@@ -1,0 +1,33 @@
+ /* .headershado{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 1px 8px -1px gray;
+    background: transparent;
+    backdrop-filter: blur(8px);
+    position: fixed;
+    transition: all 1s ease;
+}
+
+
+
+ */
+
+ .headershado {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 1px 8px -1px gray;
+    background: transparent;
+    backdrop-filter: blur(8px);
+    position: fixed;
+    transition: all 1s ease; /* Adjust timing here */
+    transform: translateY(-100%);
+  }
+  
+  .headershado.active {
+    transform: translateY(0%);
+  }
+  
