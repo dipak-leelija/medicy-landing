@@ -1,4 +1,6 @@
 import React from 'react'
+import logo from '/assets/img/logo.png';
+
 
 export default function Footer() {
     return (
@@ -6,7 +8,7 @@ export default function Footer() {
             <div className='bg-dark w-100 h-auto tect-center tex-white'>
                 <section className='d-flex justify-content-around flex-wrap'>
                     <div className='w-25'>
-                        <img className='' src='../../public/image/logo.png'></img>
+                        <img className='' src={logo}></img>
                     </div>
                     <div className='d-flex w-50 text-white justify-content-around flex-wrap'>
                         <div><h4>Customer</h4>

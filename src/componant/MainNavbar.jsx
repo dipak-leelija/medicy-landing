@@ -86,7 +86,7 @@ import {
 // }
 
 
-export default function Header() {
+export default function MainNavbar() {
   const [collapseOpen, setCollapseOpen] = React.useState(false);
   const [collapseOut, setCollapseOut] = React.useState("");
   const [color, setColor] = React.useState("navbar-transparent");

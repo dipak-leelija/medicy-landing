@@ -31,3 +31,9 @@
     transform: translateY(0%);
   }
   
+.bg-info{
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity)) !important;
+  transition: all 300ms ease 0s;
+  padding: 0;
+}

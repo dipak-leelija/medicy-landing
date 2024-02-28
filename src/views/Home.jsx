@@ -1,9 +1,9 @@
 import React from 'react'
 import {motion} from 'framer-motion';
-import img1 from '../../../public/image/HDR.png';
+import img1 from '/assets/img/HDR.png';
 
 
-export default function Layout() {
+export default function Home() {
     return (
         <>
             <section className='w-100 h-100 '>

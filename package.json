@@ -20,6 +20,10 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
+
+  "compilerOptions": {
+    "baseUrl": "src"
+  },
   "dependencies": {
     "bootstrap": "^5.3.3",
     "framer-motion": "^11.0.6",
