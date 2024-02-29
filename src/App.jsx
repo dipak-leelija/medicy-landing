@@ -7,9 +7,8 @@ import Footer from './componant/Footer';
 import AboutUs from './views/AboutUs';
 import Home from './views/Home';
 
-
-
 import "../public/assets/css/main-navbar.css";
+import "../public/assets/css/home.css";
 
 
 
