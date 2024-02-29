@@ -1,0 +1,62 @@
+@import './main.css';
+.heading{
+    margin-left: 160px;
+    margin-top: 40px;
+    width: 80%;
+    color: var(--brandeis-blue);
+    z-index: 1;
+    position: relative;
+    backdrop-filter: blur(1px);
+}
+.heading h1{
+    font-size: 2.7rem;
+    font-weight: 900;
+}
+.heroimg{
+    height: 430px;
+    width: 430px;
+    margin-top: 85px;
+    margin-left: 200px;
+    border-radius: 50%;
+    background-color: gray;
+
+}
+.circle1{
+    height: 150px;
+    width: 150px;
+    margin-right: 160px;
+    border-radius: 50%;
+    background-color: rgb(124, 128, 224);
+    z-index: -1;
+    position: absolute;
+}
+.circle2{
+    height: 90px;
+    width: 90px;
+    margin-right: 336px;
+    margin-top: 46px;
+    border-radius: 50%;
+    background-color: rgb(204, 205, 241);
+    z-index: -1;
+    position: absolute;
+}
+.ractangle1{
+    height: 100px;
+    width: 100px;
+    border-radius: 14%;
+    margin-left: 20px;
+    margin-top: -20px;
+    background-color: rgb(124, 128, 224);
+    /* z-index: 1; */
+    position: absolute;
+}
+.ractangle2{
+    height: 130px;
+    width: 130px;
+    border-radius: 14%;
+    margin-left: 68px;
+    margin-top: 18px;
+    background-color: rgb(204, 205, 241);
+    z-index: 1;
+    position: absolute;
+}
