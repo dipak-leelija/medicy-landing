@@ -236,9 +236,6 @@ export default function MainNavbar() {
             <NavbarBrand to="/" id="navbar-brand" tag={Link}>
               <img className='navlogo' src={logo}></img>
             </NavbarBrand>
-            <UncontrolledTooltip placement="bottom" target="navbar-brand">
-              Designed and Coded by Creative Tim
-            </UncontrolledTooltip>
           </div>
           <div className="d-flex justify-content-end w-75 navfontstyle">
             {windowWidth >= 992 && (
