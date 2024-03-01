@@ -9,6 +9,7 @@ import Home from './views/Home';
 
 import "../public/assets/css/main-navbar.css";
 import "../public/assets/css/home.css";
+import "../public/assets/css/footer.css";
 
 
 
