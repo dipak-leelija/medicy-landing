@@ -15,7 +15,7 @@
   box-sizing: border-box;
 }
 .footer-sec {
-  height: 18.25rem;
+  /* height: 18.25rem; */
   flex: 1;
   flex-direction: column;
   justify-content: flex-end;
