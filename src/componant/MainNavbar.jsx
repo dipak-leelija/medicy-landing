@@ -278,7 +278,7 @@ export default function MainNavbar() {
 
             <div className="d-flex justify-content-end align-items-center">
               {windowWidth < 992 && (
-                <>                <div><Button outline color="success" >Free Trial</Button></div>
+                <>                <div className=""><Button outline color="success" className="freetrialbtn" >Free Trial</Button></div>
                   <div className="m-2"><Button className="ml-4" color="primary" >Login</Button></div>              </>
               )}          </div>
           </div>

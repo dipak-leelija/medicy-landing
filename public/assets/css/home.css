@@ -1,5 +1,10 @@
 @import './main.css';
-.heading{
+
+.baner-left {
+    width: 50%;
+}
+
+.heading {
     margin-left: 160px;
     margin-top: 40px;
     width: 80%;
@@ -8,20 +13,53 @@
     position: relative;
     backdrop-filter: blur(1px);
 }
-.heading h1{
+
+.heading h1 {
     font-size: 2.7rem;
     font-weight: 900;
 }
-.heroimg{
+
+.heading img {
+    width: 40px;
+    margin-left: 20px;
+}
+
+.baner-text {
+    color: rgb(43, 43, 74);
+    font-size: 18px;
+    font-family: var(--f-helvetica-text-regula);
+}
+
+.pricebtn {
+    width: 30%;
+    margin-top: 25px;
+    background-color: var(--brandeis-blue);
+    color: #fff;
+    box-shadow: #4c5d77 1.95px 1.95px 2.6px;
+}
+.pricebtn:hover{
+    background-color: var(--brandeis-blue);
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;}
+
+.heroimg {
     height: 430px;
     width: 430px;
     margin-top: 85px;
     margin-left: 200px;
     border-radius: 50%;
-    background-color: gray;
-
+    /* background-color: gray; */
 }
-.circle1{
+
+.heroimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.circle1 {
     height: 150px;
     width: 150px;
     margin-right: 160px;
@@ -30,7 +68,8 @@
     z-index: -1;
     position: absolute;
 }
-.circle2{
+
+.circle2 {
     height: 90px;
     width: 90px;
     margin-right: 336px;
@@ -40,7 +79,8 @@
     z-index: -1;
     position: absolute;
 }
-.ractangle1{
+
+.ractangle1 {
     height: 100px;
     width: 100px;
     border-radius: 14%;
@@ -50,7 +90,8 @@
     /* z-index: 1; */
     position: absolute;
 }
-.ractangle2{
+
+.ractangle2 {
     height: 130px;
     width: 130px;
     border-radius: 14%;
@@ -59,4 +100,149 @@
     background-color: rgb(204, 205, 241);
     z-index: 1;
     position: absolute;
+}
+
+/* Media query for screens up to 1260px */
+@media screen and (max-width: 1260px) {
+    .baner-left {
+        width: 45%;
+    }
+
+    .heading {
+        width: 90%;
+        margin-left: 130px;
+    }
+
+    .heading h1 {
+        font-size: 2.2rem;
+        font-weight: 900;
+    }
+
+    .baner-right {
+        width: 50%;
+        /* height: 60%; */
+    }
+
+    .heroimg {
+        width: 410px;
+        margin-left: 100px;
+    }
+}
+
+/* Additional media queries for smaller screen sizes */
+@media screen and (max-width: 992px) {
+    .baner-left {
+        width: 40%;
+    }
+
+    .heading {
+        width: 100%;
+        margin-left: 120px;
+    }
+
+    .baner-right {
+        width: 50%;
+        /* height: 60%; */
+    }
+
+    .baner-text {
+        font-size: 15px;
+    }
+
+    .heroimg {
+        width: 380px;
+        height: 375px;
+        margin-left: 90px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .baner-left {
+        width: 100%;
+    }
+
+    .heading {
+        width: 100%;
+        margin-top: 40px;
+        margin-left: 0px;
+        padding-left: 40px;
+        padding-right: 30px;
+        text-align: center;
+    }
+
+    .heading h1,
+    p {
+        margin-left: 10px;
+    }
+
+    .ractangle1 {
+        height: 80px;
+        width: 80px;
+        border-radius: 14%;
+        margin-left: 0px;
+        margin-top: 10px;
+        margin-left: 300px;
+        margin-top: 40px;
+        background-color: rgb(124, 128, 224);
+        /* z-index: 1; */
+        position: absolute;
+    }
+
+    .ractangle2 {
+        height: 100px;
+        width: 100px;
+        border-radius: 14%;
+        margin-left: 0px;
+        margin-top: 10px;
+        /* margin-left: 300px;
+        margin-top: 40px; */
+        background-color: rgb(204, 205, 241);
+        z-index: 1;
+        position: absolute;
+    }
+
+    .pricebtn{
+        width: 38%; 
+    } 
+    .baner-right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .heroimg {
+        width: 100%;
+        height: 60%;
+        background-color: transparent;
+        margin-left: 0px;
+    }
+
+    .heroimg img {
+        width: 100%;
+        height: 100%;
+        padding: 0px 20px;
+        object-fit: fill;
+        border-radius: 10%;
+        box-shadow: none;
+    }
+
+    .circle1 {
+        height: 125px;
+        width: 125px;
+        margin-right: 228px;
+        margin-top: -47px;
+        background-color: rgb(124, 128, 224);
+        z-index: -1;
+        position: absolute;
+    }
+
+    .circle2 {
+        height: 80px;
+        width: 80px;
+        margin-right: 69px;
+        margin-top: -117px;
+        border-radius: 50%;
+        background-color: rgb(204, 205, 241);
+        z-index: -1;
+        position: absolute;
+    }
 }
