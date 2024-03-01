@@ -157,7 +157,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from '../../public/assets/img/logo.png';
-// reactstrap components
 import {
   Button,
   Collapse,
@@ -235,13 +234,13 @@ export default function MainNavbar() {
               </button>
             )}
             <NavbarBrand to="/" id="navbar-brand" tag={Link}>
-              <img className='w-50' src={logo}></img>
+              <img className='navlogo' src={logo}></img>
             </NavbarBrand>
             <UncontrolledTooltip placement="bottom" target="navbar-brand">
               Designed and Coded by Creative Tim
             </UncontrolledTooltip>
           </div>
-          <div className="d-flex justify-content-end w-75">
+          <div className="d-flex justify-content-end w-75 navfontstyle">
             {windowWidth >= 992 && (
               <Nav navbar className="d-flex justify-content-around w-75">
                 <NavItem>
@@ -299,7 +298,7 @@ export default function MainNavbar() {
             ❌
           </button>
         </div>
-        <Nav navbar className="flex-column respnsenave">
+        <Nav navbar className="flex-column responsesidebar">
           <NavItem>
             <NavLink href="https://github.com/creativetimofficial/blk-design-system-react/issues">
               Pricing

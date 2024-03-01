@@ -1,13 +1,29 @@
+ @import './main.css';
+
  .headershado {
-   /* top: 0;
-    left: 0;
-    width: 100%;
-    height: auto; */
    box-shadow: 0 1px 8px -1px gray;
-   /* background: transparent; */
    backdrop-filter: blur(8px);
-   /* position: fixed; */
    transition: all 0.5s ease;
+ }
+
+ .navfontstyle {
+   /* color: #E69D32; */
+   font-family: var(--f-helvetica-text-regular);
+   font-size: 18px;
+ }
+.navfontstyle .nav-link:hover{
+  color: var(--brandeis-blue);
+}
+ .navlogo {
+   width: 50%;
+
+ }
+
+ @media screen and (max-width: 768px) {
+   .navlogo {
+     width: 60%;
+
+   }
  }
 
  /* --------mobile responsive side manu-----------  */
@@ -55,55 +71,54 @@
    bottom: 0;
    z-index: 2000;
    width: 250px;
-   /* Adjust the width as needed */
-   background-color: #dfd1d1;
-   /* Sidebar background color */
+   color: rgba(255, 255, 255, .8);
+   background-color: var(--blue);
    padding: 20px;
-   /* Adjust padding as needed */
    transition: transform 0.s ease;
-   /* Add transition effect */
    transform: translateX(-100%);
  }
 
  .sidebar.show {
    transform: translateX(0);
-   /* Show sidebar when the .show class is added */
  }
 
  .sidebar nav {
    margin-top: 50px;
-   /* Adjust top margin for the navigation links */
  }
 
  .sidebar nav a {
    display: block;
    padding: 10px 0;
    color: #333;
-   /* Link text color */
    text-decoration: none;
    transition: background-color 0.3s ease;
-   /* Add transition effect to link background */
  }
 
  .sidebar nav a:hover {
    background-color: #f0f0f0;
-   /* Link background color on hover */
  }
 
- /* Additional styles for buttons */
  .sidebar .btn {
    width: 100%;
-   /* Make buttons fill the width of the sidebar */
    margin-top: 20px;
-   /* Add margin between buttons */
  }
 
- .clossbtn{
-  margin-left: 180px;
-  background-color: transparent;
-  border: none;
+ .clossbtn {
+   margin-left: 180px;
+   background-color: transparent;
+   border: none;
  }
 
- .respnsenave {
-   margin-top: 20%;
+ .responsesidebar {
+   margin: 20px;
+   padding: 20px;
+ }
+
+ .responsesidebar a {
+   padding: 20px;
+   font-family: var(--f-helvetica-text-regular);
+ }
+
+ .responsesidebar:hover {
+   color: #fff;
  }
