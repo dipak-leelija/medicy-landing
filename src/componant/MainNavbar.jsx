@@ -75,24 +75,24 @@ export default function MainNavbar() {
             {windowWidth >= 992 && (
               <Nav navbar className="d-flex justify-content-around w-75">
                 <NavItem>
-                  <NavLink href="https://github.com/creativetimofficial/blk-design-system-react/issues">
+                  <NavLink href="/">
                     Pricing
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink tag={Link} to="/">
+                  <NavLink href="/">
                     Doctors
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="https://github.com/creativetimofficial/blk-design-system-react/issues">
+                  <NavLink href="/">
                     About
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
                     className=""
-                    href="https://github.com/creativetimofficial/blk-design-system-react/issues">
+                    href="/">
                     Contact
                   </NavLink>
                 </NavItem>
@@ -145,24 +145,24 @@ export default function MainNavbar() {
         </div>
         <Nav navbar className="flex-column responsesidebar">
           <NavItem>
-            <NavLink href="https://github.com/creativetimofficial/blk-design-system-react/issues">
+            <NavLink href="/">
               Pricing
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink tag={Link} to="/">
+            <NavLink href="/">
               Doctors
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="https://github.com/creativetimofficial/blk-design-system-react/issues">
+            <NavLink href="/">
               About
             </NavLink>
           </NavItem>
           <NavItem>
             <NavLink
               className=""
-              href="https://github.com/creativetimofficial/blk-design-system-react/issues">
+              href="/">
               Contact
             </NavLink>
           </NavItem>
