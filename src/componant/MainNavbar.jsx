@@ -74,7 +74,7 @@ export default function MainNavbar() {
           <div className="d-flex justify-content-end w-75 navfontstyle">
             {windowWidth >= 992 && (
               <Nav navbar className="d-flex justify-content-between w-75">
-                <div className="d-flex justify-content-start">
+                {/* <div className="d-flex justify-content-start">
                 <NavItem>
                   <NavLink href="/">
                     Pricing
@@ -97,8 +97,8 @@ export default function MainNavbar() {
                     Contact
                   </NavLink>
                 </NavItem>
-                </div>
-                {/* <NavItem>
+                </div> */}
+                <NavItem>
                   <NavLink href="/">
                     Pricing
                   </NavLink>
@@ -119,8 +119,8 @@ export default function MainNavbar() {
                     href="/">
                     Contact
                   </NavLink>
-                </NavItem> */}
-                <div className="d-flex justify-content-around w-50">
+                </NavItem>
+                {/* <div className="d-flex justify-content-around w-50"> */}
                 <NavItem>
                   <Button color="success" className="mr-5">Free Trial</Button>
                 </NavItem>
@@ -129,7 +129,7 @@ export default function MainNavbar() {
                     color="primary"
                   >Login</Button>
                 </NavItem>
-                </div>
+                {/* </div> */}
               </Nav>
             )}
 
