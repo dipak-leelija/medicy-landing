@@ -25,11 +25,6 @@
    margin-left: 20px;
  }
 
- @media screen and (max-width: 768px) {
-   .navlogo {
-     width: 70%;
-   }
- }
 
 
 
@@ -139,6 +134,19 @@
  .responsesidebar:hover {
    color: #fff;
  }
+
+ @media screen and (max-width: 767px) {
+  .navlogo {
+    width: 70%;
+  }
+  .loginbtn{
+   --bs-btn-padding-x: 0.75rem;
+   --bs-btn-padding-y: 0.175rem;
+  }
+  .navbtn{
+   margin-top: 4px;
+  }
+}
 
  @media (min-width: 208px) and (max-width : 992px) {
 

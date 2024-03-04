@@ -137,7 +137,7 @@ export default function MainNavbar() {
               {windowWidth < 992 && (
                 <>
                   {/* <div><Button outline color="success" className="freetrialbtn" >Free Trial</Button></div> */}
-                  <div className="m-2"><Button className="ml-4" outline color="primary" >Login</Button></div>
+                  <div className="m-2"><Button className="ml-4 loginbtn" outline color="primary">Login</Button></div>
                 </>
               )}
             </div>
