@@ -1,0 +1,232 @@
+.why-choose-us {
+    position: relative;
+    line-height: 2rem;
+  }
+  .why-choose-us-wrapper {
+    position: absolute;
+    top: 0rem;
+    left: 3.25rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1.375rem 13.438rem;
+  }
+  .frame {
+    position: absolute;
+    top: 1.688rem;
+    left: 7.281rem;
+    width: 49.188rem;
+    height: 4.75rem;
+    overflow: hidden;
+  }
+  .removebg-preview-1-icon {
+    width: 17.125rem;
+    position: relative;
+    height: 17.125rem;
+    object-fit: cover;
+  }
+  .frame2 {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 18.375rem;
+    height: 17.188rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2.188rem 3rem;
+    box-sizing: border-box;
+  }
+  .frame1 {
+    position: absolute;
+    top: 2.875rem;
+    left: 22.688rem;
+    width: 18.375rem;
+    height: 20.375rem;
+    overflow: hidden;
+  }
+  .cloud-based-software {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    line-height: 2rem;
+    font-weight: 600;
+  }
+  .cloud-based-software-wrapper {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 18.375rem;
+    height: 2.188rem;
+    overflow: hidden;
+  }
+  .be-always-connected {
+    position: absolute;
+    top: 0.25rem;
+    left: 0rem;
+    line-height: 1.25rem;
+    display: inline-block;
+    width: 18.75rem;
+    height: 2.938rem;
+  }
+  .be-always-connected-with-your-wrapper {
+    position: absolute;
+    top: 2.188rem;
+    left: 0rem;
+    width: 18.75rem;
+    height: 5.375rem;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-sm);
+  }
+  .frame5 {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 18.75rem;
+    height: 7.563rem;
+  }
+  .frame4 {
+    position: absolute;
+    top: 2.688rem;
+    left: 0rem;
+    width: 18.75rem;
+    height: 19.25rem;
+    overflow: hidden;
+  }
+  .frame7 {
+    position: absolute;
+    top: 17.063rem;
+    left: 0rem;
+    width: 18.75rem;
+    height: 7.563rem;
+  }
+  .frame6 {
+    position: absolute;
+    top: 0rem;
+    left: 4.375rem;
+    width: 18.75rem;
+    height: 24.625rem;
+    overflow: hidden;
+  }
+  .frame3 {
+    position: absolute;
+    top: 0.75rem;
+    left: 0rem;
+    width: 23.125rem;
+    height: 24.625rem;
+    overflow: hidden;
+  }
+  .cloud-based-software2 {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    line-height: 2rem;
+    font-weight: 600;
+    display: inline-block;
+    width: 18.375rem;
+  }
+  .be-always-connected-with-your-frame {
+    position: absolute;
+    top: 2.188rem;
+    left: 0rem;
+    width: 18.75rem;
+    height: 5.375rem;
+    overflow: hidden;
+    font-size: var(--font-size-sm);
+  }
+  .frame9 {
+    position: absolute;
+    top: 2.688rem;
+    left: 4.375rem;
+    width: 18.75rem;
+    height: 19.25rem;
+    overflow: hidden;
+  }
+  .cloud-based-software3 {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    line-height: 2rem;
+    font-weight: 600;
+    display: inline-block;
+    width: 18.375rem;
+    height: 2.188rem;
+  }
+  .frame11 {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 18.75rem;
+    height: 24.625rem;
+    overflow: hidden;
+  }
+  .frame8 {
+    position: absolute;
+    top: 0.75rem;
+    left: 40.625rem;
+    width: 23.125rem;
+    height: 24.625rem;
+    overflow: hidden;
+    text-align: right;
+  }
+  .frame-parent {
+    position: absolute;
+    top: 7.5rem;
+    left: calc(50% - 510px);
+    width: 63.75rem;
+    height: 26.125rem;
+    overflow: hidden;
+    font-size: var(--font-size-xl);
+  }
+  .main-div {
+    width: 63.75rem;
+    position: absolute;
+    margin: 0 !important;
+    top: 0rem;
+    left: calc(50% - 510px);
+    height: 35rem;
+    z-index: 0;
+  }
+  .wby-choose-us {
+    width: 100%;
+    position: relative;
+    background-color: #198f51;
+    height: 35rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0.625rem;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 2.25rem;
+    color: var(--pure-white);
+    font-family: var(--font-poppins);
+  }
+  
+  @media screen and (max-width: 768px) {
+
+    .frame-parent{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .frame1 {
+        position: absolute;
+        top: 2.875rem;
+        left: 22.688rem;
+        width: 18.375rem;
+        height: 20.375rem;
+        overflow: hidden;
+      }
+      .frame2{
+        
+      }
+    
+  }
