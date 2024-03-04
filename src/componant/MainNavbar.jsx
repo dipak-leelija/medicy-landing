@@ -71,11 +71,36 @@ export default function MainNavbar() {
               <img className='navlogo' src={logo}></img>
             </NavbarBrand>
           </div>
-          <div className="d-flex justify-content-end w-75 navfontstyle">
+          <div className="d-flex justify-content-center w-100 navfontstyle">
             {windowWidth >= 992 && (
-              <Nav navbar className="d-flex justify-content-between w-75">
-                {/* <div className="d-flex justify-content-start">
-                <NavItem>
+              <Nav navbar className="d-flex justify-content-between w-100">
+                <div className="d-flex justify-content-center w-75 mr-4">
+                  <NavItem>
+                    <NavLink href="/">
+                      Pricing
+                    </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="/">
+                      Doctors
+                    </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="/">
+                      About
+                    </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink
+                      className=""
+                      href="/">
+                      Contact
+                    </NavLink>
+                  </NavItem>
+
+
+                </div>
+                {/* <NavItem>
                   <NavLink href="/">
                     Pricing
                   </NavLink>
@@ -96,51 +121,27 @@ export default function MainNavbar() {
                     href="/">
                     Contact
                   </NavLink>
-                </NavItem>
-                </div> */}
-                <NavItem>
-                  <NavLink href="/">
-                    Pricing
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="/">
-                    Doctors
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink href="/">
-                    About
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink
-                    className=""
-                    href="/">
-                    Contact
-                  </NavLink>
-                </NavItem>
-                {/* <div className="d-flex justify-content-around w-50"> */}
-                <NavItem>
-                  <Button color="success" className="mr-5">Free Trial</Button>
-                </NavItem>
-                <NavItem>
-                  <Button
-                    color="primary"
-                  >Login</Button>
-                </NavItem>
-                {/* </div> */}
+                </NavItem> */}
+                <div className="d-flex justify-content-around w-25">
+                  <NavItem>
+                    <Button color="success" className="mr-5">Free Trial</Button>
+                  </NavItem>
+                  <NavItem>
+                    <Button
+                      color="primary"
+                    >Login</Button>
+                  </NavItem>
+                </div>
               </Nav>
             )}
-
-            <div className="d-flex justify-content-end align-items-center">
-              {windowWidth < 992 && (
-                <>
-                  {/* <div><Button outline color="success" className="freetrialbtn" >Free Trial</Button></div> */}
-                  <div className="m-2"><Button className="ml-4 loginbtn" outline color="primary">Login</Button></div>
-                </>
-              )}
-            </div>
+          </div>
+          <div className="d-flex justify-content-end align-items-center">
+            {windowWidth < 992 && (
+              <>
+                {/* <div><Button outline color="success" className="freetrialbtn" >Free Trial</Button></div> */}
+                <div className="m-2"><Button className="loginbtn" outline color="primary">Login</Button></div>
+              </>
+            )}
           </div>
           {windowWidth < 992 && (
             <button
@@ -166,7 +167,7 @@ export default function MainNavbar() {
             className="clossbtn"
             onClick={toggleSidebar}
           >
-           &times;
+            &times;
           </button>
         </div>
         <Nav navbar className="flex-column responsesidebar">
