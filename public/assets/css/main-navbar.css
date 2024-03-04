@@ -21,6 +21,10 @@
 
  }
 
+ #navbar-brand {
+   margin-left: 20px;
+ }
+
  @media screen and (max-width: 768px) {
    .navlogo {
      width: 70%;
@@ -76,23 +80,12 @@
    left: 0;
    bottom: 0;
    z-index: 2000;
-   width: 390px;
+   width: 100%;
    color: rgba(255, 255, 255, .8);
    background-color: var(--blue);
    padding: 20px;
-   transition: transform 1s ease;
+   transition: transform 0.3s ease;
    transform: translateX(-100%);
-
-   /* height: 100%;
-   width: 390px;
-   position: fixed;
-   z-index: 2000;
-   top: 0;
-   left: 0;
-   background-color: var(--blue);
-   overflow-x: hidden;
-   transition: 0.5s;
-   padding: 20px; */
  }
 
  .sidebar.show {
@@ -104,35 +97,36 @@
  } */
 
  .sidebar a {
-  font-size: 20px;
-  font-weight: 100;
+   font-size: 20px;
+   font-weight: 100;
    display: block;
    padding: 10px 0;
    color: #f1f1f1;
    text-decoration: none;
-   transition: background-color 0.5s ease;
+   transition: padding-left 0.5s ease;
  }
 
  .sidebar a:hover {
-   text-shadow: 2px 2px 12px #ffff;
+   color: #fff;
+   padding-left: 0.5rem;
  }
 
  .clossbtn {
-  font-size: 45px;
-  font-weight: 400;
-  padding: 0px;
+   font-size: 45px;
+   font-weight: 400;
+   padding: 0px;
    margin-top: -12px;
-   margin-left: 320px;
-   color:#f1f1f1;
+   color: #f1f1f1;
    background-color: transparent;
    border: none;
  }
- .clossbtn:hover{
-  color: red;
-  text-shadow: 2px 2px 12px #ffff;
+
+ .clossbtn:hover {
+   color: #ffff;
  }
 
  .responsesidebar {
+  width: 50%;
    margin: 20px;
    padding: 20px;
  }
@@ -157,9 +151,9 @@
 
  @media (min-width: 1204px) {
 
-  .container,
-  .container-md,
-  .container-sm {
-    max-width:100%;
-  }
-}
+   .container,
+   .container-md,
+   .container-sm {
+     max-width: 100%;
+   }
+ }

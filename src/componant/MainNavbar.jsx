@@ -73,7 +73,8 @@ export default function MainNavbar() {
           </div>
           <div className="d-flex justify-content-end w-75 navfontstyle">
             {windowWidth >= 992 && (
-              <Nav navbar className="d-flex justify-content-around w-75">
+              <Nav navbar className="d-flex justify-content-between w-75">
+                <div className="d-flex justify-content-start">
                 <NavItem>
                   <NavLink href="/">
                     Pricing
@@ -96,14 +97,39 @@ export default function MainNavbar() {
                     Contact
                   </NavLink>
                 </NavItem>
+                </div>
+                {/* <NavItem>
+                  <NavLink href="/">
+                    Pricing
+                  </NavLink>
+                </NavItem>
                 <NavItem>
-                  <Button color="success">Free Trial</Button>
+                  <NavLink href="/">
+                    Doctors
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink href="/">
+                    About
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink
+                    className=""
+                    href="/">
+                    Contact
+                  </NavLink>
+                </NavItem> */}
+                <div className="d-flex justify-content-around w-50">
+                <NavItem>
+                  <Button color="success" className="mr-5">Free Trial</Button>
                 </NavItem>
                 <NavItem>
                   <Button
                     color="primary"
                   >Login</Button>
                 </NavItem>
+                </div>
               </Nav>
             )}
 
@@ -134,7 +160,7 @@ export default function MainNavbar() {
         className={"sidebar " + (showSidebar ? "show" : "")}
         navbar
       >
-        <div className="navbar-collapse-header">
+        <div className="navbar-collapse-header d-flex justify-content-end">
           <button
             aria-expanded={showSidebar}
             className="clossbtn"

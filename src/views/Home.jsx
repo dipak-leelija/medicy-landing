@@ -5,6 +5,21 @@ import tap from '/assets/img/tap.png';
 
 
 export default function Home() {
+
+    const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
+    const [showImage, setShowImage] = React.useState(window.innerWidth > 767);
+
+    React.useEffect(() => {
+        window.addEventListener("resize", handleResize);
+        return function cleanup() {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+
+    const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+        setShowImage(window.innerWidth > 767); // Update showImage state based on window width
+    };
     return (
         <>
             <section className='w-100 h-100 '>
@@ -32,9 +47,11 @@ export default function Home() {
                         <div className='baner-right d-flex justify-content-end'>
                             <div className='circle1'></div>
                             <div className='circle2'></div>
-                            <div className='heroimg'>
-                                <img src={img1} alt="" />
-                            </div>
+                            {showImage && (
+                                <div className='heroimg'>
+                                    <img src={img1} alt="" />
+                                </div>
+                            )}
                         </div>
                     </div>
                 </div>

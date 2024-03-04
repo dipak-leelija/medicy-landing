@@ -31,7 +31,7 @@
 }
 
 .pricebtn {
-    width: 30%;
+    width: auto;
     margin-top: 25px;
     background-color: var(--brandeis-blue);
     color: #fff;
@@ -208,9 +208,6 @@
         position: absolute;
     }
 
-    .pricebtn{
-        width: 38%; 
-    } 
     .baner-right {
         width: 100%;
         justify-content: center;
