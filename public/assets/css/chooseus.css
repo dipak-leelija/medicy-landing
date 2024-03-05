@@ -1,232 +1,538 @@
-.why-choose-us {
+/* .why-choose-us {
+  position: relative;
+  line-height: 2rem;
+}
+
+.why-choose-us-wrapper {
+  position: absolute;
+  top: 0rem;
+  left: 3.25rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1.375rem 13.438rem;
+}
+
+.frame {
+  position: absolute;
+  top: 1.688rem;
+  left: 7.281rem;
+  width: 49.188rem;
+  height: 4.75rem;
+  overflow: hidden;
+}
+
+.removebg-preview-1-icon {
+  width: 17.125rem;
+  position: relative;
+  height: 17.125rem;
+  object-fit: cover;
+}
+
+.frame2 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 18.375rem;
+  height: 17.188rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2.188rem 3rem;
+  box-sizing: border-box;
+}
+
+.frame1 {
+  position: absolute;
+  top: 2.875rem;
+  left: 22.688rem;
+  width: 18.375rem;
+  height: 20.375rem;
+  overflow: hidden;
+}
+
+.cloud-based-software {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+.cloud-based-software-wrapper {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 18.375rem;
+  height: 2.188rem;
+  overflow: hidden;
+}
+
+.be-always-connected {
+  position: absolute;
+  top: 0.25rem;
+  left: 0rem;
+  line-height: 1.25rem;
+  display: inline-block;
+  width: 18.75rem;
+  height: 2.938rem;
+}
+
+.be-always-connected-with-your-wrapper {
+  position: absolute;
+  top: 2.188rem;
+  left: 0rem;
+  width: 18.75rem;
+  height: 5.375rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-sm);
+}
+
+.frame5 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 18.75rem;
+  height: 7.563rem;
+}
+
+.frame4 {
+  position: absolute;
+  top: 2.688rem;
+  left: 0rem;
+  width: 18.75rem;
+  height: 19.25rem;
+  overflow: hidden;
+}
+
+.frame7 {
+  position: absolute;
+  top: 17.063rem;
+  left: 0rem;
+  width: 18.75rem;
+  height: 7.563rem;
+}
+
+.frame6 {
+  position: absolute;
+  top: 0rem;
+  left: 4.375rem;
+  width: 18.75rem;
+  height: 24.625rem;
+  overflow: hidden;
+}
+
+.frame3 {
+  position: absolute;
+  top: 0.75rem;
+  left: 0rem;
+  width: 23.125rem;
+  height: 24.625rem;
+  overflow: hidden;
+}
+
+.cloud-based-software2 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  line-height: 2rem;
+  font-weight: 600;
+  display: inline-block;
+  width: 18.375rem;
+}
+
+.be-always-connected-with-your-frame {
+  position: absolute;
+  top: 2.188rem;
+  left: 0rem;
+  width: 18.75rem;
+  height: 5.375rem;
+  overflow: hidden;
+  font-size: var(--font-size-sm);
+}
+
+.frame9 {
+  position: absolute;
+  top: 2.688rem;
+  left: 4.375rem;
+  width: 18.75rem;
+  height: 19.25rem;
+  overflow: hidden;
+}
+
+.cloud-based-software3 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  line-height: 2rem;
+  font-weight: 600;
+  display: inline-block;
+  width: 18.375rem;
+  height: 2.188rem;
+}
+
+.frame11 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 18.75rem;
+  height: 24.625rem;
+  overflow: hidden;
+}
+
+.frame8 {
+  position: absolute;
+  top: 0.75rem;
+  left: 40.625rem;
+  width: 23.125rem;
+  height: 24.625rem;
+  overflow: hidden;
+  text-align: right;
+}
+
+.frame-parent {
+  position: absolute;
+  top: 7.5rem;
+  left: calc(50% - 510px);
+  width: 63.75rem;
+  height: 26.125rem;
+  overflow: hidden;
+  font-size: var(--font-size-xl);
+}
+
+.main-div {
+  width: 63.75rem;
+  position: absolute;
+  margin: 0 !important;
+  top: 0rem;
+  left: calc(50% - 510px);
+  height: 35rem;
+  z-index: 0;
+}
+
+.wby-choose-us {
+  width: 100%;
+  position: relative;
+  background-color: #198f51;
+  height: 35rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.625rem;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 2.25rem;
+  color: var(--pure-white);
+  font-family: var(--font-poppins);
+}
+
+@media screen and (max-width: 767px) {
+  .why-choose-us-wrapper,
+  .frame,
+  .frame1,
+  .frame2,
+  .frame3,
+  .frame4,
+  .frame5,
+  .frame6,
+  .frame7,
+  .frame8,
+  .frame9,
+  .frame11,
+  .frame-parent
+   {
     position: relative;
-    line-height: 2rem;
+    width: 100%;
+    left: 0;
+    margin: 0 auto;
+    top: 0;
+    transform: none;
+    padding: 0;
   }
-  .why-choose-us-wrapper {
-    position: absolute;
-    top: 0rem;
-    left: 3.25rem;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 1.375rem 13.438rem;
-  }
+
   .frame {
     position: absolute;
     top: 1.688rem;
-    left: 7.281rem;
-    width: 49.188rem;
     height: 4.75rem;
     overflow: hidden;
-  }
-  .removebg-preview-1-icon {
-    width: 17.125rem;
+}
+  .main-div {
     position: relative;
-    height: 17.125rem;
-    object-fit: cover;
+    width: 100%;
+    height: 65rem;
+    left: 0;
+    margin: 0 auto;
+    top: 0;
+    transform: none;
+    padding: 0;
   }
-  .frame2 {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    width: 18.375rem;
-    height: 17.188rem;
-    display: flex;
-    flex-direction: row;
+  .wby-choose-us {
+    font-size: 1.5rem;
+    height:auto;
     align-items: center;
     justify-content: center;
-    padding: 2.188rem 3rem;
-    box-sizing: border-box;
-  }
-  .frame1 {
-    position: absolute;
-    top: 2.875rem;
-    left: 22.688rem;
-    width: 18.375rem;
-    height: 20.375rem;
-    overflow: hidden;
-  }
-  .cloud-based-software {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    line-height: 2rem;
-    font-weight: 600;
-  }
-  .cloud-based-software-wrapper {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    width: 18.375rem;
-    height: 2.188rem;
-    overflow: hidden;
-  }
-  .be-always-connected {
-    position: absolute;
-    top: 0.25rem;
-    left: 0rem;
-    line-height: 1.25rem;
-    display: inline-block;
-    width: 18.75rem;
-    height: 2.938rem;
-  }
-  .be-always-connected-with-your-wrapper {
-    position: absolute;
-    top: 2.188rem;
-    left: 0rem;
-    width: 18.75rem;
-    height: 5.375rem;
-    overflow: hidden;
-    text-align: left;
-    font-size: var(--font-size-sm);
-  }
-  .frame5 {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    width: 18.75rem;
-    height: 7.563rem;
-  }
-  .frame4 {
-    position: absolute;
-    top: 2.688rem;
-    left: 0rem;
-    width: 18.75rem;
-    height: 19.25rem;
-    overflow: hidden;
-  }
-  .frame7 {
-    position: absolute;
-    top: 17.063rem;
-    left: 0rem;
-    width: 18.75rem;
-    height: 7.563rem;
-  }
-  .frame6 {
-    position: absolute;
-    top: 0rem;
-    left: 4.375rem;
-    width: 18.75rem;
-    height: 24.625rem;
-    overflow: hidden;
-  }
-  .frame3 {
-    position: absolute;
-    top: 0.75rem;
-    left: 0rem;
-    width: 23.125rem;
-    height: 24.625rem;
-    overflow: hidden;
-  }
-  .cloud-based-software2 {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    line-height: 2rem;
-    font-weight: 600;
-    display: inline-block;
-    width: 18.375rem;
-  }
-  .be-always-connected-with-your-frame {
-    position: absolute;
-    top: 2.188rem;
-    left: 0rem;
-    width: 18.75rem;
-    height: 5.375rem;
-    overflow: hidden;
-    font-size: var(--font-size-sm);
-  }
-  .frame9 {
-    position: absolute;
-    top: 2.688rem;
-    left: 4.375rem;
-    width: 18.75rem;
-    height: 19.25rem;
-    overflow: hidden;
-  }
-  .cloud-based-software3 {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    line-height: 2rem;
-    font-weight: 600;
-    display: inline-block;
-    width: 18.375rem;
-    height: 2.188rem;
-  }
-  .frame11 {
-    position: absolute;
-    top: 0rem;
-    left: 0rem;
-    width: 18.75rem;
-    height: 24.625rem;
-    overflow: hidden;
-  }
-  .frame8 {
-    position: absolute;
-    top: 0.75rem;
-    left: 40.625rem;
-    width: 23.125rem;
-    height: 24.625rem;
-    overflow: hidden;
-    text-align: right;
+    flex-direction: column;
+    padding: 1rem;
   }
   .frame-parent {
+    display: flex;
+    flex-wrap: wrap;
     position: absolute;
     top: 7.5rem;
     left: calc(50% - 510px);
     width: 63.75rem;
-    height: 26.125rem;
+    height: 60rem;
     overflow: hidden;
     font-size: var(--font-size-xl);
   }
-  .main-div {
-    width: 63.75rem;
+  .frame3 {
     position: absolute;
-    margin: 0 !important;
-    top: 0rem;
-    left: calc(50% - 510px);
-    height: 35rem;
-    z-index: 0;
-  }
-  .wby-choose-us {
-    width: 100%;
-    position: relative;
-    background-color: #198f51;
-    height: 35rem;
+    top: 20.75rem;
+    left: 23rem;
+    width: 26.125rem;
+    height: 18.625rem;
     overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 0.625rem;
-    box-sizing: border-box;
-    text-align: center;
-    font-size: 2.25rem;
-    color: var(--pure-white);
-    font-family: var(--font-poppins);
-  }
-  
-  @media screen and (max-width: 768px) {
+}
+  .frame4{
+    position: relative;
+    width: 100%;
+    height: 40%;
+    left: 0;
+    margin: 0 auto;
+    top: 0;
+    transform: none;
+    padding: 0;
+}
 
-    .frame-parent{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .frame1 {
-        position: absolute;
-        top: 2.875rem;
-        left: 22.688rem;
-        width: 18.375rem;
-        height: 20.375rem;
-        overflow: hidden;
-      }
-      .frame2{
-        
-      }
+  .frame6 {
+    position: relative;
+    width: 100%;
+    height: 40%;
+    left: 0;
+    margin: 0 auto;
+    top: 0;
+    transform: none;
+    padding: 0;
+}
+
+.frame8 {
+  position: absolute;
+  top: 35.75rem;
+  left: 23rem;
+  width: 23.125rem;
+  height: 20.625rem;
+  overflow: hidden;
+  text-align: left;
+}
+
+.frame9 {
+  position: absolute;
+  top: 2.688rem;
+ 
+  width: 18.75rem;
+  height: 8.25rem;
+  overflow: hidden;
+}
+
+  .frame11 {
+    position: absolute;
+    top: 12rem;
+    left: 0rem;
+    width: 18.75rem;
+    height: 24.625rem;
+    overflow: hidden;
+}
+}
+
+@media screen and (max-width: 1024px) {
+  .textcard{
+   display: flex;
+   justify-content: space-between;
+  }
+} */
+
+.wby-choose-us {
+  width: 100%;
+  position: relative;
+  background-color: #198f51;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.625rem;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 2.25rem;
+  color: var(--pure-white);
+  font-family: var(--font-poppins);
+}
+
+.main-div {
+  width: 100%;
+  margin-bottom: 10%;
+  /* background-color: ; */
+}
+
+.frame1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+}
+
+.frame2 img {
+  width: 100%;
+}
+
+.frame-parent {
+  display: flex;
+  justify-content: center;
+  margin-top: 6%;
+  height: 100%;
+  /* flex-wrap: wrap; */
+}
+
+.frame3 {
+  width: 100%;
+}
+
+.frame4 {
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+
+.frame5 {
+
+  margin-left: 25px;
+  text-align: left;
+}
+
+.be-always-connected {
+  font-size: var(--font-size-sm);
+}
+
+.frame6 {
+  margin-top: 38%;
+  margin-left: 100px;
+  text-align: left;
+}
+
+.frame8 {
+  width: 100%;
+}
+
+.frame9 {
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+
+.frame10 {
+  margin-right: 25px;
+  text-align: right;
+}
+
+.frame11 {
+  font-size: var(--font-size-sm);
+}
+
+.frame12 {
+  margin-top: 38%;
+  margin-right: 100px;
+  text-align: right;
+}
+
+@media screen and (max-width:767px) {
+  .frame-parent {
+    display: flex;
+    justify-content: center;
+    margin-top: 6%;
+    height: 100%;
+    flex-wrap: wrap;
+  }
+
+  .frame1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 8%;
+  }
+
+  .frame3 {
+    width: 90%;
+    padding-left: 8px;
+    padding-bottom: 8px;
+  }
+
+  .frame4 {
+    padding: 0;
+  }
+
+  .frame5 {
+    /* width: 90%; */
+    margin-left: 0px;
+    text-align: justify;
+  }
+
+  .frame6 {
+    margin-top: 6%;
+    margin-left: 0px;
+    padding: 2px;
+  }
+
+  .frame7 {
+    /* width: 90%; */
+    /* margin-top: 6%; */
+    margin-left: 0px;
+    /* padding: 2px; */
+    text-align: justify;
+  }
+
+  .frame8{
+    width: 90%;
+    padding-left: 8px;
+    padding-bottom: 8px;
+  }
+  .frame9 {
+    padding: 0;
+  }
+
+  .frame10 {
+    /* width: 90%; */
+    margin-top: 6%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 2px;
+    text-align: justify;
+  }
+
+  .frame12 {
+    margin-top: 6%;
+    margin-right: 0px;
+    padding: 2px;
+    text-align: justify;
+  }
+
+  .frame13 {
+    /* width: 90%; */
+    margin-left: 0px;
+    margin-right: 0px;
+    /* padding: 2px; */
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width:1024) {
+  .wrapcard{
     
   }
+}
