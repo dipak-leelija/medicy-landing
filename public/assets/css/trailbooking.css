@@ -5,5 +5,42 @@
     background-color: var(--salem-green);
 }
 .sub-trail{
-    margin: 20px;
+   padding: 6% 0px;
+}
+.trailhead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.trailhead h2{
+    font-family: var(--font-poppins);
+    font-weight: bolder;
+    color: var(--pure-white);
+}
+.trail-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 200px;
+    text-align: justify;
+    color: var(--pure-white);
+}
+.trailButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+}
+.trailButton .tbtn{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+@media screen and (max-width:767px) {
+    .trail-text{
+        margin: 20px 30px;
+    }
+}
+@media screen and (max-width:1024px) {
+    .trail-text{
+        margin: 20px 70px;
+    }
 }
