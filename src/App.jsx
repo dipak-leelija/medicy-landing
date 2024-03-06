@@ -3,7 +3,8 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainNavbar from './componant/MainNavbar'
 import ChooseUs from './views/Chooseus';
-import Keyfeatures from './views/Keyfeatures';
+import KeyFeature from './views/KeyFeature';
+import TrailBooking from './views/TrailBooking';
 import Footer from './componant/Footer';
 
 import AboutUs from './views/AboutUs';
@@ -13,6 +14,7 @@ import "../public/assets/css/home.css";
 import "../public/assets/css/chooseus.css";
 import "../public/assets/css/keyfeatures.css";
 import "../public/assets/css/footer.css";
+import "../public/assets/css/trailbooking.css";
 
 
 
@@ -23,7 +25,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/choose' element={<ChooseUs />} />
-        <Route path='/features' element={<Keyfeatures />} />
+        <Route path='/features' element={<KeyFeature />} />
+        <Route path='/Trail-boking' element={<TrailBooking />}/>
         <Route path='/about' element={<AboutUs />} />
       </Routes>
       <Footer />

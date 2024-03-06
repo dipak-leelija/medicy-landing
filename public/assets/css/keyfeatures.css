@@ -1,3 +1,4 @@
+@import './main.css';
 .featuresmain{
     width: 100%;
     height: auto;
@@ -8,6 +9,10 @@
    margin: 20px 80px;
    padding-left:10px;
    padding-right:10px;
+}
+.mainhead p{
+    font-family: var(--font-poppins);
+    text-align: justify;
 }
 .featureHead{
     display: flex;
@@ -20,15 +25,38 @@
     font-weight: bolder;
     color: var(--brandeis-blue);
     font-family: var(--font-poppins);
-    color: var(--black );
+    /* color: var(--black ); */
 }
 
 .main-card{
     margin: 50px 80px;
 }
 
-.feature-card{
+.card{
 border: none;
 background-color: #F3F0F0;
-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+box-shadow: rgba(0, 0, 0, 0.15) 4.95px 6.95px 9.6px;
+}
+.card-title{
+    font-family: var(--font-poppins);
+    color: var(--black );
+    font-weight: bolder;
+}
+.card-text{
+    font-family: var(--font-poppins);
+}
+@media screen and (min-width:200px) {
+    .featuresmain {
+        padding: 10px;
+    }
+    .featureHead{
+        padding: 0px 8px;
+    }
+    .mainhead{
+        margin: 0px;
+        padding: 0px 16px;
+    }
+    .main-card {
+        margin: 40px 16px;
+    }
 }
