@@ -3,7 +3,8 @@ import { motion } from 'framer-motion';
 import img1 from '/assets/img/hero-image.jpg';
 import tap from '/assets/img/tap.png';
 import Chooseus from './Chooseus';
-import Keyfeatures from './Keyfeatures';
+import KeyFeature from './KeyFeature';
+import TrailBooking from './TrailBooking';
 
 
 export default function Home() {
@@ -59,7 +60,8 @@ export default function Home() {
                 </div>
             </section>
              <Chooseus/>
-            <Keyfeatures/>
+            <KeyFeature/>
+            <TrailBooking/>
         </>
     );
 }
