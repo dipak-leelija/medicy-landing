@@ -1,0 +1,9 @@
+@import './main.css';
+
+.main-trail{
+    width: 100%;
+    background-color: var(--salem-green);
+}
+.sub-trail{
+    margin: 20px;
+}
