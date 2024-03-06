@@ -11,6 +11,7 @@
    padding-right:10px;
 }
 .mainhead p{
+    /* padding: 0px 40px; */
     font-family: var(--font-poppins);
     text-align: justify;
 }
@@ -45,7 +46,7 @@ box-shadow: rgba(0, 0, 0, 0.15) 4.95px 6.95px 9.6px;
 .card-text{
     font-family: var(--font-poppins);
 }
-@media screen and (min-width:200px) {
+@media screen and (max-width:767px) {
     .featuresmain {
         padding: 10px;
     }
@@ -55,6 +56,9 @@ box-shadow: rgba(0, 0, 0, 0.15) 4.95px 6.95px 9.6px;
     .mainhead{
         margin: 0px;
         padding: 0px 16px;
+    }
+    .mainhead p {
+        padding: 0px 10px;
     }
     .main-card {
         margin: 40px 16px;
