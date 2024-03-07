@@ -180,11 +180,14 @@
         width: 100%;
         margin-top: 40px;
         margin-left: 0px;
-        padding-left: 40px;
+        padding-left: 30px;
         padding-right: 30px;
         text-align: center;
     }
 
+    .headingtext{
+        width: 20rem;
+    }
     .heading h1{
         font-size: 1.9rem;
         font-weight: 900;
