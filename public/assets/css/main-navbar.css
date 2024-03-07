@@ -17,7 +17,7 @@
  }
 
  .navlogo {
-   width: 50%;
+   width: 60%;
 
  }
 
@@ -25,9 +25,12 @@
    margin-left: 20px;
  }
 
- .nav-item{
-  margin: 0px;
-  padding-left: 8px;
+ .nav-item {
+   display: flex;
+   align-self: center;
+   margin: 0px;
+   padding-left: 8px;
+   font-style: var(--f-helvetica-text-regular);
  }
 
 
@@ -125,7 +128,7 @@
  }
 
  .responsesidebar {
-  width: 50%;
+   width: 50%;
    margin: 20px;
    padding: 20px;
  }
@@ -140,18 +143,35 @@
  }
 
  @media screen and (max-width: 767px) {
-  .navlogo {
-    width: 70%;
-  }
-  .loginbtn{
-   --bs-btn-padding-x: 0.75rem;
-   --bs-btn-padding-y: 0.175rem;
-  }
-  .navbtn{
-   margin-top: 4px;
-  }
+  #navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 0px;
 }
 
+   .navlogo {
+     width: 112%;
+   }
+
+   .loginbtn {
+     --bs-btn-padding-x: 0.75rem;
+     --bs-btn-padding-y: 0.175rem;
+   }
+
+   .navbtn {
+     width: 60px;
+     margin-top: 4px;
+
+   }
+ }
+
+ @media (max-width : 1023px) {
+  .navlogo {
+    width: 90%;
+  }
+ }
  @media (min-width: 208px) and (max-width : 992px) {
 
    .container,

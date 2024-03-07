@@ -1,4 +1,5 @@
 @import './main.css';
+@import './main-navbar.css';
 
 .baner-left {
     width: 50%;
@@ -26,8 +27,8 @@
 
 .baner-text {
     color: rgb(43, 43, 74);
-    font-size: 18px;
-    font-family: var(--f-helvetica-text-regula);
+    font-size: var(--font-size-base);
+    font-family: var(--font-poppins);
 }
 
 .pricebtn {
@@ -141,9 +142,11 @@
 
     .heading {
         width: 100%;
-        margin-left: 120px;
+        margin-left: 70px;
     }
-
+    .headingtext{
+        width: 24rem;
+    }
     .baner-right {
         width: 50%;
         /* height: 60%; */

@@ -45,5 +45,8 @@ body {
 
   /* Border radiuses */
   --br-5xs: 8px;
+
+  /* font width  */
+  --font-width :700;
 }
 

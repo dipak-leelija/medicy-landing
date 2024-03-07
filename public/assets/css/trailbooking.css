@@ -12,9 +12,9 @@
     justify-content: center;
     align-items: center;
 }
-.trailhead h2{
+.trailhead h1{
     font-family: var(--font-poppins);
-    font-weight: bolder;
+    font-weight: var(--font-width);
     color: var(--pure-white);
 }
 .trail-text{
@@ -22,8 +22,9 @@
     justify-content: center;
     align-items: center;
     margin: 20px 200px;
-    text-align: justify;
+    text-align: center;
     color: var(--pure-white);
+    font-size: var(--font-size-base);
 }
 .trailButton{
     display: flex;

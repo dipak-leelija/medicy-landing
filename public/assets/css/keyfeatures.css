@@ -13,17 +13,19 @@
 .mainhead p{
     /* padding: 0px 40px; */
     font-family: var(--font-poppins);
-    text-align: justify;
+    text-align: center;
+    font-size: var(--font-size-base);
 }
 .featureHead{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 20%;
-    margin:20px 0px;
+    margin: 45px 0px;
+    margin-bottom: 10px;
 }
 .featureHead h1{
-    font-weight: bolder;
+    font-weight: var(--font-width);
     color: var(--brandeis-blue);
     font-family: var(--font-poppins);
     /* color: var(--black ); */
@@ -45,6 +47,7 @@ box-shadow: rgba(0, 0, 0, 0.15) 4.95px 6.95px 9.6px;
 }
 .card-text{
     font-family: var(--font-poppins);
+    font-size: var(--font-size-mini);
 }
 @media screen and (max-width:767px) {
     .featuresmain {
@@ -59,6 +62,7 @@ box-shadow: rgba(0, 0, 0, 0.15) 4.95px 6.95px 9.6px;
     }
     .mainhead p {
         padding: 0px 10px;
+        text-align: left;
     }
     .main-card {
         margin: 40px 16px;

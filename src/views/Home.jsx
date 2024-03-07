@@ -32,7 +32,7 @@ export default function Home() {
                             <div className='ractangle1'></div>
                             <div className='ractangle2'></div>
                             <div className='heading text-start'>
-                                <div className='mb-4'>
+                                <div className='mb-4 headingtext'>
                                     <h1>Pharmacy Management Solved In a Click
                                         <img src={tap} alt="" />
                                     </h1>
