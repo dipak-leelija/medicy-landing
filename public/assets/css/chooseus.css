@@ -14,7 +14,7 @@
   font-size: 2.25rem;
   color: var(--pure-white);
   font-family: var(--font-poppins);
-  z-index: -2;
+  /* z-index: -2; */
 }
 .why-choose-us{
   font-weight: var(--font-width);
