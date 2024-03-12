@@ -32,7 +32,7 @@
 }
 
 .main-card{
-    margin: 50px 80px;
+    margin: 50px 35px;
 }
 
 .card{
@@ -45,6 +45,11 @@ box-shadow: rgba(0, 0, 0, 0.15) 4.95px 6.95px 9.6px;
     color: var(--black );
     font-weight: bolder;
 }
+.card-title img{
+    width: 80px;
+    margin-left: -25px;
+    margin-right: -12px;
+}
 .card-text{
     font-family: var(--font-poppins);
     font-size: var(--font-size-mini);
@@ -54,15 +59,16 @@ box-shadow: rgba(0, 0, 0, 0.15) 4.95px 6.95px 9.6px;
         padding: 10px;
     }
     .featureHead{
-        padding: 0px 8px;
+        /* padding: 0px 8px; */
     }
     .mainhead{
         margin: 0px;
-        padding: 0px 16px;
+        /* padding: 0px 16px; */
     }
     .mainhead p {
+        margin: 0px;
         padding: 0px 10px;
-        text-align: left;
+        text-align: center;
     }
     .main-card {
         margin: 40px 16px;

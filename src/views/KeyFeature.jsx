@@ -16,7 +16,7 @@ export default function KeyFeature() {
                         <div className="col">
                             <div className="card">
                                 <div className="card-body">
-                                    <h5 className="card-title"> <img src={keymarmaimg} style={{width:'80px', marginLeft:'-20px'}} alt='' />Patient Reecords Management </h5>
+                                    <h5 className="card-title"> <img src={keymarmaimg}  alt='' />Patient Reecords Management </h5>
                                     <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 </div>
                             </div>
@@ -25,7 +25,7 @@ export default function KeyFeature() {
                             <div className="card">
 
                                 <div className="card-body">
-                                    <h5 className="card-title"><img src={keymarmaimg} style={{width:'80px', marginLeft:'-20px'}} alt='' />Patient Reecords Management </h5>
+                                    <h5 className="card-title"><img src={keymarmaimg}  alt='' />Patient Reecords Management </h5>
                                     <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 </div>
                             </div>
@@ -34,7 +34,7 @@ export default function KeyFeature() {
                             <div className="card">
 
                                 <div className="card-body">
-                                    <h5 className="card-title"><img src={keymarmaimg} style={{width:'80px', marginLeft:'-20px'}} alt='' />Patient Reecords Management </h5>
+                                    <h5 className="card-title"><img src={keymarmaimg}  alt='' />Patient Reecords Management </h5>
                                     <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.This content is a little bit longer.</p>
                                 </div>
                             </div>
@@ -43,7 +43,7 @@ export default function KeyFeature() {
                             <div className="card">
 
                                 <div className="card-body">
-                                    <h5 className="card-title"><img src={keymarmaimg} style={{width:'80px', marginLeft:'-20px'}} alt='' />Patient Reecords Management </h5>
+                                    <h5 className="card-title"><img src={keymarmaimg}  alt='' />Patient Reecords Management </h5>
                                     <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 </div>
                             </div>

@@ -40,44 +40,42 @@ export default function Chooseus() {
                                 </div>
                             </div>
                         )}
-                        <div className="frame3">
-                            <div className="frame4">
-                                <div className="frame5">
-                                    <div className="cloud-based-software-wrapper">
-                                        {/* <div className="cloud-based-software">
-                                        Cloud Based Software
-                                    </div> */}
-                                        <h4> Cloud Based Software</h4>
+                        {(windowWidth <= 767 || windowWidth > 1024) && (
+                            <>
+                                <div className="frame3">
+                                    <div className="frame4">
+                                        <div className="frame5">
+                                            <div className="cloud-based-software-wrapper">
+                                                <h4> Cloud Based Software</h4>
+                                            </div>
+                                            <div className="be-always-connected-with-your-wrapper">
+                                                <div className="be-always-connected">
+                                                    Be always connected with your Pharmacy with cloud
+                                                    technology. Monitor your Medical store from anywhere
+                                                    Be always connected with your Pharmacy with cloud
+                                                    technology. Monitor your Medical store from anywhere
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div className="be-always-connected-with-your-wrapper">
-                                        <div className="be-always-connected">
-                                            Be always connected with your Pharmacy with cloud
-                                            technology. Monitor your Medical store from anywhere
-                                            Be always connected with your Pharmacy with cloud
-                                            technology. Monitor your Medical store from anywhere
+                                    <div className="frame6">
+                                        <div className="frame7">
+                                            <div className="cloud-based-software-wrapper">
+                                                <h4> Cloud Based Software</h4>
+                                            </div>
+                                            <div className="be-always-connected-with-your-wrapper">
+                                                <div className="be-always-connected">
+                                                    Be Be always connected with your Pharmacy with cloud
+                                                    technology. Monitor your Medical store from anywhere
+                                                    Be always connected with your Pharmacy with cloud
+                                                    technology. Monitor your Medical store from anywhere
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="frame6">
-                                <div className="frame7">
-                                    <div className="cloud-based-software-wrapper">
-                                        {/* <div className="cloud-based-software">
-                                        Cloud Based Software
-                                    </div> */}
-                                        <h4> Cloud Based Software</h4>
-                                    </div>
-                                    <div className="be-always-connected-with-your-wrapper">
-                                        <div className="be-always-connected">
-                                            Be Be always connected with your Pharmacy with cloud
-                                            technology. Monitor your Medical store from anywhere
-                                            Be always connected with your Pharmacy with cloud
-                                            technology. Monitor your Medical store from anywhere
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            </>
+                        )}
                         {showImage && (
                             <div className="frame1">
                                 <div className="frame2">
@@ -89,45 +87,157 @@ export default function Chooseus() {
                                 </div>
                             </div>
                         )}
-                        <div className="frame8">
-                            <div className="frame9">
-                                <div className="frame10">
-                                    <div className="cloud-based-software-wrapper">
-                                        {/* <div className="cloud-based-software2">
-                                        Cloud Based Software
-                                    </div> */}
-                                        <h4> Cloud Based Software</h4>
+                        {(windowWidth <= 767 || windowWidth > 1024) && (
+                            <div className="frame8">
+                                <div className="frame9">
+                                    <div className="frame10">
+                                        <div className="cloud-based-software-wrapper">
+                                            <h4> Cloud Based Software</h4>
+                                        </div>
+                                        <div className="be-always-connected-with-your-frame">
+                                            <div className="be-always-connected">
+                                                Be always connected with your Pharmacy with cloud
+                                                technology. Monitor your Medical store from anywhere
+                                                Be always connected with your Pharmacy with cloud
+                                                technology. Monitor your Medical store from anywhere
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div className="be-always-connected-with-your-frame">
-                                        <div className="be-always-connected">
-                                            Be always connected with your Pharmacy with cloud
-                                            technology. Monitor your Medical store from anywhere
-                                            Be always connected with your Pharmacy with cloud
-                                            technology. Monitor your Medical store from anywhere
+                                </div>
+                                <div className="frame12">
+                                    <div className="frame13">
+                                        <div className="cloud-based-software-wrapper">
+                                            <h4> Cloud Based Software</h4>
+                                        </div>
+                                        <div className="be-always-connected-with-your-frame">
+                                            <div className="be-always-connected">
+                                                Be always connected with your Pharmacy with cloud
+                                                technology. Monitor your Medical store from anywhere
+                                                Be always connected with your Pharmacy with cloud
+                                                technology. Monitor your Medical store from anywhere
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className="frame12">
-                                <div className="frame13">
-                                    <div className="cloud-based-software-wrapper">
-                                        {/* <div className="cloud-based-software3">
-                                        Cloud Based Software
-                                    </div> */}
-                                        <h4> Cloud Based Software</h4>
-                                    </div>
-                                    <div className="be-always-connected-with-your-frame">
-                                        <div className="be-always-connected">
-                                            Be always connected with your Pharmacy with cloud
-                                            technology. Monitor your Medical store from anywhere
-                                            Be always connected with your Pharmacy with cloud
-                                            technology. Monitor your Medical store from anywhere
+                        )}
+                    </div>
+
+                    {windowWidth >= 768 && windowWidth <= 1024 && (
+                        <div className="frame-parent ">
+                            {/* <div className="frame3">
+                                <div className="frame4">
+                                    <div className="frame5">
+                                        <div className="cloud-based-software-wrapper">
+                                            <h4> Cloud Based Software</h4>
                                         </div>
+                                        <div className="be-always-connected-with-your-wrapper">
+                                            <div className="be-always-connected">
+                                                Be always connected with your Pharmacy with cloud
+                                                technology. Monitor your Medical store from anywhere
+                                                Be always connected with your Pharmacy with cloud
+                                                technology. Monitor your Medical store from anywhere
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="frame6">
+                                    <div className="frame7">
+                                        <div className="cloud-based-software-wrapper">
+                                            <h4> Cloud Based Software</h4>
+                                        </div>
+                                        <div className="be-always-connected-with-your-wrapper">
+                                            <div className="be-always-connected">
+                                                Be Be always connected with your Pharmacy with cloud
+                                                technology. Monitor your Medical store from anywhere
+                                                Be always connected with your Pharmacy with cloud
+                                                technology. Monitor your Medical store from anywhere
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="frame8">
+                                <div className="frame9">
+                                    <div className="frame10">
+                                        <div className="cloud-based-software-wrapper">
+                                            <h4> Cloud Based Software</h4>
+                                        </div>
+                                        <div className="be-always-connected-with-your-frame">
+                                            <div className="be-always-connected">
+                                                Be always connected with your Pharmacy with cloud
+                                                technology. Monitor your Medical store from anywhere
+                                                Be always connected with your Pharmacy with cloud
+                                                technology. Monitor your Medical store from anywhere
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="frame12">
+                                    <div className="frame13">
+                                        <div className="cloud-based-software-wrapper">
+                                            <h4> Cloud Based Software</h4>
+                                        </div>
+                                        <div className="be-always-connected-with-your-frame">
+                                            <div className="be-always-connected">
+                                                Be always connected with your Pharmacy with cloud
+                                                technology. Monitor your Medical store from anywhere
+                                                Be always connected with your Pharmacy with cloud
+                                                technology. Monitor your Medical store from anywhere
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> */}
+
+                            <div className="row row-cols-1 row-cols-md-2 g-4 p-4">
+                                <div className="col">
+                                    <div className="choose-card">
+                                            <div className="card-body">
+                                                <h5 className="card-title text-white pb-2">Cloud Based Software</h5>
+                                                <p className="card-text"> Be always connected with your Pharmacy with cloud
+                                                technology. Monitor your Medical store from anywhere
+                                                Be always connected with your Pharmacy with cloud
+                                                technology. Monitor your Medical store from anywhere</p>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div className="col">
+                                    <div className="choose-card">
+                                            <div className="card-body">
+                                                <h5 className="card-title text-white pb-2">Cloud Based Software</h5>
+                                                <p className="card-text"> Be always connected with your Pharmacy with cloud
+                                                technology. Monitor your Medical store from anywhere
+                                                Be always connected with your Pharmacy with cloud
+                                                technology. Monitor your Medical store from anywhere</p>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div className="col">
+                                    <div className="choose-card">
+                                            <div className="card-body">
+                                                <h5 className="card-title text-white pb-2">Cloud Based Software</h5>
+                                                <p className="card-text"> Be always connected with your Pharmacy with cloud
+                                                technology. Monitor your Medical store from anywhere
+                                                Be always connected with your Pharmacy with cloud
+                                                technology. Monitor your Medical store from anywheret.</p>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div className="col">
+                                    <div className="choose-card" >
+                                            <div className="card-body">
+                                                <h5 className="card-title text-white pb-2">Cloud Based Software</h5>
+                                                <p className="card-text"> Be always connected with your Pharmacy with cloud
+                                                technology. Monitor your Medical store from anywhere
+                                                Be always connected with your Pharmacy with cloud
+                                                technology. Monitor your Medical store from anywhere</p>
+                                            </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    )}
                 </div>
             </div>
         </section>
