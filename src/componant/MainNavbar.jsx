@@ -21,13 +21,16 @@ export default function MainNavbar() {
   const [showSidebar, setShowSidebar] = React.useState(false);
   const [collapseOut, setCollapseOut] = React.useState(false);
   const [color, setColor] = React.useState("navbar-transparent");
+  const [navtextcolor, setNavtextcolor] = React.useState('');
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
 
   React.useEffect(() => {
     window.addEventListener("scroll", changeColor);
+    window.addEventListener("scroll", changeNavtextColor)
     window.addEventListener("resize", handleResize);
     return function cleanup() {
       window.removeEventListener("scroll", changeColor);
+      window.removeEventListener("scroll", changeNavtextColor)
       window.removeEventListener("resize", handleResize);
     };
   }, []);
@@ -53,10 +56,19 @@ export default function MainNavbar() {
     }
   };
 
-  // const toggleCollapse = () => {
-  //   setCollapseOpen(!collapseOpen);
-  // };
-
+  const changeNavtextColor = () => {
+    const scrollPercentage =
+      (window.scrollY /
+        (document.documentElement.scrollHeight -
+          document.documentElement.clientHeight)) *
+      100;
+    if (scrollPercentage > 25) {
+      setNavtextcolor('navtext');
+      console.log(scrollPercentage);
+    } else {
+      setNavtextcolor('');
+    }
+  };
   const toggleSidebar = () => {
     setShowSidebar(!showSidebar);
   };
@@ -73,33 +85,7 @@ export default function MainNavbar() {
           </div>
           <div className="d-flex justify-content-center w-100 navfontstyle">
             {windowWidth >= 992 && (
-              <Nav navbar className="d-flex justify-content-end w-100">
-                {/* <div className="d-flex justify-content-center w-75 mr-4">
-                  <NavItem>
-                    <NavLink href="/">
-                      Pricing
-                    </NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink href="/">
-                      Doctors
-                    </NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink href="/">
-                      About
-                    </NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink
-                      className=""
-                      href="/">
-                      Contact
-                    </NavLink>
-                  </NavItem>
-
-
-                </div> */}
+              <Nav navbar className={"d-flex justify-content-end w-100 " + navtextcolor.color}>
                 <NavItem>
                   <NavLink href="/">
                     Pricing
