@@ -21,16 +21,13 @@ export default function MainNavbar() {
   const [showSidebar, setShowSidebar] = React.useState(false);
   const [collapseOut, setCollapseOut] = React.useState(false);
   const [color, setColor] = React.useState("navbar-transparent");
-  const [navtextcolor, setNavtextcolor] = React.useState('');
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
 
   React.useEffect(() => {
     window.addEventListener("scroll", changeColor);
-    window.addEventListener("scroll", changeNavtextColor)
     window.addEventListener("resize", handleResize);
     return function cleanup() {
       window.removeEventListener("scroll", changeColor);
-      window.removeEventListener("scroll", changeNavtextColor)
       window.removeEventListener("resize", handleResize);
     };
   }, []);
@@ -56,19 +53,6 @@ export default function MainNavbar() {
     }
   };
 
-  const changeNavtextColor = () => {
-    const scrollPercentage =
-      (window.scrollY /
-        (document.documentElement.scrollHeight -
-          document.documentElement.clientHeight)) *
-      100;
-    if (scrollPercentage > 25) {
-      setNavtextcolor('navtext');
-      console.log(scrollPercentage);
-    } else {
-      setNavtextcolor('');
-    }
-  };
   const toggleSidebar = () => {
     setShowSidebar(!showSidebar);
   };
@@ -85,7 +69,7 @@ export default function MainNavbar() {
           </div>
           <div className="d-flex justify-content-center w-100 navfontstyle">
             {windowWidth >= 992 && (
-              <Nav navbar className={"d-flex justify-content-end w-100 " + navtextcolor.color}>
+              <Nav navbar className="d-flex justify-content-end w-100 " >
                 <NavItem>
                   <NavLink href="/">
                     Pricing
@@ -114,6 +98,7 @@ export default function MainNavbar() {
                   </NavItem>
                   <NavItem>
                     <Button
+                    href="https://app.medicy.in/login.php"
                       color="primary"
                     >Login</Button>
                   </NavItem>
@@ -125,7 +110,7 @@ export default function MainNavbar() {
             {windowWidth < 992 && (
               <>
                 {/* <div><Button outline color="success" className="freetrialbtn" >Free Trial</Button></div> */}
-                <div className="m-2"><Button className="loginbtn" outline color="primary">Login</Button></div>
+                <div className="m-2"><Button href="https://app.medicy.in/login.php" className="loginbtn" outline color="primary">Login</Button></div>
               </>
             )}
           </div>

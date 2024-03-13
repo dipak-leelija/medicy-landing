@@ -1,6 +1,10 @@
 @import './main.css';
 @import './main-navbar.css';
 
+.main-banner{
+    margin-top: 8%;
+    margin-bottom: 2%;
+}
 .baner-left {
     width: 50%;
 }
@@ -33,6 +37,7 @@
 
 .pricebtn {
     width: auto;
+    font-weight: var( --font-width);
     margin-top: 25px;
     background-color: var(--brandeis-blue);
     color: #fff;
@@ -186,7 +191,7 @@
     }
 
     .headingtext{
-        width: 20rem;
+        width: 100%;
     }
     .heading h1{
         font-size: 1.9rem;

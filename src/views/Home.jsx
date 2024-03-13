@@ -27,7 +27,7 @@ export default function Home() {
         <>
             <section className='w-100 h-100 '>
                 <div>
-                    <div className='d-flex justify-content-around flex-wrap' style={{ marginTop: '8%' }}>
+                    <div className='d-flex justify-content-around align-items-start flex-wrap main-banner' >
                         <div className='baner-left mt-5'>
                             <div className='ractangle1'></div>
                             <div className='ractangle2'></div>
