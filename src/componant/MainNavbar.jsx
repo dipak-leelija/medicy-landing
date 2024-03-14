@@ -19,15 +19,18 @@ import {
 export default function MainNavbar() {
   const [collapseOpen, setCollapseOpen] = React.useState(false);
   const [showSidebar, setShowSidebar] = React.useState(false);
-  const [collapseOut, setCollapseOut] = React.useState(false);
   const [color, setColor] = React.useState("navbar-transparent");
+  const [navtextcolor, setNavtextcolor] = React.useState('');
+  const [navlogin, setnavlogin] = React.useState('loginbtn');
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
 
   React.useEffect(() => {
     window.addEventListener("scroll", changeColor);
+    window.addEventListener("scroll", changeNavtextColor);
     window.addEventListener("resize", handleResize);
     return function cleanup() {
       window.removeEventListener("scroll", changeColor);
+      window.removeEventListener("scroll", changeNavtextColor);
       window.removeEventListener("resize", handleResize);
     };
   }, []);
@@ -53,6 +56,17 @@ export default function MainNavbar() {
     }
   };
 
+  const changeNavtextColor = () => {
+    const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - document.documentElement.clientHeight)) * 100;
+    if (scrollPercentage > 1.2) {
+      setNavtextcolor('navtext');
+      setnavlogin('responsivebtn')
+    } else {
+      setNavtextcolor('');
+      setnavlogin('')
+    }
+  };
+
   const toggleSidebar = () => {
     setShowSidebar(!showSidebar);
   };
@@ -61,7 +75,7 @@ export default function MainNavbar() {
   return (
     <>
       <Navbar className={"fixed-top " + color} color-on-scroll="100" expand="lg">
-        <Container className="d-flex justify-content-between p-2">
+        <Container className="d-flex justify-content-between align-items-center p-2">
           <div className="navbar-translate d-flex justify-content-between">
             <NavbarBrand to="/" id="navbar-brand" tag={Link}>
               <img className='navlogo' src={logo}></img>
@@ -71,23 +85,23 @@ export default function MainNavbar() {
             {windowWidth >= 992 && (
               <Nav navbar className="d-flex justify-content-end w-100 " >
                 <NavItem>
-                  <NavLink href="/">
+                  <NavLink href="/" className={navtextcolor}>
                     Pricing
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/">
+                  <NavLink href="/" className={navtextcolor}>
                     Doctors
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/">
+                  <NavLink href="/" className={navtextcolor}>
                     About
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    className=""
+                    className={navtextcolor}
                     href="/">
                     Contact
                   </NavLink>
@@ -110,7 +124,7 @@ export default function MainNavbar() {
             {windowWidth < 992 && (
               <>
                 {/* <div><Button outline color="success" className="freetrialbtn" >Free Trial</Button></div> */}
-                <div className="m-2"><Button href="https://app.medicy.in/login.php" className="loginbtn" outline color="primary">Login</Button></div>
+                <div className="m-2"><Button href="https://app.medicy.in/login.php" className={"loginbtn btn btn-transparent "+ navlogin} >Login</Button></div>
               </>
             )}
           </div>

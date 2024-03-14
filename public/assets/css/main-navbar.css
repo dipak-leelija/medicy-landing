@@ -1,7 +1,7 @@
  @import './main.css';
 
  .headershado {
-  box-shadow: 0 6px 8px -1px gray;
+  box-shadow: 0 4px 6px -1px gray;
    backdrop-filter: blur(8px);
    transition: all 0.5s ease;
    background-color: var(--blue);
@@ -12,37 +12,56 @@
  }
 
  .navfontstyle {
-   /* color: #E69D32; */
    font-family: var(--f-helvetica-text-regular);
    font-size: 18px;
  }
+.navtext{
+  color:var(--pure-white);
+}
+.navtext:hover{
+  color: var(--pure-white);
+}
+.navfontstyle .nav-link{
+  transition: margin-top 0.3s ease;
+}
+.navfontstyle .nav-link:hover {
+   /* color: var(--brandeis-blue); */
+   margin-top: -8px;
+}
 
- .navfontstyle .nav-link:hover {
-   color: var(--brandeis-blue);
- }
-
- .navlogo {
+.navlogo {
    width: 60%;
+   filter: drop-shadow(0 0 0.4rem #fff);
+}
 
- }
-
- #navbar-brand {
+#navbar-brand {
    margin-left: 20px;
- }
+}
 
- .nav-item {
+.nav-item {
    display: flex;
    align-self: center;
    margin: 0px;
    padding-left: 8px;
-   /* font-weight: 400; */
    font-style: var(--f-helvetica-text-regular);
+}
+
+.loginbtn { 
+    color: var( --blue);
+    border: 1px solid var( --blue);
+    background-color: transparent;
+     --bs-btn-padding-x: 0.75rem;
+     --bs-btn-padding-y: 0.175rem;
+  }
+.responsivebtn{
+    color: var(--pure-white);
+    background-color: transparent;
+    border: 1px solid var( --pure-white);
+    --bs-btn-padding-x: 0.75rem;
+    --bs-btn-padding-y: 0.175rem;
  }
 
-
-
  /* --------mobile responsive side manu-----------  */
-
  .navbtn {
    width: 40px;
    height: 40px;
@@ -59,7 +78,6 @@
    transition: all 0.6s;
    width: 40px;
    /* z-index: 1000; */
-
  }
 
  .navbtn:hover,
@@ -79,7 +97,6 @@
    transition: all 0.6s;
    width: 100%;
    margin: 6px 0;
-
  }
 
  .sidebar {
@@ -99,11 +116,6 @@
  .sidebar.show {
    transform: translateX(0);
  }
-
- /* .sidebar nav {
-   margin-top: 50px;
- } */
-
  .sidebar a {
    font-size: 20px;
    font-weight: 100;
@@ -160,33 +172,30 @@
     margin-left: 20px;
     margin-right: 0px;
 }
-
    .navlogo {
-     width: 112%;
+     width: 108%;
    }
-
-   .loginbtn {
-     --bs-btn-padding-x: 0.75rem;
-     --bs-btn-padding-y: 0.175rem;
-   }
-
    .navbtn {
      width: 60px;
-     margin-top: 4px;
-
+     margin-top: 2px;
    }
    .responsesidebar .nav-item{
     align-self: self-start;
    }
  }
 
- @media (max-width : 1023px) {
+ @media screen and (min-width: 768px) and (max-width : 1023px) {
   .navlogo {
-    width: 90%;
+    width: 85%;
   }
+  .responsesidebar .nav-item{
+    align-self: self-start;
+   }
+   .navbtn{
+    margin-top: 2px;
+   }
  }
  @media (min-width: 208px) and (max-width : 992px) {
-
    .container,
    .container-md,
    .container-sm {
@@ -195,7 +204,6 @@
  }
 
  @media (min-width: 1204px) {
-
    .container,
    .container-md,
    .container-sm {
