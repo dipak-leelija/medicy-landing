@@ -5,6 +5,8 @@ import MainNavbar from './componant/MainNavbar'
 import ChooseUs from './views/Chooseus';
 import KeyFeature from './views/KeyFeature';
 import TrailBooking from './views/TrailBooking';
+import PharmaciesIcon from './views/PharmaciesIcon';
+import Faqs from './views/Faqs';
 import Footer from './componant/Footer';
 
 import AboutUs from './views/AboutUs';
@@ -15,6 +17,8 @@ import "../public/assets/css/chooseus.css";
 import "../public/assets/css/keyfeatures.css";
 import "../public/assets/css/footer.css";
 import "../public/assets/css/trailbooking.css";
+import "../public/assets/css/pharmaciesicon.css";
+import '../public/assets/css/faqs.css';
 
 
 
@@ -24,10 +28,12 @@ function App() {
       <MainNavbar />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/top-pharmacies' element={<PharmaciesIcon/>}/>
         <Route path='/choose' element={<ChooseUs />} />
         <Route path='/features' element={<KeyFeature />} />
         <Route path='/Trail-boking' element={<TrailBooking />}/>
         <Route path='/about' element={<AboutUs />} />
+        <Route path='/Faqs' element={<Faqs/>}/>
       </Routes>
       <Footer />
     </BrowserRouter>

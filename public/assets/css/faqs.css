@@ -1,0 +1,24 @@
+.main-faqs{
+    margin: 100px 0px;
+}
+.faq-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--font-poppins);
+    font-weight: var(--font-width);
+}
+.main-accordino{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0px;
+}
+.accordinobtn{
+    width: 60%;
+}
+.accordion-button{
+    font-family: var(--font-poppins);
+    font-weight: 500;
+}

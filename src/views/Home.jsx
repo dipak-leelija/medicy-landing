@@ -5,6 +5,8 @@ import tap from '/assets/img/tap.png';
 import Chooseus from './Chooseus';
 import KeyFeature from './KeyFeature';
 import TrailBooking from './TrailBooking';
+import TopPharmacies from './PharmaciesIcon';
+import Faqs from './Faqs';
 
 
 export default function Home() {
@@ -60,8 +62,10 @@ export default function Home() {
                 </div>
             </section>
              <Chooseus/>
+             <TopPharmacies/>
             <KeyFeature/>
             <TrailBooking/>
+            <Faqs/>
         </>
     );
 }

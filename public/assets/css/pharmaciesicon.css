@@ -1,0 +1,78 @@
+/* .parent{
+  display: flex;
+  justify-content: center;
+  background-color: aqua;
+} */
+.pharmaciesTag{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px;
+  padding: 0px 20px;
+}
+.pharmaciesTag h1{
+  color: var(--brandeis-blue);
+  font-weight: var(--font-width);
+  font-family: var(--font-poppins);
+}
+.carousel-div{
+ margin: 20px 0px;
+}
+.slider {
+  margin:0 20px;
+  overflow:"hidden";
+  padding:2rem 0;
+}
+
+.slider img {
+  width: 100%;
+  border-radius:10px;
+}
+
+.react-multi-carousel-list {
+margin: 0px 200px;
+}
+.react-multi-carousel-item {
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ position: relative;
+ width: 230px;
+}
+.react-multi-carousel-item--active{
+  flex: 1 1 auto;
+  position: relative;
+  width: 0px;
+}
+  
+.react-multiple-carousel__arrow{
+  display: none;
+}
+
+@media screen and (max-width:767px) {
+  .pharmaciesTag{
+   text-align: center;
+  }
+.react-multi-carousel-list {
+margin: 0px 60px;
+}
+.slider {
+  margin:0 10px;
+  overflow:"hidden";
+  padding:1rem 0;
+}
+.react-multi-carousel-item {
+   width: 100px;
+ }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){
+  .react-multi-carousel-list {
+  margin: 0px 80px;
+  }
+  /* .slider {
+    margin:0 10px;
+    overflow:"hidden";
+    padding:1rem 0;
+  } */
+  }
