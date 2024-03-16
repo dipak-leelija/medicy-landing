@@ -3,12 +3,13 @@
  .headershado {
   box-shadow: 0 4px 6px -1px gray;
    backdrop-filter: blur(8px);
-   transition: all 0.5s ease;
-   background-color: var(--blue);
+   transition: all 1s ease;
+   /* background-color: var(--blue); */
+   background-color: #3989fa;
  }
  .navbar-transparent{
   background-color: transparent;
-  transition: all 0.5s ease;
+  transition: all 1s ease;
  }
 
  .navfontstyle {

@@ -7,6 +7,7 @@ import KeyFeature from './views/KeyFeature';
 import TrailBooking from './views/TrailBooking';
 import PharmaciesIcon from './views/PharmaciesIcon';
 import Faqs from './views/Faqs';
+import Cataloguebanner from './views/Cataloguebanner';
 import Footer from './componant/Footer';
 
 import AboutUs from './views/AboutUs';
@@ -19,6 +20,7 @@ import "../public/assets/css/footer.css";
 import "../public/assets/css/trailbooking.css";
 import "../public/assets/css/pharmaciesicon.css";
 import '../public/assets/css/faqs.css';
+import '../public/assets/css/catalougebanner.css';
 
 
 
@@ -34,6 +36,7 @@ function App() {
         <Route path='/Trail-boking' element={<TrailBooking />}/>
         <Route path='/about' element={<AboutUs />} />
         <Route path='/Faqs' element={<Faqs/>}/>
+        <Route path='/catalouge' element={<Cataloguebanner/>}/>
       </Routes>
       <Footer />
     </BrowserRouter>

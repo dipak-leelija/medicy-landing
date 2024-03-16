@@ -7,6 +7,7 @@ import KeyFeature from './KeyFeature';
 import TrailBooking from './TrailBooking';
 import TopPharmacies from './PharmaciesIcon';
 import Faqs from './Faqs';
+import Cataloguebanner from './Cataloguebanner';
 
 
 export default function Home() {
@@ -44,7 +45,7 @@ export default function Home() {
                                 </div>
 
                                 <div className='mainpricebtn'>
-                                    <button className='btn pricebtn'>See Pricing</button>
+                                    <button className='btn btn-lg pricebtn'>See Pricing</button>
                                 </div>
                             </div>
 
@@ -64,6 +65,7 @@ export default function Home() {
              <Chooseus/>
              <TopPharmacies/>
             <KeyFeature/>
+            <Cataloguebanner/>
             <TrailBooking/>
             <Faqs/>
         </>
