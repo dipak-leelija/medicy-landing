@@ -1,0 +1,19 @@
+.mainTestimonial{
+    width: 100%;
+    margin: 110px 0px;
+}
+
+.contentdiv{
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 16px;
+}
+.testimonial-img{
+    width: 20%;
+    margin: 0px 0px 8px 0px;
+}
+.testimonial-img img{
+    width: 100%;
+}
