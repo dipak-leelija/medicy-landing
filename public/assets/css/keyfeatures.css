@@ -11,7 +11,6 @@
    padding-right:10px;
 }
 .mainhead p{
-    /* padding: 0px 40px; */
     font-family: var(--font-poppins);
     text-align: center;
     font-size: var(--font-size-base);
@@ -28,42 +27,53 @@
     font-weight: var(--font-width);
     color: var(--brandeis-blue);
     font-family: var(--font-poppins);
-    /* color: var(--black ); */
 }
 
 .main-card{
-    margin: 50px 35px;
+    margin: 50px 65px;
+}
+.keycontent{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin: 0px 20px;
+}
+.maincontent{
+    width: 50%;
+    margin: 0px;
+    padding: 60px 40px 60px 40px;
+    text-align: left;
+    box-shadow: rgba(169, 169, 223, 0.25) 0px 50px 100px -20px, rgba(231, 222, 222, 0.3) 0px 30px 60px -30px;
+    border-radius: 16px;
 }
 
-.card{
-border: none;
-background-color: #F3F0F0;
-box-shadow: rgba(0, 0, 0, 0.15) 4.95px 6.95px 9.6px;
+.keycard-img{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 35%;
+}
+.keycard-img img{
+    width: 100%;
+    filter: drop-shadow(-2px 20px 14px rgb(181, 196, 238));
 }
 .card-title{
     font-family: var(--font-poppins);
-    color: var(--black );
+    color: var(--brandeis-blue );
     font-weight: bolder;
-}
-.card-title img{
-    width: 80px;
-    margin-left: -25px;
-    margin-right: -12px;
+    margin-bottom: 20px;
 }
 .card-text{
     font-family: var(--font-poppins);
     font-size: var(--font-size-mini);
+    margin-left: 0px;
 }
 @media screen and (max-width:767px) {
     .featuresmain {
         padding: 10px;
     }
-    .featureHead{
-        /* padding: 0px 8px; */
-    }
     .mainhead{
         margin: 0px;
-        /* padding: 0px 16px; */
     }
     .mainhead p {
         margin: 0px;
@@ -73,4 +83,37 @@ box-shadow: rgba(0, 0, 0, 0.15) 4.95px 6.95px 9.6px;
     .main-card {
         margin: 40px 16px;
     }
+    .keycontent{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        margin: 20px 0px;
+        width: 100%;
+    }
+    .maincontent{
+        width: 100%;
+        margin: 0px;
+        padding: 40px 12px;
+        text-align: center;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 16px;
+    }
+    .keycard-img{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .keycard-img img{
+        width: 50%;
+        filter: drop-shadow(-2px 20px 14px rgb(181, 196, 238));
+    }
+    .card-title{
+    font-family: var(--font-poppins);
+    color: var(--brandeis-blue );
+    font-weight:var(--font-width);
+    margin-bottom: 20px; 
+    }
 }
+

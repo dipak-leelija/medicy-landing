@@ -12,7 +12,7 @@ export default function Faqs() {
 				</p>
 				<div className='main-accordino'>
 					<Accordion className='accordinobtn' flush>
-						<Accordion.Item eventKey='0' className='border border-4 mb-4 rounded'>
+						<Accordion.Item eventKey='0' className='border border-2 mb-2 rounded'>
 							<Accordion.Header>General FAQs</Accordion.Header>
 							<Accordion.Body>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -24,7 +24,7 @@ export default function Faqs() {
 								sunt in culpa qui officia deserunt mollit anim id est laborum.
 							</Accordion.Body>
 						</Accordion.Item>
-						<Accordion.Item eventKey='1' className='border border-4 mb-4 rounded'>
+						<Accordion.Item eventKey='1' className='border border-2 mb-2 rounded'>
 							<Accordion.Header>Sales Related FAQs</Accordion.Header>
 							<Accordion.Body>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -36,7 +36,7 @@ export default function Faqs() {
 								sunt in culpa qui officia deserunt mollit anim id est laborum.
 							</Accordion.Body>
 						</Accordion.Item>
-                        <Accordion.Item eventKey='2' className='border border-4 mb-4 rounded'>
+                        <Accordion.Item eventKey='2' className='border border-2 mb-2 rounded'>
 							<Accordion.Header>Customer Relations FAQs</Accordion.Header>
 							<Accordion.Body>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -48,7 +48,7 @@ export default function Faqs() {
 								sunt in culpa qui officia deserunt mollit anim id est laborum.
 							</Accordion.Body>
 						</Accordion.Item>
-						<Accordion.Item eventKey='3' className='border border-4 mb-4 rounded'>
+						<Accordion.Item eventKey='3' className='border border-2 mb-2 rounded'>
 							<Accordion.Header>Pricing Related FAQs</Accordion.Header>
 							<Accordion.Body>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

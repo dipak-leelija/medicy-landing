@@ -57,10 +57,10 @@ const PharmaciesIcon = () => {
 							autoPlay={true}
 							swipeable={true}
 							draggable={true}
-							// showDots={true}
-							partialVisible={false}
+							showDots={false}
+							partialVisible={true}
 							autoPlaySpeed={2000}
-              customButtonGroup={false}
+                            customButtonGroup={false}
 						>
 							{sliderImageUrl.map((imageUrl, index) => {
 								return (
