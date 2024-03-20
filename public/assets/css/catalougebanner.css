@@ -1,5 +1,9 @@
 .maincat-banner{
     margin: 6%;
+    transition: transform 0.5s ease;
+}
+.maincat-banner:hover{
+    transform: scale(1.1);
 }
 .subcat-banner{
     display: flex;

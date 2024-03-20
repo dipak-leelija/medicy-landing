@@ -19,3 +19,30 @@
 .testimonial-img img{
     width: 100%;
 }
+
+
+
+/* Custom arrow styles */
+.custom-arrow {
+    position: absolute;
+    top: 50%;
+    font-size: x-large;
+    font-weight: 900;
+    transform: translateY(-50%);
+    background-color: rgba(101, 110, 139, 0.5);
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 9999;
+  }
+  
+  .custom-arrow-left {
+    left: 1px;
+  }
+  
+  .custom-arrow-right {
+    right: 1px;
+  }
+  

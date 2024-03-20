@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import pharmamanage1 from '../../public/assets/img/pharmamanage1.png';
 import pharmamanage3 from '../../public/assets/img/pharmamanage3.png';
 import parmamanage4 from '../../public/assets/img/parmamanage4.png';
@@ -22,7 +23,12 @@ export default function KeyFeature() {
 	return (
 		<section>
 			<div className='featuresmain'>
-				<div className='mainhead'>
+				<motion.div
+					initial={{ opacity: 0, y: 100 }}
+					whileInView={{ opacity: 1, y: 1 }}
+					transition={{ duration: 0.5, delay: 0.1 }}
+					viewport={{ once: true }}
+					className='mainhead'>
 					<div className='featureHead'>
 						<h1>Key Features Of Medicy</h1>
 					</div>
@@ -32,10 +38,15 @@ export default function KeyFeature() {
 						ever since the 1500s, when an unknown printer took a galley of type
 						and scrambled it to make a typ
 					</p>
-				</div>
+				</motion.div>
 				<div className='main-card'>
 					<div className='keycontent'>
-						<div className='maincontent'>
+						<motion.div
+							initial={{ opacity: 0, x: -100 }}
+							whileInView={{ opacity: 1, x: 1 }}
+							transition={{ duration: 1.2, delay: 0.1 }}
+							viewport={{ once: true }}
+							className='maincontent'>
 							{!showImage && (
 								<div className='keycard-img'>
 									<img src={pharmamanage1} alt='' />
@@ -47,20 +58,35 @@ export default function KeyFeature() {
 								lead-in to additional content. This content is a little bit
 								longer.
 							</p>
-						</div>
+						</motion.div>
 						{showImage && (
-							<div className='keycard-img'>
+							<motion.div
+								initial={{ opacity: 0, x: 100 }}
+								whileInView={{ opacity: 1, x: 1 }}
+								transition={{ duration: 1.2, delay: 0.1 }}
+								viewport={{ once: true }}
+								className='keycard-img'>
 								<img src={pharmamanage1} alt='' />
-							</div>
+							</motion.div>
 						)}
 					</div>
 					<div className='keycontent'>
 						{showImage && (
-							<div className='keycard-img'>
+							<motion.div
+								initial={{ opacity: 0, x: -100 }}
+								whileInView={{ opacity: 1, x: 1 }}
+								transition={{ duration: 1.2, delay: 0.1 }}
+								viewport={{ once: true }}
+								className='keycard-img'>
 								<img src={parmamanage4} alt='' />
-							</div>
+							</motion.div>
 						)}
-						<div className='maincontent'>
+						<motion.div
+							initial={{ opacity: 0, x: 100 }}
+							whileInView={{ opacity: 1, x: 1 }}
+							transition={{ duration: 1.2, delay: 0.1 }}
+							viewport={{ once: true }}
+							className='maincontent'>
 							{!showImage && (
 								<div className='keycard-img'>
 									<img src={parmamanage4} alt='' />
@@ -72,50 +98,68 @@ export default function KeyFeature() {
 								lead-in to additional content. This content is a little bit
 								longer.
 							</p>
-						</div>
+						</motion.div>
 					</div>
 					<div className='keycontent'>
-						<div className='maincontent'>
-						{!showImage && (
-							<div className='keycard-img'>
-								<img src={pharmamanage3} alt='' />
-							</div>
-						)}
+						<motion.div
+						initial={{ opacity: 0, x: -100 }}
+						whileInView={{ opacity: 1, x: 1 }}
+						transition={{ duration: 1.2, delay: 0.1 }}
+						viewport={{ once: true }}
+						className='maincontent'>
+							{!showImage && (
+								<div className='keycard-img'>
+									<img src={pharmamanage3} alt='' />
+								</div>
+							)}
 							<h4 className='card-title'>Patient Reecords Management</h4>
 							<p className='card-text'>
 								This is a longer card with supporting text below as a natural
 								lead-in to additional content. This content is a little bit
 								longer.
 							</p>
-						</div>
+						</motion.div>
 						{showImage && (
-							<div className='keycard-img'>
+							<motion.div
+							initial={{ opacity: 0, x: 100 }}
+							whileInView={{ opacity: 1, x: 1 }}
+							transition={{ duration: 1.2, delay: 0.1 }}
+							viewport={{ once: true }}
+							className='keycard-img'>
 								<img src={pharmamanage3} alt='' />
-							</div>
+							</motion.div>
 						)}
 					</div>
 					<div className='keycontent'>
 						{showImage && (
-							<div className='keycard-img'>
+							<motion.div
+							initial={{ opacity: 0, x: -100 }}
+							whileInView={{ opacity: 1, x: 1 }}
+							transition={{ duration: 1.2, delay: 0.1 }}
+							viewport={{ once: true }}
+							className='keycard-img'>
 								<img src={parmamanage4} alt='' />
-							</div>
+							</motion.div>
 						)}
-						<div className='maincontent'>
-						{!showImage && (
-							<div className='keycard-img'>
-								<img src={parmamanage4} alt='' />
-							</div>
-						)}
+						<motion.div 
+						initial={{ opacity: 0, x: 100 }}
+						whileInView={{ opacity: 1, x: 1 }}
+						transition={{ duration: 1.2, delay: 0.1 }}
+						viewport={{ once: true }}
+						className='maincontent'>
+							{!showImage && (
+								<div className='keycard-img'>
+									<img src={parmamanage4} alt='' />
+								</div>
+							)}
 							<h4 className='card-title'>Patient Reecords Management</h4>
 							<p className='card-text'>
 								This is a longer card with supporting text below as a natural
 								lead-in to additional content. This content is a little bit
 								longer.
 							</p>
-						</div>
+						</motion.div>
 					</div>
-					<div></div>
-					<div></div>
 				</div>
 			</div>
 		</section>

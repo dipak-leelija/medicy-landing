@@ -40,7 +40,12 @@ export default function Testimonial() {
 						containerClass='carousel-container'
 						dotListClass='custom-dot-list-style'
 						itemClass='carousel-item-padding-40-px'
-						>
+						customLeftArrow={
+							<button className='custom-arrow custom-arrow-left'>{'<'}</button>
+						}
+						customRightArrow={
+							<button className='custom-arrow custom-arrow-right'>{'>'}</button>
+						}>
 						<div className='contentdiv'>
 							<div className='testimonial-img'>
 								<img src={avtar} alt='' />
