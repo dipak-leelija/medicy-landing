@@ -8,6 +8,7 @@ import TrailBooking from './TrailBooking';
 import TopPharmacies from './PharmaciesIcon';
 import Faqs from './Faqs';
 import Cataloguebanner from './Cataloguebanner';
+import Testimonial from './Testimonial';
 
 export default function Home() {
 	const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
@@ -70,6 +71,7 @@ export default function Home() {
 			<TopPharmacies />
 			<Cataloguebanner />
 			<TrailBooking />
+			<Testimonial/>
 			<Faqs />
 		</>
 	);

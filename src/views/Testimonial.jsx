@@ -1,7 +1,7 @@
 import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import avtar from '../../public/assets/img/quotation.png'
+import avtar from '../../public/assets/img/quotation.png';
 
 const responsive = {
 	desktop: {
@@ -23,71 +23,74 @@ export default function Testimonial() {
 		<section>
 			<div className='mainTestimonial'>
 				<div className='pharmaciesTag'>
-					<h1>Trusted by Top pharmacies of India</h1>
+					<h1>What Our Client Says</h1>
 				</div>
 				{/* <div className='carousel-div'> */}
-					{
-						<Carousel
-							responsive={responsive}
-							infinite={true}
-							autoPlay={true}
-							swipeable={true}
-							draggable={true}
-							// showDots={true}
-							partialVisible={true}
-							autoPlaySpeed={2000}
-							customButtonGroup={false}
-							arrows={true}>
-							<div className='contentdiv'>
-                                <div className='testimonial-img'>
-                                    <img src={avtar} alt="" />
-                                </div>
-									Lorem Ipsum is simply dummy text of the printing and
-									typesetting industry. Lorem Ipsum has been the industry's
-									standard dummy text ever since the 1500s, when an unknown
-									printer took a galley of type and scrambled it to make a typ
-                                    <div className='d-flex justify-content-end mt-4'>
-                                        <p>- Jayanta</p>
-                                    </div>
+				{
+					<Carousel
+						responsive={responsive}
+						infinite={true}
+						autoPlay={true}
+						swipeable={true}
+						draggable={true}
+						partialVisible={true}
+						autoPlaySpeed={4000}
+						keyBoardControl={true}
+						removeArrowOnDeviceType={['mobile']}
+						containerClass='carousel-container'
+						dotListClass='custom-dot-list-style'
+						itemClass='carousel-item-padding-40-px'
+						>
+						<div className='contentdiv'>
+							<div className='testimonial-img'>
+								<img src={avtar} alt='' />
 							</div>
-							<div className='contentdiv'>
-                                <div className='testimonial-img'>
-                                    <img src={avtar} alt="" />
-                                </div>
-									Lorem Ipsum is simply dummy text of the printing and
-									typesetting industry. Lorem Ipsum has been the industry's
-									standard dummy text ever since the 1500s, when an unknown
-									printer took a galley of type and scrambled it to make a typ
-                                    <div className='d-flex justify-content-end mt-4'>
-                                        <p>- Jayanta</p>
-                                    </div>
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry. Lorem Ipsum has been the industry's standard dummy text
+							ever since the 1500s, when an unknown printer took a galley of
+							type and scrambled it to make a typ
+							<div className='d-flex justify-content-end mt-3 fw-bold'>
+								<p>- Jayanta</p>
 							</div>
-							<div className='contentdiv'>
-                                <div className='testimonial-img'>
-                                    <img src={avtar} alt="" />
-                                </div>
-									Lorem Ipsum is simply dummy text of the printing and
-									typesetting industry. Lorem Ipsum has been the industry's
-									standard dummy text ever since the 1500s, when an unknown
-									printer took a galley of type and scrambled it to make a typ
-                                    <div className='d-flex justify-content-end mt-4'>
-                                        <p>- Jayanta</p>
-                                    </div>
+						</div>
+						<div className='contentdiv'>
+							<div className='testimonial-img'>
+								<img src={avtar} alt='' />
 							</div>
-							<div className='contentdiv'>
-                                <div className='testimonial-img'>
-                                    <img src={avtar} alt="" />
-                                </div>
-									Lorem Ipsum is simply dummy text of the printing and
-									typesetting industry. Lorem Ipsum has been the industry's
-									standard dummy text ever since the 1500s, when an unknown
-									printer took a galley of type and scrambled it to make a typ
-                                    <div className='d-flex justify-content-end mt-4'>
-                                        <p>- Jayanta</p>
-                                    </div>
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry. Lorem Ipsum has been the industry's standard dummy text
+							ever since the 1500s, when an unknown printer took a galley of
+							type and scrambled it to make a typ
+							<div className='d-flex justify-content-end mt-3 fw-bold'>
+								<p>- Jayanta</p>
 							</div>
-						</Carousel>
-					}
+						</div>
+						<div className='contentdiv'>
+							<div className='testimonial-img'>
+								<img src={avtar} alt='' />
+							</div>
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry. Lorem Ipsum has been the industry's standard dummy text
+							ever since the 1500s, when an unknown printer took a galley of
+							type and scrambled it to make a typ
+							<div className='d-flex justify-content-end mt-3 fw-bold'>
+								<p>- Jayanta</p>
+							</div>
+						</div>
+						<div className='contentdiv'>
+							<div className='testimonial-img'>
+								<img src={avtar} alt='' />
+							</div>
+							Lorem Ipsum is simply dummy text of the printing and typesetting
+							industry. Lorem Ipsum has been the industry's standard dummy text
+							ever since the 1500s, when an unknown printer took a galley of
+							type and scrambled it to make a typ
+							<div className='d-flex justify-content-end mt-3 fw-bold'>
+								<p>- Jayanta</p>
+							</div>
+						</div>
+					</Carousel>
+				}
 				{/* </div> */}
 			</div>
 		</section>
