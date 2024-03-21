@@ -34,14 +34,19 @@ export default function Chooseus() {
 					</div>
 					<div className='frame-parent '>
 						{!showImage && (
-							<div className='frame1'>
-								<div className='frame2'>
+							<div
+							className='frame1'>
+								<motion.div
+								initial={{ opacity: 0, y: 100}}
+								whileInView={{ opacity: 1, y: 1}}
+								transition={{ duration: 0.5, delay: 0.5 }}
+								viewport={{once:true}} className='frame2'>
 									<img
 										className='removebg-preview-1-icon'
 										alt=''
 										src={chooseImg}
 									/>
-								</div>
+								</motion.div>
 							</div>
 						)}
 						{(windowWidth <= 767 || windowWidth > 1024) && (
@@ -91,14 +96,20 @@ export default function Chooseus() {
 							</>
 						)}
 						{showImage && (
-							<div className='frame1'>
-								<div className='frame2'>
+							<div
+							className='frame1'>
+								<motion.div
+								initial={{ opacity: 0, y: 100}}
+								whileInView={{ opacity: 1, y: 1}}
+								transition={{ duration: 0.5, delay: 0.5 }}
+								viewport={{once:true}}
+								className='frame2'>
 									<img
 										className='removebg-preview-1-icon'
 										alt=''
 										src={chooseImg}
 									/>
-								</div>
+								</motion.div>
 							</div>
 						)}
 						{(windowWidth <= 767 || windowWidth > 1024) && (
@@ -157,7 +168,6 @@ export default function Chooseus() {
 												Cloud Based Software
 											</h5>
 											<p className='card-text'>
-												{' '}
 												Be always connected with your Pharmacy with cloud
 												technology. Monitor your Medical store from anywhere Be
 												always connected with your Pharmacy with cloud
@@ -173,7 +183,6 @@ export default function Chooseus() {
 												Cloud Based Software
 											</h5>
 											<p className='card-text'>
-												{' '}
 												Be always connected with your Pharmacy with cloud
 												technology. Monitor your Medical store from anywhere Be
 												always connected with your Pharmacy with cloud
@@ -189,7 +198,6 @@ export default function Chooseus() {
 												Cloud Based Software
 											</h5>
 											<p className='card-text'>
-												{' '}
 												Be always connected with your Pharmacy with cloud
 												technology. Monitor your Medical store from anywhere Be
 												always connected with your Pharmacy with cloud
@@ -205,7 +213,6 @@ export default function Chooseus() {
 												Cloud Based Software
 											</h5>
 											<p className='card-text'>
-												{' '}
 												Be always connected with your Pharmacy with cloud
 												technology. Monitor your Medical store from anywhere Be
 												always connected with your Pharmacy with cloud

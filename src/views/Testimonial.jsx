@@ -2,6 +2,8 @@ import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import avtar from '../../public/assets/img/quotation.png';
+import { CgArrowLeft } from "react-icons/cg";
+import { CgArrowRight } from "react-icons/cg";
 
 const responsive = {
 	desktop: {
@@ -41,10 +43,10 @@ export default function Testimonial() {
 						dotListClass='custom-dot-list-style'
 						itemClass='carousel-item-padding-40-px'
 						customLeftArrow={
-							<button className='custom-arrow custom-arrow-left'>{'<'}</button>
+							<button className='custom-arrow custom-arrow-left'><CgArrowLeft size={25} /></button>
 						}
 						customRightArrow={
-							<button className='custom-arrow custom-arrow-right'>{'>'}</button>
+							<button className='custom-arrow custom-arrow-right'><CgArrowRight size={25} /></button>
 						}>
 						<div className='contentdiv'>
 							<div className='testimonial-img'>
@@ -55,7 +57,7 @@ export default function Testimonial() {
 							ever since the 1500s, when an unknown printer took a galley of
 							type and scrambled it to make a typ
 							<div className='d-flex justify-content-end mt-3 fw-bold'>
-								<p>- Jayanta</p>
+								<p>~ Jayanta</p>
 							</div>
 						</div>
 						<div className='contentdiv'>
@@ -67,7 +69,7 @@ export default function Testimonial() {
 							ever since the 1500s, when an unknown printer took a galley of
 							type and scrambled it to make a typ
 							<div className='d-flex justify-content-end mt-3 fw-bold'>
-								<p>- Jayanta</p>
+								<p>~ Jayanta</p>
 							</div>
 						</div>
 						<div className='contentdiv'>
@@ -79,7 +81,7 @@ export default function Testimonial() {
 							ever since the 1500s, when an unknown printer took a galley of
 							type and scrambled it to make a typ
 							<div className='d-flex justify-content-end mt-3 fw-bold'>
-								<p>- Jayanta</p>
+								<p>~ Jayanta</p>
 							</div>
 						</div>
 						<div className='contentdiv'>
@@ -91,7 +93,7 @@ export default function Testimonial() {
 							ever since the 1500s, when an unknown printer took a galley of
 							type and scrambled it to make a typ
 							<div className='d-flex justify-content-end mt-3 fw-bold'>
-								<p>- Jayanta</p>
+								<p>~ Jayanta</p>
 							</div>
 						</div>
 					</Carousel>

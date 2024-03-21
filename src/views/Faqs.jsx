@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import Accordion from 'react-bootstrap/Accordion';
 export default function Faqs() {
 	return (
@@ -10,8 +11,19 @@ export default function Faqs() {
 				<p className='d-flex justify-content-center align-items-center'>
 					Frequently Asked Questions
 				</p>
-				<div className='main-accordino'>
+				<div
+				initial={{ opacity: 0, y: 50 }}
+				whileInView={{ opacity: 1, y: 1 }}
+				transition={{ duration: 0.5, delay: 0.5 }}
+				viewport={{ once: true }} 
+				className='main-accordino'>
 					<Accordion className='accordinobtn' flush>
+						<motion.div
+						initial={{ opacity: 0, y: 50 }}
+						whileInView={{ opacity: 1, y: 1 }}
+						transition={{ duration: 0.5, delay: 0.5 }}
+						viewport={{ once: true }} 
+						>
 						<Accordion.Item eventKey='0' className='border border-2 mb-2 rounded'>
 							<Accordion.Header>General FAQs</Accordion.Header>
 							<Accordion.Body>
@@ -24,6 +36,13 @@ export default function Faqs() {
 								sunt in culpa qui officia deserunt mollit anim id est laborum.
 							</Accordion.Body>
 						</Accordion.Item>
+						</motion.div>
+						<motion.div
+						initial={{ opacity: 0, y: 50 }}
+						whileInView={{ opacity: 1, y: 1 }}
+						transition={{ duration: 0.5, delay: 0.6 }}
+						viewport={{ once: true }} 
+						>
 						<Accordion.Item eventKey='1' className='border border-2 mb-2 rounded'>
 							<Accordion.Header>Sales Related FAQs</Accordion.Header>
 							<Accordion.Body>
@@ -36,6 +55,13 @@ export default function Faqs() {
 								sunt in culpa qui officia deserunt mollit anim id est laborum.
 							</Accordion.Body>
 						</Accordion.Item>
+						</motion.div>
+						<motion.div
+						initial={{ opacity: 0, y: 50 }}
+						whileInView={{ opacity: 1, y: 1 }}
+						transition={{ duration: 0.5, delay: 0.7 }}
+						viewport={{ once: true }} 
+						>
                         <Accordion.Item eventKey='2' className='border border-2 mb-2 rounded'>
 							<Accordion.Header>Customer Relations FAQs</Accordion.Header>
 							<Accordion.Body>
@@ -48,6 +74,13 @@ export default function Faqs() {
 								sunt in culpa qui officia deserunt mollit anim id est laborum.
 							</Accordion.Body>
 						</Accordion.Item>
+						</motion.div>
+						<motion.div
+						initial={{ opacity: 0, y: 50 }}
+						whileInView={{ opacity: 1, y: 1 }}
+						transition={{ duration: 0.5, delay: 0.8 }}
+						viewport={{ once: true }} 
+						>
 						<Accordion.Item eventKey='3' className='border border-2 mb-2 rounded'>
 							<Accordion.Header>Pricing Related FAQs</Accordion.Header>
 							<Accordion.Body>
@@ -60,6 +93,7 @@ export default function Faqs() {
 								sunt in culpa qui officia deserunt mollit anim id est laborum.
 							</Accordion.Body>
 						</Accordion.Item>
+						</motion.div>
 					</Accordion>
 				</div>
 			</div>

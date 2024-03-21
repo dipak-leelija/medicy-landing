@@ -31,36 +31,61 @@ export default function Home() {
 				<div>
 					<div className='d-flex justify-content-around align-items-start flex-wrap main-banner'>
 						<div className='baner-left mt-5'>
-							<div className='ractangle1'></div>
-							<div className='ractangle2'></div>
+							<motion.div initial={{opacity: 0, scale: 0}} whileInView={{opacity: 1, scale:1}} transition={{ duration: 1, delay: 0.5 }} viewport={{ once: true }} className='ractangle1'></motion.div>
+							<motion.div initial={{opacity: 0, scale : 0}} whileInView={{opacity: 1, scale: 1}} transition={{ duration: 1, delay: 0.5 }} viewport={{ once: true }} className='ractangle2'></motion.div>
 							<div className='heading text-start'>
-								<div className='mb-4 headingtext'>
+								<motion.div
+									initial={{ opacity: 0, y: 50 }}
+									whileInView={{ opacity: 1, y: 1 }}
+									transition={{ duration: 0.5, delay: 0.5 }}
+									viewport={{ once: true }}
+									className='mb-4 headingtext'>
 									<h1>
 										Pharmacy Management Solved In a Click
 										<img src={tap} alt='' />
 									</h1>
-								</div>
-								<div className='baner-text'>
+								</motion.div>
+								<motion.div
+									initial={{ opacity: 0, y: 50 }}
+									whileInView={{ opacity: 1, y: 1 }}
+									transition={{ duration: 0.5, delay: 1 }}
+									viewport={{ once: true }}
+									className='baner-text'>
 									<p>
 										Lorem Ipsum is simply dummy text of the printing and
 										typesetting industry. Lorem Ipsum has been the industry's
 										standard dummy text ever since the 1500s, when an unknown
 										printer took a galley of type.
 									</p>
-								</div>
+								</motion.div>
 
-								<div className='mainpricebtn'>
+								<motion.div
+									initial={{ opacity: 0, y: 50 }}
+									whileInView={{ opacity: 1, y: 1 }}
+									transition={{
+										duration: 0.5,
+										delay: 1.5,
+										stiffness: 100,
+										type: 'spring',
+									}}
+									viewport={{ once: true }}
+									className='mainpricebtn'>
 									<button className='btn btn-lg pricebtn'>See Pricing</button>
-								</div>
+								</motion.div>
 							</div>
 						</div>
 						<div className='baner-right d-flex justify-content-end'>
-							<div className='circle1'></div>
-							<div className='circle2'></div>
+							<motion.div initial={{opacity: 0, scale: 0}} whileInView={{opacity: 1, scale: 1}} transition={{ duration: 1, delay: 0.5 }} viewport={{once:true}} className='circle1'></motion.div>
+							<motion.div initial={{opacity: 0, scale: 0}} whileInView={{opacity: 1, scale: 1}} transition={{ duration: 1, delay: 0.5 }} viewport={{once:true}}  className='circle2'></motion.div>
 							{showImage && (
-								<div className='heroimg'>
+								<motion.div
+									initial={{ opacity: 0, x: 50 }}
+									whileInView={{ opacity: 1, x: 1 }}
+									transition={{ duration: 0.5, delay: 0.5 }}
+									viewport={{ once: true }}
+									className='heroimg'>
 									<img src={img1} alt='' />
-								</div>
+								</motion.div>
 							)}
 						</div>
 					</div>
@@ -71,7 +96,7 @@ export default function Home() {
 			<TopPharmacies />
 			<Cataloguebanner />
 			<TrailBooking />
-			<Testimonial/>
+			<Testimonial />
 			<Faqs />
 		</>
 	);
