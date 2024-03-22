@@ -1,0 +1,57 @@
+@import './main.css';
+
+.main-feat{
+    margin: 50px 100px;
+}
+.main-feat-head h1{
+    font-weight: var(--font-width);
+    color: var(--brandeis-blue);
+    font-family: var( --font-poppins);
+}
+.main-feat-head p{
+    font-family: var( --plus-Jakarta-Sans);
+    font-size: var( --font-size-sm);
+    color: var(--tp-common-black);
+}
+.feat-card{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border: none;
+    border-radius: var(--br-5xs);
+}
+.feat-card-body{
+    transition: transform 0.5s ease;
+}
+.feat-card-body:hover{
+    margin: 0;
+    padding: 0;
+    transform: scale(1.1);
+    border: none;
+    box-shadow:none;
+}
+.svgIcon{
+    filter: drop-shadow(0px 12px 20px rgb(181, 196, 238));
+}
+.feat-head{
+    font-family: var( --plus-Jakarta-Sans);
+    font-size: var( --font-size-sm);
+    color: var(--tp-common-black);
+}
+
+@media screen and (max-width: 767px) {
+    .main-feat{
+        margin: 50px 50px;
+    }
+    .svgIcon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .svgIcon img{
+        width: 2rem;
+    }
+    .feat-head{
+        text-align: center;
+    }
+}
