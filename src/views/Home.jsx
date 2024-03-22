@@ -9,6 +9,7 @@ import TopPharmacies from './PharmaciesIcon';
 import Faqs from './Faqs';
 import Cataloguebanner from './Cataloguebanner';
 import Testimonial from './Testimonial';
+import Features from './Features';
 
 export default function Home() {
 	const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
@@ -95,6 +96,7 @@ export default function Home() {
 			<KeyFeature />
 			<TopPharmacies />
 			<Cataloguebanner />
+			<Features/>
 			<TrailBooking />
 			<Testimonial />
 			<Faqs />

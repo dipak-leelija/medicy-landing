@@ -24,7 +24,8 @@
     margin: 20px 200px;
     text-align: center;
     color: var(--pure-white);
-    font-size: var(--font-size-base);
+    font-family: var( --plus-Jakarta-Sans);
+    font-size: var(--font-size-sm);
 }
 .trailButton{
     display: flex;

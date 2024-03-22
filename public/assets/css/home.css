@@ -3,7 +3,7 @@
 
 .main-banner{
     margin-top: 8%;
-    margin-bottom: 2%;
+    margin-bottom: 6%;
 }
 .baner-left {
     width: 50%;
@@ -46,8 +46,8 @@
   }
 
 .baner-text {
-    color: rgb(43, 43, 74);
-    font-size: var(--font-size-base);
+    color:var( --tp-common-black);
+    font-size: var(--font-size-sm);
     font-family: var(--font-poppins);
 }
 

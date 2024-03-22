@@ -8,7 +8,7 @@ export default function Faqs() {
 				<div className='faq-heading'>
 					<h1>MEDICY FAQs</h1>
 				</div>
-				<p className='d-flex justify-content-center align-items-center'>
+				<p className='d-flex justify-content-center align-items-center faq-text'>
 					Frequently Asked Questions
 				</p>
 				<div

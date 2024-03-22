@@ -3,6 +3,7 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"); */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 body {
   margin: 0;
@@ -10,6 +11,7 @@ body {
 }
 :root {
   /* fonts */
+  --plus-Jakarta-Sans: "Plus Jakarta Sans", sans-serif;
   --font-poppins: Poppins;
   --font-inter: Inter;
   --f-helvetica-text-regular: "HelveticaNowMTTextRegular", Helvetica, Arial, sans-serif;
@@ -19,9 +21,11 @@ body {
   --font-size-base: 1rem;
   --font-size-5xl: 1.5rem;
   --font-size-lgi: 1.188rem;
-  --font-size-sm: 0.875rem;
+  --font-size-max-sm: 0.875rem;
+  --font-size-sm : 1.0625rem;
   --font-size-xl: 1.25rem;
   --font-size-respon: 1.9rem;
+
 
   /* Colors */
   --pure-white    : #fff;
@@ -30,6 +34,7 @@ body {
   --brandeis-blue : #0060FE;
   --blue          : #4e73df;
   --black         :  #000000;
+  --tp-common-black: #000229;
 
   /* Gaps */
   --gap-0: 0rem;

@@ -9,6 +9,11 @@
     font-family: var(--font-poppins);
     font-weight: var(--font-width);
 }
+.faq-text{
+    font-family: var( --plus-Jakarta-Sans);
+    font-size: var( --font-size-sm);
+    color: var(--tp-common-black);
+}
 .main-accordino{
     display: flex;
     justify-content: center;

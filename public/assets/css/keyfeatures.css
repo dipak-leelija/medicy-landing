@@ -11,9 +11,10 @@
    padding-right:10px;
 }
 .mainhead p{
-    font-family: var(--font-poppins);
+    font-family: var( --plus-Jakarta-Sans);
     text-align: center;
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-sm);
+    color: var( --tp-common-black);
 }
 .featureHead{
     display: flex;
@@ -64,8 +65,8 @@
     margin-bottom: 20px;
 }
 .card-text{
-    font-family: var(--font-poppins);
-    font-size: var(--font-size-mini);
+    font-family: var( --plus-Jakarta-Sans);
+    font-size: var(--font-size-sm);
     margin-left: 0px;
 }
 @media screen and (max-width:767px) {
