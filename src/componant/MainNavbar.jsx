@@ -102,7 +102,7 @@ export default function MainNavbar() {
                 <NavItem>
                   <NavLink
                     className={navtextcolor}
-                    href="/">
+                    href="/contact">
                     Contact
                   </NavLink>
                 </NavItem>
@@ -174,7 +174,7 @@ export default function MainNavbar() {
           <NavItem>
             <NavLink
               className=""
-              href="/">
+              href="/contact">
               Contact
             </NavLink>
           </NavItem>

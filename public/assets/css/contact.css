@@ -1,0 +1,105 @@
+.main-contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem !important;
+    padding: 1.5rem !important;
+    border: none;
+    border-radius: var(--br-lg);
+}
+.left-contact{
+    width: 40%;
+    color: var(--pure-white);
+}
+.left-one {
+    margin: 3rem !important;
+    background:linear-gradient(180deg, #0060fe, #0d3576);
+    border: 1px solid gray;
+    border-radius: var(--br-5xs);
+    text-align: center;
+}
+.left-two{
+    margin: 3rem !important;
+    background:linear-gradient(180deg, #0060fe, #0d3576);
+    border: 1px solid gray;
+    border-radius: var(--br-5xs);
+    text-align: center;
+}
+.right-contact{
+    width: 55%;
+    padding: 8px;
+}
+.contact-head h1{
+    text-align: center;
+    font-family: var(--font-poppins);
+    font-weight: var(--font-width);
+    color: var(--brandeis-blue);
+}
+.contact-head p{
+    font-family: var(--plus-Jakarta-Sans);
+}
+.contact-div label{
+    font-size: large;
+    font-weight: 500;
+}
+.contact-input{
+    border: none;
+    border-bottom: 2px solid gray;
+    border-radius: inherit;
+    box-shadow: none !important;
+}
+.form-check-input{
+    border: 2px solid gray;
+    box-shadow: none !important;
+}
+.contact-input input:focus,
+.form-check-input:focus
+{
+    box-shadow: none !important;
+}
+.contact-button{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 767px) {
+    .main-contact{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0rem !important;
+        padding: 0.5rem !important;
+    }
+    .left-contact{
+        width: 100%;
+        color: var(--pure-white);
+        margin-top: 4rem;
+    }
+    .left-one, .left-two{
+        /* margin-top: 3rem !important; */
+        margin: 1rem !important;
+    }
+    .right-contact {
+        width: 100%;
+        margin: 8px 8px 30px 8px;;
+        padding: 20px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .main-contact{
+        margin: 5rem 2rem 4rem 2rem !important;
+        padding: 1.5rem !important;
+    }
+    .left-one{
+        margin: 0rem !important;
+    }
+    .left-two{
+        margin: 2rem 0rem 0rem 0rem !important;
+    }
+    .right-contact{
+        width: 58%;
+        padding: 8px 8px 8px 12px;
+    }
+}

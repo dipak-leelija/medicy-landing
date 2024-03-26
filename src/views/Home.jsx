@@ -80,7 +80,7 @@ export default function Home() {
 							<motion.div initial={{opacity: 0, scale: 0}} whileInView={{opacity: 1, scale: 1}} transition={{ duration: 1, delay: 0.5 }} viewport={{once:true}}  className='circle2'></motion.div>
 							{showImage && (
 								<motion.div
-									initial={{ opacity: 0, x: 50 }}
+									initial={{ opacity: 0, x: 30 }}
 									whileInView={{ opacity: 1, x: 1 }}
 									transition={{ duration: 0.5, delay: 0.5 }}
 									viewport={{ once: true }}
@@ -92,9 +92,9 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<Chooseus />
-			<KeyFeature />
 			<TopPharmacies />
+			<KeyFeature />
+			<Chooseus />
 			<Cataloguebanner />
 			<Features/>
 			<TrailBooking />

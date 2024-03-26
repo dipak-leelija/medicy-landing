@@ -10,6 +10,7 @@ import Faqs from './views/Faqs';
 import Cataloguebanner from './views/Cataloguebanner';
 import Testimonial from './views/Testimonial';
 import Features from './views/Features';
+import Contact from './views/Contact';
 import Footer from './componant/Footer';
 
 import AboutUs from './views/AboutUs';
@@ -25,6 +26,7 @@ import '../public/assets/css/faqs.css';
 import '../public/assets/css/catalougebanner.css';
 import '../public/assets/css/testimonial.css';
 import '../public/assets/css/features.css';
+import '../public/assets/css/contact.css';
 
 
 
@@ -42,6 +44,7 @@ function App() {
         <Route path='/Faqs' element={<Faqs/>}/>
         <Route path='/catalouge' element={<Cataloguebanner/>}/>
         <Route path='/usefull-features' element={<Features/>}/>
+        <Route path='/contact' element={<Contact/>} />
         <Route path='/Testimonial' element={<Testimonial/>} />
       </Routes>
       <Footer />

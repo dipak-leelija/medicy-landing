@@ -27,20 +27,20 @@ export default function Chooseus() {
 							initial={{ opacity: 0, y: 100 }}
 							whileInView={{ opacity: 1, y: 1 }}
 							transition={{ duration: 0.5, delay: 0.1 }}
-                            viewport={{once:true}}
+							viewport={{ once: true }}
 							className='why-choose-us-wrapper'>
 							<h1 className='why-choose-us'>Why Choose Us?</h1>
 						</motion.div>
 					</div>
 					<div className='frame-parent '>
 						{!showImage && (
-							<div
-							className='frame1'>
+							<div className='frame1'>
 								<motion.div
-								initial={{ opacity: 0, y: 100}}
-								whileInView={{ opacity: 1, y: 1}}
-								transition={{ duration: 0.5, delay: 0.5 }}
-								viewport={{once:true}} className='frame2'>
+									initial={{ opacity: 0, y: 100 }}
+									whileInView={{ opacity: 1, y: 1 }}
+									transition={{ duration: 0.5, delay: 0.5 }}
+									viewport={{ once: true }}
+									className='frame2'>
 									<img
 										className='removebg-preview-1-icon'
 										alt=''
@@ -57,7 +57,7 @@ export default function Chooseus() {
 											initial={{ opacity: 0, y: 100 }}
 											whileInView={{ opacity: 1, y: 1 }}
 											transition={{ duration: 0.5, delay: 0.5 }}
-                                            viewport={{once:true}}
+											viewport={{ once: true }}
 											className='frame5'>
 											<div className='cloud-based-software-wrapper'>
 												<h4> Cloud Based Software</h4>
@@ -76,7 +76,7 @@ export default function Chooseus() {
 										initial={{ opacity: 0, y: 100 }}
 										whileInView={{ opacity: 1, y: 1 }}
 										transition={{ duration: 0.5, delay: 0.5 }}
-                                        viewport={{once:true}}
+										viewport={{ once: true }}
 										className='frame6'>
 										<div className='frame7'>
 											<div className='cloud-based-software-wrapper'>
@@ -96,14 +96,13 @@ export default function Chooseus() {
 							</>
 						)}
 						{showImage && (
-							<div
-							className='frame1'>
+							<div className='frame1'>
 								<motion.div
-								initial={{ opacity: 0, y: 100}}
-								whileInView={{ opacity: 1, y: 1}}
-								transition={{ duration: 0.5, delay: 0.5 }}
-								viewport={{once:true}}
-								className='frame2'>
+									initial={{ opacity: 0, y: 100 }}
+									whileInView={{ opacity: 1, y: 1 }}
+									transition={{ duration: 0.5, delay: 0.5 }}
+									viewport={{ once: true }}
+									className='frame2'>
 									<img
 										className='removebg-preview-1-icon'
 										alt=''
@@ -118,7 +117,7 @@ export default function Chooseus() {
 									initial={{ opacity: 0, y: 100 }}
 									whileInView={{ opacity: 1, y: 1 }}
 									transition={{ duration: 0.5, delay: 0.5 }}
-                                    viewport={{once:true}}
+									viewport={{ once: true }}
 									className='frame9'>
 									<div className='frame10'>
 										<div className='cloud-based-software-wrapper'>
@@ -138,7 +137,7 @@ export default function Chooseus() {
 									initial={{ opacity: 0, y: 100 }}
 									whileInView={{ opacity: 1, y: 1 }}
 									transition={{ duration: 0.5, delay: 0.5 }}
-                                    viewport={{once:true}}
+									viewport={{ once: true }}
 									className='frame12'>
 									<div className='frame13'>
 										<div className='cloud-based-software-wrapper'>
@@ -161,7 +160,12 @@ export default function Chooseus() {
 					{windowWidth >= 768 && windowWidth <= 1024 && (
 						<div className='frame-parent '>
 							<div className='row row-cols-1 row-cols-md-2 g-4 p-4'>
-								<div className='col'>
+								<motion.div
+									initial={{ opacity: 0, y: 100 }}
+									whileInView={{ opacity: 1, y: 1 }}
+									transition={{ duration: 0.5, delay: 0.5 }}
+									viewport={{ once: true }}
+									className='col'>
 									<div className='choose-card'>
 										<div className='card-body'>
 											<h5 className='card-title text-white pb-2'>
@@ -175,8 +179,13 @@ export default function Chooseus() {
 											</p>
 										</div>
 									</div>
-								</div>
-								<div className='col'>
+								</motion.div>
+								<motion.div
+									initial={{ opacity: 0, y: 100 }}
+									whileInView={{ opacity: 1, y: 1 }}
+									transition={{ duration: 0.5, delay: 0.6 }}
+									viewport={{ once: true }}
+									className='col'>
 									<div className='choose-card'>
 										<div className='card-body'>
 											<h5 className='card-title text-white pb-2'>
@@ -190,8 +199,13 @@ export default function Chooseus() {
 											</p>
 										</div>
 									</div>
-								</div>
-								<div className='col'>
+								</motion.div>
+								<motion.div
+									initial={{ opacity: 0, y: 100 }}
+									whileInView={{ opacity: 1, y: 1 }}
+									transition={{ duration: 0.5, delay: 0.7 }}
+									viewport={{ once: true }}
+									className='col'>
 									<div className='choose-card'>
 										<div className='card-body'>
 											<h5 className='card-title text-white pb-2'>
@@ -205,8 +219,13 @@ export default function Chooseus() {
 											</p>
 										</div>
 									</div>
-								</div>
-								<div className='col'>
+								</motion.div>
+								<motion.div
+									initial={{ opacity: 0, y: 100 }}
+									whileInView={{ opacity: 1, y: 1 }}
+									transition={{ duration: 0.5, delay: 0.8 }}
+									viewport={{ once: true }}
+									className='col'>
 									<div className='choose-card'>
 										<div className='card-body'>
 											<h5 className='card-title text-white pb-2'>
@@ -220,7 +239,7 @@ export default function Chooseus() {
 											</p>
 										</div>
 									</div>
-								</div>
+								</motion.div>
 							</div>
 						</div>
 					)}
