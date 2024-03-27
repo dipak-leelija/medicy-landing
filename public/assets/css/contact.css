@@ -17,6 +17,7 @@
     border: 1px solid gray;
     border-radius: var(--br-5xs);
     text-align: center;
+    opacity: 0.8;
 }
 .left-two{
     margin: 3rem !important;
@@ -24,6 +25,7 @@
     border: 1px solid gray;
     border-radius: var(--br-5xs);
     text-align: center;
+    opacity: 0.8;
 }
 .right-contact{
     width: 55%;

@@ -1,10 +1,19 @@
-import React from 'react';
-
-
-
-
+import React, { useState } from 'react';
+import { Form, Button } from 'react-bootstrap';
 
 export default function Contact() {
+	const [validated, setValidated] = useState(false);
+
+	const handleSubmit = (event) => {
+		const form = event.currentTarget;
+		if (form.checkValidity() === false) {
+			event.preventDefault();
+			event.stopPropagation();
+		}
+
+		setValidated(true);
+	};
+
 	return (
 		<section>
 			<div className='main-contact'>
@@ -78,7 +87,11 @@ export default function Contact() {
 							Fill out the form below to get your Free Proposal.
 						</p>
 					</div>
-					<form action=''>
+					<Form
+						action=''
+						validated={validated}
+						noValidate
+						onSubmit={handleSubmit}>
 						<div class='form-floating contact-div  mb-5'>
 							<input
 								type='text'
@@ -87,17 +100,23 @@ export default function Contact() {
 								placeholder=''
 								required
 							/>
-							<label for='floatingName'>Name</label>
+							<Form.Label for='floatingName'>Name</Form.Label>
+							<Form.Control.Feedback type='invalid'>
+								Please provide a valid name.
+							</Form.Control.Feedback>
 						</div>
 						<div class='form-floating contact-div mb-5'>
 							<input
-								type='password'
+								type='email'
 								class='form-control contact-input'
 								id='floatingEmail'
-								placeholder='Password'
+								placeholder=''
 								required
 							/>
 							<label for='floatingEmail'>Email</label>
+							<Form.Control.Feedback type='invalid'>
+								Please provide a valid email.
+							</Form.Control.Feedback>
 						</div>
 						<div class='form-floating contact-div '>
 							<textarea
@@ -109,7 +128,18 @@ export default function Contact() {
 							/>
 							<label for='floatingTextarea'>Comments</label>
 						</div>
-						<div class='form-check  mt-3 mb-2'>
+
+						<Form.Group className=' mt-3 mb-2' controlId='flexCheckDefault'>
+							<Form.Check
+								type='checkbox'
+								label='By submitting this form I accept the privacy policy of this site'
+								required
+							/>
+							<Form.Control.Feedback type='invalid'>
+								You must agree before submitting.
+							</Form.Control.Feedback>
+						</Form.Group>
+						{/* <div class='form-check  mt-3 mb-2'>
 							<input
 								class='form-check-input '
 								type='checkbox'
@@ -119,18 +149,16 @@ export default function Contact() {
 							<label class='form-check-label' for='flexCheckDefault'>
 								By submitting this form I accept the privacy policy of this site
 							</label>
+							<Form.Control.Feedback type='invalid'>
+								You must agree before submitting.
+							</Form.Control.Feedback>
+						</div> */}
+						<div className='contact-button '>
+							<button type='submit' className='btn btn-primary btn-lg'>
+								Submit
+							</button>
 						</div>
-            <div className='contact-button '>
-						<button type='submit' className='btn btn-primary btn-lg'>
-							Submit
-						</button>
-					</div>
-					</form>
-					{/* <div className='contact-button '>
-						<button type='submit' className='btn btn-primary btn-lg'>
-							Submit
-						</button>
-					</div> */}
+					</Form>
 				</div>
 			</div>
 		</section>
