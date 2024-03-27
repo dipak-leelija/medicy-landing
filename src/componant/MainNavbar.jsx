@@ -1,6 +1,11 @@
 
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
+// import Container from 'react-bootstrap/Container';
+// import Nav from 'react-bootstrap/Nav';
+// import Navbar from 'react-bootstrap/Navbar';
+// import NavDropdown from 'react-bootstrap/NavDropdown';
+
 import logo from '../../public/assets/img/logo.png';
 import {
   Button,
@@ -23,6 +28,7 @@ export default function MainNavbar() {
   const [navtextcolor, setNavtextcolor] = React.useState('');
   const [navlogin, setnavlogin] = React.useState('loginbtn');
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
+
 
   React.useEffect(() => {
     window.addEventListener("scroll", changeColor);
@@ -72,9 +78,35 @@ export default function MainNavbar() {
   };
 
 
+
   return (
     <>
-      <Navbar className={"fixed-top " + color} color-on-scroll="100" expand="lg">
+    {/* <Navbar expand="lg" className="bg-body-tertiary">
+      <Container>
+        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#link">Link</Nav.Link>
+            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar> */}
+
+
+      <Navbar  className={"fixed-top " + color} color-on-scroll="100" expand="lg">
         <Container className="d-flex justify-content-between align-items-center p-2">
           <div className="navbar-translate d-flex justify-content-between">
             <NavbarBrand to="/" id="navbar-brand" tag={Link}>
@@ -85,24 +117,31 @@ export default function MainNavbar() {
             {windowWidth >= 992 && (
               <Nav navbar className="d-flex justify-content-end w-100 " >
                 <NavItem>
-                  <NavLink href="/" className={navtextcolor}>
+                  <NavLink href="/" 
+                  className={navtextcolor}
+                  >
                     Pricing
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/" className={navtextcolor}>
+                  <NavLink href="/" 
+                  className={navtextcolor}
+                  >
                     Doctors
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/" className={navtextcolor}>
+                  <NavLink href="/"
+                   className={navtextcolor}
+                   >
                     About
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
                     className={navtextcolor}
-                    href="/contact">
+                    href="/contact"
+                    >
                     Contact
                   </NavLink>
                 </NavItem>
@@ -123,7 +162,6 @@ export default function MainNavbar() {
           <div className="d-flex justify-content-end align-items-center">
             {windowWidth < 992 && (
               <>
-                {/* <div><Button outline color="success" className="freetrialbtn" >Free Trial</Button></div> */}
                 <div className="m-2"><Button href="https://app.medicy.in/login.php" className={"loginbtn btn btn-transparent "+ navlogin} >Login</Button></div>
               </>
             )}

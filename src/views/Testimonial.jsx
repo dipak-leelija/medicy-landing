@@ -2,8 +2,6 @@ import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import avtar from '../../public/assets/img/quotation.png';
-import { CgArrowLeft } from "react-icons/cg";
-import { CgArrowRight } from "react-icons/cg";
 
 const responsive = {
 	desktop: {
@@ -43,10 +41,10 @@ export default function Testimonial() {
 						dotListClass='custom-dot-list-style'
 						itemClass='carousel-item-padding-40-px'
 						customLeftArrow={
-							<button className='custom-arrow custom-arrow-left'><CgArrowLeft size={25} /></button>
+							<button className='custom-arrow custom-arrow-left'><svg width='1.5rem' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill='#6f6f70'><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg> </button>
 						}
 						customRightArrow={
-							<button className='custom-arrow custom-arrow-right'><CgArrowRight size={25} /></button>
+							<button className='custom-arrow custom-arrow-right'><svg width='1.5rem' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill='#6f6f70'><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></button>
 						}>
 						<div className='contentdiv'>
 							<div className='testimonial-img'>
