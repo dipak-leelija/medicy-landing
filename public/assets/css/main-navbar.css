@@ -47,15 +47,19 @@
    font-style: var(--f-helvetica-text-regular);
 }
 .nav-item:hover {
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  /* transition: 0.3s ease; */
   border-bottom: 2px solid var(--blue);
 }
 .active {
   border-bottom: 2px solid var(--blue);
 }
-/* .active{
-  border-bottom: 2px solid var(--blue);
-} */
+.deactive{
+  color: var(--pure-white);
+  border-bottom: 2px solid var(--pure-white);
+}
+.navbutton:hover{
+  border: none;
+}
 .loginbtn { 
     color: var( --blue);
     border: 1px solid var( --blue);

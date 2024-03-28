@@ -44,7 +44,7 @@ export default function KeyFeature() {
 						<motion.div
 							initial={{ opacity: 0, x: -30 }}
 							whileInView={{ opacity: 1, x: 1 }}
-							transition={{ duration: 1.2, delay: 0.5 }}
+							transition={{duration: 0.5, delay: 0.8 }}
 							viewport={{ once: true }}
 							className='maincontent'>
 							{!showImage && (
@@ -63,7 +63,7 @@ export default function KeyFeature() {
 							<motion.div
 								initial={{ opacity: 0, x: 30 }}
 								whileInView={{ opacity: 1, x: 1 }}
-								transition={{ duration: 1.2, delay: 0.8 }}
+								transition={{ duration: 0.5, delay: 0.8 }}
 								viewport={{ once: true }}
 								className='keycard-img'>
 								<img src={pharmamanage1} alt='' />
@@ -75,7 +75,7 @@ export default function KeyFeature() {
 							<motion.div
 								initial={{ opacity: 0, x: -30 }}
 								whileInView={{ opacity: 1, x: 1 }}
-								transition={{ duration: 1.2, delay: 0.5 }}
+								transition={{ duration: 0.5, delay: 0.8 }}
 								viewport={{ once: true }}
 								className='keycard-img'>
 								<img src={parmamanage4} alt='' />
@@ -84,7 +84,7 @@ export default function KeyFeature() {
 						<motion.div
 							initial={{ opacity: 0, x: 30 }}
 							whileInView={{ opacity: 1, x: 1 }}
-							transition={{ duration: 1.2, delay: 0.5 }}
+							transition={{ duration: 0.5, delay: 0.8 }}
 							viewport={{ once: true }}
 							className='maincontent'>
 							{!showImage && (
@@ -104,7 +104,7 @@ export default function KeyFeature() {
 						<motion.div
 						initial={{ opacity: 0, x: -30 }}
 						whileInView={{ opacity: 1, x: 1 }}
-						transition={{ duration: 1.2, delay: 0.5 }}
+						transition={{ duration: 0.5, delay: 0.8 }}
 						viewport={{ once: true }}
 						className='maincontent'>
 							{!showImage && (
@@ -123,7 +123,7 @@ export default function KeyFeature() {
 							<motion.div
 							initial={{ opacity: 0, x: 30 }}
 							whileInView={{ opacity: 1, x: 1 }}
-							transition={{ duration: 1.2, delay: 0.5 }}
+							transition={{ duration: 0.5, delay: 0.8 }}
 							viewport={{ once: true }}
 							className='keycard-img'>
 								<img src={pharmamanage3} alt='' />
@@ -135,7 +135,7 @@ export default function KeyFeature() {
 							<motion.div
 							initial={{ opacity: 0, x: -30 }}
 							whileInView={{ opacity: 1, x: 1 }}
-							transition={{ duration: 1.2, delay: 0.5 }}
+							transition={{ duration: 0.5, delay: 0.8 }}
 							viewport={{ once: true }}
 							className='keycard-img'>
 								<img src={parmamanage4} alt='' />
@@ -144,7 +144,7 @@ export default function KeyFeature() {
 						<motion.div 
 						initial={{ opacity: 0, x: 30 }}
 						whileInView={{ opacity: 1, x: 1 }}
-						transition={{ duration: 1.2, delay: 0.5 }}
+						transition={{ duration: 0.5, delay: 0.8 }}
 						viewport={{ once: true }}
 						className='maincontent'>
 							{!showImage && (

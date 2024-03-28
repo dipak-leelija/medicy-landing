@@ -66,8 +66,6 @@ export default function Home() {
 									transition={{
 										duration: 0.5,
 										delay: 1.5,
-										stiffness: 100,
-										type: 'spring',
 									}}
 									viewport={{ once: true }}
 									className='mainpricebtn'>
