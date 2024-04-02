@@ -11,6 +11,7 @@
 .main-aboutImg img{
     width: 100%;
     border-radius: 16px;
+    position: relative;
     z-index: 1;
 }
 .design-one{
@@ -19,16 +20,18 @@
     margin-top: -695px;
     margin-left: 224px;
     background-color: rgb(124, 128, 224);
-    /* border-radius: 43% 30% 45% 53% / 80% 64% 36% 18%; */
     border-radius: 37% 61% 45% 52% / 70% 65% 35% 30%;
+    z-index: -1;
+    position: absolute;
 }
 .design-two{
     width:850px;
     height: 435px;
-    margin-top: -150px;
+    margin-top: -350px;
     background-color: rgb(204, 205, 241);
     border-radius: 15% 80% 26% 84% / 40% 68% 40% 69%;
-    /* z-index: auto; */
+    z-index: -2;
+    position: absolute;
 }
 .design-three{
     width: 20%;
@@ -41,6 +44,29 @@
     position: absolute;
 }
 
+@media screen and (min-width:1350px) and (max-width:1500px) {
+    .design-one{
+        width: 985px;
+        margin-top: -820px;
+    }
+    .design-two{
+        width:65%;
+        height: 435px;
+        margin-top: -350px;
+    }
+}
+@media screen and (min-width:1500px) {
+    .design-one{
+        width: 70%;
+        margin-top: -850px;
+    }
+}
+@media screen and (min-width:1580px) {
+    .design-one{
+        width: 70%;
+        margin-top: -950px;
+    }
+}
 .headdiv{
     width: 45%;
     margin-top: -200px;
@@ -327,7 +353,7 @@
         padding: 20px 2px 2px 2px;
     }
     .main-aboutImg{
-        width: 90%;
+        width: 80%;
         display: block;
         margin-left: auto;
         margin-right: auto;
