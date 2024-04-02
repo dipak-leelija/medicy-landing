@@ -36,14 +36,13 @@
 .design-three{
     width: 20%;
     /* height: 263px; */
-    margin-top: -200px;
+    margin-top: -140px;
     background-color: rgb(124, 128, 224);
     border-radius: 50%;
     aspect-ratio: 1/1;
     z-index: 1;
     position: absolute;
 }
-
 @media screen and (min-width:1350px) and (max-width:1500px) {
     .design-one{
         width: 985px;
@@ -69,7 +68,7 @@
 }
 .headdiv{
     width: 45%;
-    margin-top: -200px;
+    margin-top: -130px;
     padding: 40px;
     border-radius: 8px;
     background-color: white;
@@ -89,7 +88,7 @@
     line-height: 1.8rem;
 }
 .about-one{
-    margin-top: 225px;
+    margin-top: 230px;
     padding: 0px 50px;
     text-align: center;
 }
@@ -259,6 +258,11 @@
         display: flex;
         justify-content: center;
     }
+    .about-one{
+        margin-top: 400px;
+        padding: 0px 50px;
+        text-align: center;
+    }
     .trusted-layout {
         display: flex;
         flex-wrap: wrap;
@@ -358,14 +362,14 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .design-one, .design-two{
+    .design-one, .design-two, .design-three{
         display: none;
     }
-    .design-three{
+    /* .design-three{
         margin-top: -105px;
         z-index: 4;
         position: absolute;
-    }
+    } */
 
     .headdiv {
         width: 100%;
@@ -383,6 +387,12 @@
     .headdiv-button{
         display: flex;
         justify-content: center;
+    }
+
+    .about-one{
+        margin-top: 400px;
+        padding: 0px 50px;
+        text-align: center;
     }
     .trusted-layout {
         margin: 0px;
