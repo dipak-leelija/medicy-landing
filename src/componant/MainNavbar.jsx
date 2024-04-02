@@ -94,8 +94,8 @@ export default function MainNavbar() {
       return "pricing";
     } else if (path === "/doctors") {
       return "doctors";
-    } else if (path === "/choose") {
-      return "choose";
+    } else if (path === "/about") {
+      return "about";
     } else if (path === "/contact") {
       return "contact";
     } else {
@@ -137,10 +137,10 @@ export default function MainNavbar() {
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/choose"
-                   className={` ${navtextcolor} ${activeNavItem === 'choose' && curhover}`}
-                   onClick={() => handleNavItemClicked('choose')}
-                   active={activeNavItem === 'choose'}
+                  <NavLink href="/about"
+                   className={` ${navtextcolor} ${activeNavItem === 'about' && curhover}`}
+                   onClick={() => handleNavItemClicked('about')}
+                   active={activeNavItem === 'about'}
                    >
                     About
                   </NavLink>
@@ -215,7 +215,7 @@ export default function MainNavbar() {
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/">
+            <NavLink href="/about">
               About
             </NavLink>
           </NavItem>

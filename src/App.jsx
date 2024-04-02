@@ -12,11 +12,13 @@ import Testimonial from './views/Testimonial';
 import Features from './views/Features';
 import Contact from './views/Contact';
 import Footer from './componant/Footer';
-
 import AboutUs from './views/AboutUs';
 import Home from './views/Home';
+
+
 import "../public/assets/css/main-navbar.css";
 import "../public/assets/css/home.css";
+import "../public/assets/css/about.css";
 import "../public/assets/css/chooseus.css";
 import "../public/assets/css/keyfeatures.css";
 import "../public/assets/css/footer.css";
