@@ -1,0 +1,89 @@
+.chatwidget{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 60px;
+    height: 60px;
+    background-color: green;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    z-index: 9999;
+}
+.chatwidget:hover{
+    transform: scale(1.1);
+}
+
+
+.chatform {
+    position: fixed;
+    bottom: 95px;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 350px; 
+    height: 450px;
+    background-color: var(--pure-white);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border-radius: var(--br-5xs);
+    transition: all 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 9999;
+}
+.chatform.open {
+    opacity: 1;
+    pointer-events: auto; 
+}
+
+hr{
+    border-top: 3px solid #bbb;
+    margin: 0;
+}
+
+
+.chatting{
+    height: 300px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(231, 228, 228);
+}
+.chat-one{
+    width: auto;
+    height: 38px;
+    padding: 8px;
+    background-color: var(--pure-white);
+    border-top-left-radius:none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px
+}
+.chat-two{
+    width: auto;
+    height: 38px;
+    margin-top: 50px;
+    padding: 8px;
+    background-color: var(--pure-white);
+    border-top-left-radius:8px;
+    border-top-right-radius: none;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px
+}
+.chatinput-field{
+    width: 290px;
+    height: 35px;
+    padding: 12px;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: var(--br-lg );
+    outline: none;
+}
+.chatinputbtn{
+    outline: none;
+    border: none;
+}
+.chatinputbtn svg:active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
