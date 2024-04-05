@@ -6,6 +6,10 @@ export default function Pricing() {
 	return (
 		<section>
 			<div className=' main-pricediv'>
+				<div className='main-pricehead text-center m-4 mb-5'>
+					<h1>Choose Your Pricing Plan</h1>
+					<p>All plan FREE for first 30days</p>
+				</div>
 				<div className='row row-cols-1 row-cols-md-3 g-4'>
 					<div className='col'>
 						<div className='card price-card'>

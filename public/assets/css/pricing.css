@@ -3,9 +3,14 @@
     margin-top: 60px;
     padding: 40px 80px;
 }
+.main-pricehead h1{
+    font-weight: var(--font-width);
+    color: #044c9d;
+    font-family: var(--font-poppins);
+}
 .price-card{
     border: none;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    box-shadow: rgba(82, 95, 97, 0.16) 0px 10px 36px 0px, rgba(18, 19, 19, 0.06) 0px 0px 0px 1px;
     overflow: hidden;
 }
 .head h3{
@@ -35,12 +40,40 @@
     background-color: #044c9d;
 }
 .pricebdg{
-    width: 35%;
+    width: 40%;
     height: 35px;
     margin-top: 10px;
     margin-left: -30px;
     background-color: #044c9d;
     transform: rotate(-40deg);
     position: absolute;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     /* z-index: 1; */
+}
+@media screen and (max-width: 767px) {
+    .pricebdg {
+        width: 40%;
+    }
+    .main-pricediv {
+        margin: 26px;
+        margin-top: 60px;
+        padding: 40px 0px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .main-pricediv {
+        margin: 26px;
+        margin-top: 60px;
+        padding: 40px 0px;
+    }
+    .pricebdg {
+        width: 55%;
+        height: 35px;
+        margin-top: 9px;
+        margin-left: -30px;
+        background-color: #044c9d;
+        transform: rotate(-40deg);
+        position: absolute;
+        /* z-index: 1; */
+    }
 }
