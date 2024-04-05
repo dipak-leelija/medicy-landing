@@ -15,6 +15,7 @@ import Footer from './componant/Footer';
 import AboutUs from './views/AboutUs';
 import Home from './views/Home';
 import ChatWidget from './componant/ChatWidget';
+import Pricing from './views/Pricing';
 
 
 import "../public/assets/css/main-navbar.css";
@@ -31,6 +32,7 @@ import '../public/assets/css/testimonial.css';
 import '../public/assets/css/features.css';
 import '../public/assets/css/contact.css';
 import '../public/assets/css/chatwidget.css'
+import '../public/assets/css/pricing.css';
 
 
 
@@ -50,9 +52,10 @@ function App() {
         <Route path='/usefull-features' element={<Features/>}/>
         <Route path='/contact' element={<Contact/>} />
         <Route path='/Testimonial' element={<Testimonial/>} />
+        <Route path='/pricing' element={<Pricing/>} />
       </Routes>
       <Footer />
-      <ChatWidget/>
+      {/* <ChatWidget/> */}
     </BrowserRouter>
     
   )

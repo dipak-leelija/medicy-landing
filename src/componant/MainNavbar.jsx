@@ -119,7 +119,7 @@ export default function MainNavbar() {
               <Nav navbar className="d-flex justify-content-end w-100 " >
                 <NavItem>
                   <NavLink
-                   href="/" 
+                   href="/pricing" 
                   className={navtextcolor}
                   onClick={() => handleNavItemClicked('pricing')}
                   active={activeNavItem === 'pricing'}
@@ -205,7 +205,7 @@ export default function MainNavbar() {
         </div>
         <Nav navbar className="flex-column responsesidebar">
           <NavItem>
-            <NavLink href="/">
+            <NavLink href="/pricing">
               Pricing
             </NavLink>
           </NavItem>
