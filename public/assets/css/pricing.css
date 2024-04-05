@@ -3,3 +3,44 @@
     margin-top: 60px;
     padding: 40px 80px;
 }
+.price-card{
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    overflow: hidden;
+}
+.head h3{
+    color: #044c9d;
+}
+.show-price h4{
+    font-size: 16px;
+    color: rgba(4, 76, 157, .6);
+    position: relative;
+}
+.show-price label{
+    position: absolute;
+    /* top: -5px;  */
+    font-size: 16px;
+    color: rgba(4, 76, 157, .6);
+}
+.show-price span{
+    font-size: 32px;
+    color: #044c9d;
+    margin-left: 12px;
+}
+.feature-head span{
+    font-size: 18px;
+    font-family: var(--plus-Jakarta-Sans);
+}
+.price-btn{
+    background-color: #044c9d;
+}
+.pricebdg{
+    width: 35%;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: -30px;
+    background-color: #044c9d;
+    transform: rotate(-40deg);
+    position: absolute;
+    /* z-index: 1; */
+}
