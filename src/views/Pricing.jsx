@@ -8,15 +8,15 @@ export default function Pricing() {
 			<div className=' main-pricediv'>
 				<div className='main-pricehead text-center m-4 mb-5'>
 					<h1>Choose Your Pricing Plan</h1>
-					<p>All plan FREE for first 30days</p>
+					<p>All plan FREE for first 7days</p>
 				</div>
-				<div className='row row-cols-1 row-cols-md-3 g-4'>
+				<div className='row row-cols-1 row-cols-md-3 g-5'>
 					<div className='col'>
 						<div className='card price-card'>
 							<div className='card-body'>
 								<div className='head text-center mb-4 p-4 pb-0'>
 									<h3 className='mb-0 fw-semibold'>Basic</h3>
-									<p className='text-center '>starter</p>
+									<p className='text-center'>starter</p>
 								</div>
 
 								<div className='show-price text-center mb-4'>
@@ -27,27 +27,27 @@ export default function Pricing() {
 								</div>
 
 								<div className='p-3'>
-									<div className='feature-head d-flex justify-content-between align-items-center mb-3'>
+									<div className='feature-head d-flex justify-content-between align-items-center mb-2'>
 										<span>Lab Test</span>
 										<img src={circleCheck} alt='' />
 									</div>
-									<div className='feature-head d-flex justify-content-between align-items-center mb-3'>
+									<div className='feature-head d-flex justify-content-between align-items-center mb-2'>
 										<span>Report</span>
 										<img src={circleCheck} alt='' />
 									</div>
-									<div className='feature-head d-flex justify-content-between align-items-center mb-3'>
+									<div className='feature-head d-flex justify-content-between align-items-center mb-2'>
 										<span>Product</span>
 										<img src={circleUnCheck} alt='' />
 									</div>
-									<div className='feature-head d-flex justify-content-between align-items-center mb-3'>
+									<div className='feature-head d-flex justify-content-between align-items-center mb-2'>
 										<span>Sale Management</span>
 										<img src={circleUnCheck} alt='' />
 									</div>
-									<div className='feature-head d-flex justify-content-between align-items-center mb-3'>
+									<div className='feature-head d-flex justify-content-between align-items-center mb-2'>
 										<span>Purchase Management</span>
 										<img src={circleUnCheck} alt='' />
 									</div>
-									<div className='feature-head d-flex justify-content-between align-items-center mb-3'>
+									<div className='feature-head d-flex justify-content-between align-items-center mb-2'>
 										<span>Stock Details</span>
 										<img src={circleUnCheck} alt='' />
 									</div>
@@ -66,7 +66,7 @@ export default function Pricing() {
 							<div className='card-body'>
 								<div className='head text-center mb-4 p-4 pb-0'>
 									<h3 className='mb-0 fw-semibold'>Standard</h3>
-									<p className='text-center '>Better result</p>
+									<p className='text-center'>Better result</p>
 								</div>
 
 								<div className='show-price text-center mb-4'>
@@ -77,27 +77,27 @@ export default function Pricing() {
 								</div>
 
 								<div className='p-3'>
-									<div className='feature-head d-flex justify-content-between align-items-center mb-3'>
+									<div className='feature-head d-flex justify-content-between align-items-center mb-2'>
 										<span>Lab Test</span>
 										<img src={circleCheck} alt='' />
 									</div>
-									<div className='feature-head d-flex justify-content-between align-items-center mb-3'>
+									<div className='feature-head d-flex justify-content-between align-items-center mb-2'>
 										<span>Report</span>
 										<img src={circleCheck} alt='' />
 									</div>
-									<div className='feature-head d-flex justify-content-between align-items-center mb-3'>
+									<div className='feature-head d-flex justify-content-between align-items-center mb-2'>
 										<span>Product</span>
 										<img src={circleCheck} alt='' />
 									</div>
-									<div className='feature-head d-flex justify-content-between align-items-center mb-3'>
+									<div className='feature-head d-flex justify-content-between align-items-center mb-2'>
 										<span>Sale Management</span>
 										<img src={circleUnCheck} alt='' />
 									</div>
-									<div className='feature-head d-flex justify-content-between align-items-center mb-3'>
+									<div className='feature-head d-flex justify-content-between align-items-center mb-2'>
 										<span>Purchase Management</span>
 										<img src={circleUnCheck} alt='' />
 									</div>
-									<div className='feature-head d-flex justify-content-between align-items-center mb-3'>
+									<div className='feature-head d-flex justify-content-between align-items-center mb-2'>
 										<span>Stock Details</span>
 										<img src={circleUnCheck} alt='' />
 									</div>
@@ -121,7 +121,7 @@ export default function Pricing() {
 							<div className='card-body'>
 								<div className='head text-center mb-4 p-4 pb-0'>
 									<h3 className='mb-0 fw-semibold'>Premium</h3>
-									<p className='text-center '>Go all in one</p>
+									<p className='text-center'>Go all in one</p>
 								</div>
 
 								<div className='show-price text-center mb-4'>
@@ -132,27 +132,27 @@ export default function Pricing() {
 								</div>
 
 								<div className='p-3'>
-									<div className='feature-head d-flex justify-content-between align-items-center mb-3'>
+									<div className='feature-head d-flex justify-content-between align-items-center mb-2'>
 										<span>Lab Test</span>
 										<img src={circleCheck} alt='' />
 									</div>
-									<div className='feature-head d-flex justify-content-between align-items-center mb-3'>
+									<div className='feature-head d-flex justify-content-between align-items-center mb-2'>
 										<span>Report</span>
 										<img src={circleCheck} alt='' />
 									</div>
-									<div className='feature-head d-flex justify-content-between align-items-center mb-3'>
+									<div className='feature-head d-flex justify-content-between align-items-center mb-2'>
 										<span>Product</span>
 										<img src={circleCheck} alt='' />
 									</div>
-									<div className='feature-head d-flex justify-content-between align-items-center mb-3'>
+									<div className='feature-head d-flex justify-content-between align-items-center mb-2'>
 										<span>Sale Management</span>
 										<img src={circleCheck} alt='' />
 									</div>
-									<div className='feature-head d-flex justify-content-between align-items-center mb-3'>
+									<div className='feature-head d-flex justify-content-between align-items-center mb-2'>
 										<span>Purchase Management</span>
 										<img src={circleCheck} alt='' />
 									</div>
-									<div className='feature-head d-flex justify-content-between align-items-center mb-3'>
+									<div className='feature-head d-flex justify-content-between align-items-center mb-2'>
 										<span>Stock Details</span>
 										<img src={circleCheck} alt='' />
 									</div>

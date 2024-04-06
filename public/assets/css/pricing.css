@@ -1,20 +1,31 @@
 .main-pricediv {
-    margin: 20px;
-    margin-top: 60px;
+    margin:60px 20px;
     padding: 40px 80px;
 }
 .main-pricehead h1{
     font-weight: var(--font-width);
-    color: #044c9d;
+    color: var(--royel-blue);
     font-family: var(--font-poppins);
 }
+.main-pricehead p{
+    font-family: var(--plus-Jakarta-Sans);
+    font-weight: 500;
+}
 .price-card{
+    position: relative;
     border: none;
     box-shadow: rgba(82, 95, 97, 0.16) 0px 10px 36px 0px, rgba(18, 19, 19, 0.06) 0px 0px 0px 1px;
     overflow: hidden;
+    transition: transform .6s ease;
+}
+.price-card:hover{
+    margin: 0px;
+    transform: scaleY(1.1) scaleX(1.05);
+    border: 1px solid var(--royel-blue);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 .head h3{
-    color: #044c9d;
+    color: var(--royel-blue);
 }
 .show-price h4{
     font-size: 16px;
@@ -25,35 +36,40 @@
     position: absolute;
     /* top: -5px;  */
     font-size: 16px;
-    color: rgba(4, 76, 157, .6);
+    color: rgba(4, 76, 157, 0.6);
 }
 .show-price span{
     font-size: 32px;
-    color: #044c9d;
+    color: var(--royel-blue);
     margin-left: 12px;
 }
 .feature-head span{
     font-size: 18px;
     font-family: var(--plus-Jakarta-Sans);
 }
+.feature-head{
+    padding: 8px;
+}
 .price-btn{
-    background-color: #044c9d;
+    background-color: var(--royel-blue);
 }
 .pricebdg{
-    width: 40%;
+    width: 45%;
     height: 35px;
-    margin-top: 10px;
-    margin-left: -30px;
-    background-color: #044c9d;
-    transform: rotate(-40deg);
+    top: 10px; 
+    left: 10%;
+    transform: translateX(-50%) rotate(-40deg);
+    background-color: var(--royel-blue);
     position: absolute;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    /* z-index: 1; */
 }
 @media screen and (max-width: 767px) {
-    .pricebdg {
+    /* .pricebdg {
         width: 40%;
-    }
+        height: 35px;
+        margin-top: 10px;
+        margin-left: -30px;
+    } */
     .main-pricediv {
         margin: 26px;
         margin-top: 60px;
@@ -67,13 +83,13 @@
         padding: 40px 0px;
     }
     .pricebdg {
-        width: 55%;
-        height: 35px;
-        margin-top: 9px;
-        margin-left: -30px;
-        background-color: #044c9d;
-        transform: rotate(-40deg);
-        position: absolute;
-        /* z-index: 1; */
+    width: 60%;
+    height: 35px;
+    top: 12px; 
+    left: 14%;
+    transform: translateX(-50%) rotate(-40deg);
+    background-color: var(--royel-blue);
+    position: absolute;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
 }
