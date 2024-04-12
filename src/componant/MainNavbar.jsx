@@ -120,7 +120,8 @@ export default function MainNavbar() {
                 <NavItem>
                   <NavLink
                    href="/pricing" 
-                  className={navtextcolor}
+                  // className={navtextcolor}
+                  className={`${navtextcolor} ${activeNavItem === 'pricing' && curhover}`}
                   onClick={() => handleNavItemClicked('pricing')}
                   active={activeNavItem === 'pricing'}
                   >
@@ -128,8 +129,9 @@ export default function MainNavbar() {
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/" 
-                  className={navtextcolor}
+                  <NavLink href="/doctor" 
+                  // className={navtextcolor}
+                  className={`${navtextcolor} ${activeNavItem === 'doctor' && curhover}`}
                   onClick={() => handleNavItemClicked('doctor')}
                   active={activeNavItem === 'doctor'}
                   >
