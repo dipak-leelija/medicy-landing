@@ -126,6 +126,9 @@
     background-color: var(--royel-blue);
     font-family: var(--plus-Jakarta-Sans);
 }
+.price-faqs h2{
+    text-align: center;
+}
 .price-faqs a{
     background-color: var(--royel-blue);
     border: 1px solid var(--pure-white);
@@ -161,16 +164,20 @@
     border-left: none;
 }
 @media screen and (max-width: 767px) {
-    /* .pricebdg {
-        width: 40%;
-        height: 35px;
-        margin-top: 10px;
-        margin-left: -30px;
-    } */
     .main-pricediv {
         margin: 26px;
         margin-top: 60px;
         padding: 40px 0px;
+    }
+
+    .free-servicedsc h2{
+        text-align: center;
+    }
+    .price-faqs a{
+        float: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {

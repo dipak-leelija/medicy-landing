@@ -1,4 +1,5 @@
 import React from 'react';
+import {motion} from 'framer-motion';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import avtar from '../../public/assets/img/quotation.png';
@@ -22,10 +23,20 @@ export default function Testimonial() {
 	return (
 		<section>
 			<div className='mainTestimonial'>
-				<div className='pharmaciesTag'>
+				<motion.div 
+				initial={{ opacity: 0, y: 50 }}
+				whileInView={{ opacity: 1, y: 1 }}
+				transition={{ duration: 0.5, delay: 0.3 }}
+				viewport={{ once: true }}
+				className='pharmaciesTag'>
 					<h1>What Our Client Says</h1>
-				</div>
-				{/* <div className='carousel-div'> */}
+				</motion.div>
+				<motion.div
+				initial={{ opacity: 0}}
+				whileInView={{ opacity: 1}}
+				transition={{ duration: 0.5, delay: 0.8 }}
+				viewport={{ once: true }}
+				className='carousel-div'>
 				{
 					<Carousel
 						responsive={responsive}
@@ -38,6 +49,7 @@ export default function Testimonial() {
 						keyBoardControl={true}
 						removeArrowOnDeviceType={['mobile']}
 						containerClass='carousel-container'
+						showDots={true}
 						dotListClass='custom-dot-list-style'
 						itemClass='carousel-item-padding-40-px'
 						customLeftArrow={
@@ -96,7 +108,7 @@ export default function Testimonial() {
 						</div>
 					</Carousel>
 				}
-				{/* </div> */}
+				</motion.div>
 			</div>
 		</section>
 	);

@@ -1,4 +1,5 @@
 import React from 'react';
+import {motion} from 'framer-motion';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 const responsive = {
@@ -46,10 +47,17 @@ const PharmaciesIcon = () => {
 	return (
 		<section>
 			<div className='parent'>
-				<div className='pharmaciesTag'>
+				<motion.div
+				initial={{ opacity: 0, y: 80 }}
+				whileInView={{ opacity: 1, y: 1 }}
+				transition={{ duration: 0.5, delay: 0.6 }}
+				viewport={{ once: true }} 
+				className='pharmaciesTag'>
 					<h1>Trusted by Top pharmacies of India</h1>
-				</div>
-				<div className='carousel-div'>
+				</motion.div>
+				<motion.div
+				initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{ duration: 0.5, delay: 0.8 }} viewport={{ once: true }} 
+				className='carousel-div'>
 					{
 						<Carousel
 							responsive={responsive}
@@ -70,7 +78,7 @@ const PharmaciesIcon = () => {
 							})}
 						</Carousel>
 					}
-				</div>
+				</motion.div>
 			</div>
 		</section>
 	);

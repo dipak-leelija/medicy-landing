@@ -166,7 +166,7 @@ export default function Chooseus() {
 					</div>
 
 					{/* Ipad/Tab View starts from here */}
-					{/* {windowWidth >= 768 && windowWidth <= 1024 && (
+					{windowWidth >= 768 && windowWidth <= 1024 && (
 						<div className='frame-parent '>
 							<div className='row row-cols-1 row-cols-md-2 g-4 p-4'>
 								<motion.div
@@ -251,7 +251,7 @@ export default function Chooseus() {
 								</motion.div>
 							</div>
 						</div>
-					)} */}
+					)}
 					{/* Ipad/Tab View ends here */}
 				</div>
 			</div>

@@ -18,7 +18,7 @@ export default function Pricing() {
 					<div className='row  g-0'>
 						<div className='col-md-7 order-2 order-md-1'>
 							<div className='card-body free-pricebody p-4'>
-								<div className='p-3 text-white free-pricehead'>
+								<div className=' text-white free-pricehead'>
 									<div className='mb-4'>
 										<h5 className='text-white fw-semibold m-3 ms-2 fs-2'>
 											Free for one year
@@ -284,7 +284,7 @@ export default function Pricing() {
 							<h2>Have a question about our plans?</h2>
 						</div>
 						<div class='col-md-4'>
-							<a href='' className='btn btn-lg'>
+							<a href='/Faqs' className='btn btn-lg'>
 								Check out FAQs
 							</a>
 						</div>
