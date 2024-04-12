@@ -26,19 +26,21 @@ export default function Chooseus() {
 						<motion.div
 							initial={{ opacity: 0, y: 100 }}
 							whileInView={{ opacity: 1, y: 1 }}
-							transition={{ duration: 0.5, delay: 0.1 }}
+							transition={{ duration: 0.5, delay: 0.2 }}
 							viewport={{ once: true }}
 							className='why-choose-us-wrapper'>
 							<h1 className='why-choose-us'>Why Choose Us?</h1>
 						</motion.div>
 					</div>
 					<div className='frame-parent '>
+
+						{/* Image for Mobile Version starts here */}
 						{!showImage && (
 							<div className='frame1'>
 								<motion.div
 									initial={{ opacity: 0, y: 100 }}
 									whileInView={{ opacity: 1, y: 1 }}
-									transition={{ duration: 0.5, delay: 0.5 }}
+									transition={{ duration: 0.5, delay: 0.2 }}
 									viewport={{ once: true }}
 									className='frame2'>
 									<img
@@ -49,6 +51,8 @@ export default function Chooseus() {
 								</motion.div>
 							</div>
 						)}
+						{/* Image for Mobile Version ends here*/}
+
 						{(windowWidth <= 767 || windowWidth > 1024) && (
 							<>
 								<div className='frame3'>
@@ -56,11 +60,11 @@ export default function Chooseus() {
 										<motion.div
 											initial={{ opacity: 0, y: 100 }}
 											whileInView={{ opacity: 1, y: 1 }}
-											transition={{ duration: 0.5, delay: 0.5 }}
+											transition={{ duration: 0.5, delay: 0.3 }}
 											viewport={{ once: true }}
 											className='frame5'>
 											<div className='cloud-based-software-wrapper'>
-												<h4> Cloud Based Software</h4>
+												<h4> Easy Report Generation</h4>
 											</div>
 											<div className='be-always-connected-with-your-wrapper'>
 												<div className='be-always-connected'>
@@ -75,12 +79,12 @@ export default function Chooseus() {
 									<motion.div
 										initial={{ opacity: 0, y: 100 }}
 										whileInView={{ opacity: 1, y: 1 }}
-										transition={{ duration: 0.5, delay: 0.5 }}
+										transition={{ duration: 0.5, delay: 0.4 }}
 										viewport={{ once: true }}
 										className='frame6'>
 										<div className='frame7'>
 											<div className='cloud-based-software-wrapper'>
-												<h4> Cloud Based Software</h4>
+												<h4> Easy Role Management</h4>
 											</div>
 											<div className='be-always-connected-with-your-wrapper'>
 												<div className='be-always-connected'>
@@ -95,12 +99,14 @@ export default function Chooseus() {
 								</div>
 							</>
 						)}
+
+						{/* image for tab/desktop(window.width > 767) version starts here */}
 						{showImage && (
 							<div className='frame1'>
 								<motion.div
 									initial={{ opacity: 0, y: 100 }}
 									whileInView={{ opacity: 1, y: 1 }}
-									transition={{ duration: 0.5, delay: 0.5 }}
+									transition={{ duration: 0.5, delay: 0.3 }}
 									viewport={{ once: true }}
 									className='frame2'>
 									<img
@@ -111,12 +117,14 @@ export default function Chooseus() {
 								</motion.div>
 							</div>
 						)}
+						{/* image for tab/desktop(window.width > 767) version ends here */}
+
 						{(windowWidth <= 767 || windowWidth > 1024) && (
 							<div className='frame8'>
 								<motion.div
 									initial={{ opacity: 0, y: 100 }}
 									whileInView={{ opacity: 1, y: 1 }}
-									transition={{ duration: 0.5, delay: 0.5 }}
+									transition={{ duration: 0.5, delay: 0.3 }}
 									viewport={{ once: true }}
 									className='frame9'>
 									<div className='frame10'>
@@ -136,12 +144,12 @@ export default function Chooseus() {
 								<motion.div
 									initial={{ opacity: 0, y: 100 }}
 									whileInView={{ opacity: 1, y: 1 }}
-									transition={{ duration: 0.5, delay: 0.5 }}
+									transition={{ duration: 0.5, delay: 0.4 }}
 									viewport={{ once: true }}
 									className='frame12'>
 									<div className='frame13'>
 										<div className='cloud-based-software-wrapper'>
-											<h4> Cloud Based Software</h4>
+											<h4> Centralized Database</h4>
 										</div>
 										<div className='be-always-connected-with-your-frame'>
 											<div className='be-always-connected'>
@@ -157,7 +165,8 @@ export default function Chooseus() {
 						)}
 					</div>
 
-					{windowWidth >= 768 && windowWidth <= 1024 && (
+					{/* Ipad/Tab View starts from here */}
+					{/* {windowWidth >= 768 && windowWidth <= 1024 && (
 						<div className='frame-parent '>
 							<div className='row row-cols-1 row-cols-md-2 g-4 p-4'>
 								<motion.div
@@ -169,7 +178,7 @@ export default function Chooseus() {
 									<div className='choose-card'>
 										<div className='card-body'>
 											<h5 className='card-title text-white pb-2'>
-												Cloud Based Software
+												Easy Report Generation
 											</h5>
 											<p className='card-text'>
 												Be always connected with your Pharmacy with cloud
@@ -242,7 +251,8 @@ export default function Chooseus() {
 								</motion.div>
 							</div>
 						</div>
-					)}
+					)} */}
+					{/* Ipad/Tab View ends here */}
 				</div>
 			</div>
 		</section>

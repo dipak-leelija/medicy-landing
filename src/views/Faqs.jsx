@@ -17,7 +17,7 @@ export default function Faqs() {
 						<motion.div
 						initial={{ opacity: 0, y: 50 }}
 						whileInView={{ opacity: 1, y: 1 }}
-						transition={{ duration: 0.4, delay: 0.5 }}
+						transition={{ duration: 0.4, delay: 0.3 }}
 						viewport={{ once: true }} 
 						>
 						<Accordion.Item eventKey='0' className='border border-2 mb-2 rounded'>
@@ -36,7 +36,7 @@ export default function Faqs() {
 						<motion.div
 						initial={{ opacity: 0, y: 50 }}
 						whileInView={{ opacity: 1, y: 1 }}
-						transition={{ duration: 0.4, delay: 0.6 }}
+						transition={{ duration: 0.4, delay: 0.4 }}
 						viewport={{ once: true }} 
 						>
 						<Accordion.Item eventKey='1' className='border border-2 mb-2 rounded'>
@@ -55,7 +55,7 @@ export default function Faqs() {
 						<motion.div
 						initial={{ opacity: 0, y: 50 }}
 						whileInView={{ opacity: 1, y: 1 }}
-						transition={{ duration: 0.4, delay: 0.7 }}
+						transition={{ duration: 0.4, delay: 0.5 }}
 						viewport={{ once: true }} 
 						>
                         <Accordion.Item eventKey='2' className='border border-2 mb-2 rounded'>
@@ -74,7 +74,7 @@ export default function Faqs() {
 						<motion.div
 						initial={{ opacity: 0, y: 50 }}
 						whileInView={{ opacity: 1, y: 1 }}
-						transition={{ duration: 0.4, delay: 0.8 }}
+						transition={{ duration: 0.4, delay: 0.6 }}
 						viewport={{ once: true }} 
 						>
 						<Accordion.Item eventKey='3' className='border border-2 mb-2 rounded'>

@@ -32,13 +32,13 @@ export default function Home() {
 				<div>
 					<div className='d-flex justify-content-around align-items-start flex-wrap main-banner'>
 						<div className='baner-left mt-5'>
-							<motion.div initial={{opacity: 0}} whileInView={{opacity: 1, }} transition={{ duration: 1.5, delay: 1 }} viewport={{ once: true }} className='ractangle1'></motion.div>
-							<motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{ duration: 1.5, delay: 1 }} viewport={{ once: true }} className='ractangle2'></motion.div>
+							<motion.div initial={{opacity: 0}} whileInView={{opacity: 1, }} transition={{ duration: 1.5, delay: 0.4 }} viewport={{ once: true }} className='ractangle1'></motion.div>
+							<motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{ duration: 1.5, delay: 0.4 }} viewport={{ once: true }} className='ractangle2'></motion.div>
 							<div className='heading text-start'>
 								<motion.div
 									initial={{ opacity: 0, y: 50 }}
 									whileInView={{ opacity: 1, y: 1 }}
-									transition={{ duration: 0.5, delay: 0.5 }}
+									transition={{ duration: 0.5, delay: 0.3 }}
 									viewport={{ once: true }}
 									className='mb-4 headingtext'>
 									<h1>
@@ -49,7 +49,7 @@ export default function Home() {
 								<motion.div
 									initial={{ opacity: 0, y: 50 }}
 									whileInView={{ opacity: 1, y: 1 }}
-									transition={{ duration: 0.5, delay: 1 }}
+									transition={{ duration: 0.5, delay: .4 }}
 									viewport={{ once: true }}
 									className='baner-text'>
 									<p>
@@ -65,7 +65,7 @@ export default function Home() {
 									whileInView={{ opacity: 1, y: 1 }}
 									transition={{
 										duration: 0.5,
-										delay: 1.5,
+										delay: 0.5,
 									}}
 									viewport={{ once: true }}
 									className='mainpricebtn'>
@@ -74,8 +74,8 @@ export default function Home() {
 							</div>
 						</div>
 						<div className='baner-right d-flex justify-content-end'>
-							<motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{ duration: 1.5, delay: 1 }} viewport={{once:true}} className='circle1'></motion.div>
-							<motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{ duration: 1.5, delay: 1 }} viewport={{once:true}}  className='circle2'></motion.div>
+							<motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{ duration: 1.5, delay: 0.4 }} viewport={{once:true}} className='circle1'></motion.div>
+							<motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{ duration: 1.5, delay: 0.4 }} viewport={{once:true}}  className='circle2'></motion.div>
 							{showImage && (
 								<motion.div
 									initial={{ opacity: 0, x: 30 }}
