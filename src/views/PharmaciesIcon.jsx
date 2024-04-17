@@ -56,7 +56,7 @@ const PharmaciesIcon = () => {
 					<h1>Trusted by Top pharmacies of India</h1>
 				</motion.div>
 				<motion.div
-				initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{ duration: 0.5, delay: 0.8 }} viewport={{ once: true }} 
+				initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{ duration: 0.5, delay: 0.5 }} viewport={{ once: true }} 
 				className='carousel-div'>
 					{
 						<Carousel

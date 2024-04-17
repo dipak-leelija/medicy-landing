@@ -1,14 +1,21 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import mainabout from '../../public/assets/img/mainAbout.jpg';
 import aboutTwo from '../../public/assets/img/aboutTwo.jpg';
 import awardIcon from '../../public/assets/icon/award-icon.svg';
 import groupOfPeoples from '../../public/assets/img/group-of-peoples.webp';
+import missionlogo from '../../public/assets/icon/missionLogo.svg';
 
 export default function AboutUs() {
 	return (
 		<>
 			<section>
-				<div className='main-about'>
+				<motion.div
+					initial={{ opacity: 0, y: 50 }}
+					whileInView={{ opacity: 1, y: 1 }}
+					transition={{ duration: 0.5, delay: 0.4 }}
+					viewport={{ once: true }}
+					className='main-about'>
 					<div className='main-aboutImg'>
 						<img src={mainabout} alt='' />
 					</div>
@@ -67,7 +74,7 @@ export default function AboutUs() {
 							</button>
 						</div>
 					</div>
-				</div>
+				</motion.div>
 				{/* ////////// */}
 				<div className='trusted-layout d-flex justify-content-center align-items-center'>
 					<div className='trusted-banner'>
@@ -104,9 +111,9 @@ export default function AboutUs() {
 							World Class Worker
 						</h6>
 						<div className='trusted-button'>
-							<button type='button' className='btn btn-outline-light btn-lg'>
+							<a href='/contact' className='btn btn-outline-light btn-lg'>
 								Let's Connect
-							</button>
+							</a>
 						</div>
 					</div>
 					<div className='trusted-img'>
@@ -160,12 +167,15 @@ export default function AboutUs() {
 						</div>
 					</div>
 				</div>
-				{/* <div className='company-layout'>
+				<div className='company-layout'>
 					<div className='compnayLayout-head'>
-						<h1>What differentiates Our Company?</h1>
+						<div className='d-flex justify-content-center '>
+							<h1 className='me-4'>Mission</h1>
+							<img src={missionlogo} alt='' />
+						</div>
+						<h4>Empowering Patients. Empowering Pharmacies.</h4>
 					</div>
-
-				</div> */}
+				</div>
 			</section>
 		</>
 	);

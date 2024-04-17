@@ -153,6 +153,10 @@
     justify-content: center;
 }
 
+.trusted-button a{
+    border-radius: 50rem;
+}
+
 
 /* ................. */
 .about-layout{
@@ -216,13 +220,20 @@
     font-family: var(--font-poppins);
 }
 .company-layout{
-    margin: 80px;
+    text-align: center;
+    margin: 80px 100px;
+    border: 2px solid var(--royel-blue);
+    border-radius: var(--br-5xs);
+    padding: 20px 40px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .compnayLayout-head h1{
-    text-align: center;
-    color: var(  --brandeis-blue);
+    color: var(  --royel-blue);
     font-weight: var(--font-width);
     font-family: var(--font-poppins);
+}
+.compnayLayout-head h4{
+    color: var(  --royel-blue);
 }
 
 @media screen and (max-width: 767px) {

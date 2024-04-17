@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {motion} from 'framer-motion';
 import { Form, Button } from 'react-bootstrap';
 
 export default function Contact() {
@@ -24,7 +25,12 @@ export default function Contact() {
 
 	return (
 		<section>
-			<div className='main-contact'>
+			<motion.div 
+			initial={{ opacity: 0, y: 50 }}
+			whileInView={{ opacity: 1, y: 1 }}
+			transition={{ duration: 0.5, delay: 0.4 }}
+			viewport={{ once: true }} 
+			className='main-contact'>
 				<div className='left-contact'>
 					<div className='left-one'>
 						<div className='p-5'>
@@ -158,7 +164,7 @@ export default function Contact() {
 						</div>
 					</Form>
 				</div>
-			</div>
+			</motion.div>
 		</section>
 	);
 }

@@ -1,22 +1,57 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { motion } from 'framer-motion';
 import circleCheck from '../../public/assets/icon/circle-check.svg';
 import circleCheckWhite from '../../public/assets/icon/circleCheck-white.svg';
 import circleUnCheck from '../../public/assets/icon/circle-uncheck.svg';
 // import circle from '../../public/assets/icon/circle.svg';
-import freeService from '../../public/assets/img/freeService.png';
+import freeService from '../../public/assets/img/freepricing2.png';
 import teamservice from '../../public/assets/img/teamservice.png';
 
 export default function Pricing() {
+	useEffect(() => {
+		const buyNowButton = document.getElementById('buyNow');
+		buyNowButton.addEventListener('click', handleBuyNowClick);
+
+		return () => {
+			buyNowButton.removeEventListener('click', handleBuyNowClick);
+		};
+	}, []);
+
+	const handleBuyNowClick = async () => {
+		try {
+			const response = await fetch('http://localhost:5173/pricing', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify({
+					id: 'buyNow'
+				}),
+			});
+			if (response.ok) {
+				console.log('request send success');
+			} else {
+				console.log('request not send ');
+			}
+		} catch (error) {
+			console.error('Error:', error);
+		}
+	};
 	return (
 		<section>
-			<div className=' main-pricediv'>
+			<motion.div
+				initial={{ opacity: 0, y: 50 }}
+				whileInView={{ opacity: 1, y: 0 }}
+				transition={{ duration: 0.5, delay: 0.4 }}
+				viewport={{ once: true }}
+				className=' main-pricediv'>
 				<div className='main-pricehead text-center m-4 mb-5'>
 					<h1>Pick Your Perfect Plan</h1>
 					<p>All plan FREE for first 7days</p>
 				</div>
 				<div className='free-priceCard card mb-5'>
 					<div className='row  g-0'>
-						<div className='col-md-7 order-2 order-md-1'>
+						<div className='col-md-5 order-2 order-md-1'>
 							<div className='card-body free-pricebody p-4'>
 								<div className=' text-white free-pricehead'>
 									<div className='mb-4'>
@@ -63,16 +98,26 @@ export default function Pricing() {
 								</div>
 							</div>
 						</div>
-						<div className='col-md-5 order-1 order-md-2'>
+						<div className='col-md-7 order-1 order-md-2'>
 							<div className='free-priceImgsec mt-5'>
-								<img
-									src={freeService}
-									className='img-fluid rounded-start '
-									alt='...'
-								/>
-								<a href='' className='btn btn-light btn-lg mb-4  '>
-									Try for FREE
-								</a>
+								<div className='d-grid col-3 tffbtn'>
+									<a href='' className='btn btn-light btn-lg'>
+										Try for FREE
+									</a>
+								</div>
+								<div>
+									<img
+										src={freeService}
+										className='img-fluid rounded-start '
+										alt='...'
+									/>
+								</div>
+
+								{/* <div className='d-grid col-4 mb-5 ms-4'>
+									<a href='' className='btn btn-light btn-lg   '>
+										Try for FREE
+									</a>
+								</div> */}
 							</div>
 						</div>
 					</div>
@@ -121,9 +166,20 @@ export default function Pricing() {
 								</div>
 
 								<div className='d-flex justify-content-center m-4'>
-									<a href='' className='btn btn-primary price-btn btn-lg'>
+									{/* <a
+										href=''
+										type='button'
+										id='buyNow'
+										className='btn btn-primary price-btn btn-lg'>
 										Buy Now
-									</a>
+									</a> */}
+
+									<button
+										type='submit'
+										id='buyNow'
+										className='btn btn-primary price-btn btn-lg'>
+										Buy Now
+									</button>
 								</div>
 							</div>
 						</div>
@@ -171,9 +227,19 @@ export default function Pricing() {
 								</div>
 
 								<div className='d-flex justify-content-center m-4'>
-									<a href='' className='btn btn-primary price-btn btn-lg'>
+									{/* <a
+										href=''
+										id='sendRequest'
+										className='btn btn-primary price-btn btn-lg'>
 										Buy Now
-									</a>
+									</a> */}
+
+									<button
+										type='button'
+										id='buyNow1'
+										className='btn btn-primary price-btn btn-lg'>
+										Buy Now
+									</button>
 								</div>
 							</div>
 						</div>
@@ -226,9 +292,16 @@ export default function Pricing() {
 								</div>
 
 								<div className='d-flex justify-content-center m-4'>
-									<a href='' className='btn btn-primary price-btn btn-lg'>
+									{/* <a href='' className='btn btn-primary price-btn btn-lg'>
 										Buy Now
-									</a>
+									</a> */}
+
+									<button
+										type='button'
+										id='buyNow'
+										className='btn btn-primary price-btn btn-lg'>
+										Buy Now
+									</button>
 								</div>
 							</div>
 						</div>
@@ -260,20 +333,24 @@ export default function Pricing() {
 								<img src={circleCheck} className='mt-1' alt='' />
 								<p className='ms-3'>
 									{' '}
-									Present detailed specifications and features of the aircraft, highlighting its safety, comfort, performance, and customization options.
+									Present detailed specifications and features of the aircraft,
+									highlighting its safety, comfort, performance, and
+									customization options.
 								</p>
 							</div>
 							<div className=' d-flex align-items-start'>
 								<img src={circleCheck} className='mt-1' alt='' />
 								<p className='ms-3'>
 									{' '}
-									Present detailed specifications and features of the aircraft, highlighting its safety, comfort, performance, and customization options.
+									Present detailed specifications and features of the aircraft,
+									highlighting its safety, comfort, performance, and
+									customization options.
 								</p>
 							</div>
 						</div>
 
 						<div class='col-md-4 teamservice'>
-							<img src={teamservice}  alt="" />
+							<img src={teamservice} alt='' />
 						</div>
 					</div>
 				</div>
@@ -290,7 +367,7 @@ export default function Pricing() {
 						</div>
 					</div>
 				</div>
-			</div>
+			</motion.div>
 		</section>
 	);
 }

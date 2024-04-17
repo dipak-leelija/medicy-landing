@@ -14,10 +14,23 @@
 
 .free-priceCard{
     font-family: var(--font-poppins);
-    /* background-color: var(--royel-blue); */
-    background: linear-gradient(90deg, rgba(0, 96, 254, 1) 0%, rgba(167, 237, 251, 0.9612219887955182) 100%);
+    /* background-color: rgb(55, 145, 55); */
+    /* background-image: linear-gradient(
+  65deg,
+  hsl(110deg 91% 21%) 0%,
+  hsl(110deg 71% 28%) 26%,
+  hsl(110deg 55% 36%) 44%,
+  hsl(110deg 42% 44%) 56%,
+  hsl(110deg 36% 53%) 67%,
+  hsl(110deg 38% 64%) 76%,
+  hsl(110deg 40% 75%) 84%,
+  hsl(110deg 42% 87%) 92%,
+  hsl(0deg 0% 100%) 100%
+); */
+    background: linear-gradient(90deg, green 0%, rgba(146,210,126,1) 40%, rgba(245, 245, 245, 0.947) 62%);
     border: none;
     transition: transform 0.5s ease;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .free-priceCard:hover{
     transform: scale(1.02);
@@ -26,21 +39,32 @@
     margin-left: 10%;
 }
 .free-pricehead{
-    width: 70%;
+    /* width: 70%; */
+}
+.free-priceImgsec{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.tffbtn{
+    margin-top: 100px;
+    /* margin-left: 30px; */
 }
 .free-priceImgsec a{
-    background-color: var(--royel-blue);
+    background-color: green;
     color: #ffff;
+    font-weight: var(--font-width);
+    border-radius: 25px;
 }
 .free-priceImgsec a:hover{
     background-color: var(--pure-white);
-    color: var(--royel-blue);
-    border: 1px solid var(--royel-blue);
+    color: var(--salem-green);
+    border: 1px solid var(--salem-green);
 }
 .free-priceImgsec img{
-    width: 60rem;
+    /* width: 60rem; */
     /* height: 15rem; */
-    filter: drop-shadow(0 0 0.75rem rgb(250, 250, 250));
+    /* filter: drop-shadow(0 0 0.75rem rgb(250, 250, 250)); */
 }
 @media screen and (max-width: 767px) {
     .free-pricebody{
@@ -50,12 +74,19 @@
     .free-pricehead{
         width: 100%;
     }
+    .free-priceCard{
+        background: linear-gradient(0deg, green 0%, rgba(146,210,126,1) 56%, rgba(245,245,245,1) 100%);
+    }
     .free-priceImgsec{
         display: flex;
         flex-wrap: wrap-reverse;
     }
+    .tffbtn {
+        width: 100%;
+        margin: 0px;
+    }
     .free-priceImgsec a{
-        margin-left: 30%;
+        margin: 40px 40px 0px 40px;
     }
     .free-priceImgsec img{
         order: 1;

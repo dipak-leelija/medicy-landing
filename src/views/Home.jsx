@@ -69,7 +69,7 @@ export default function Home() {
 									}}
 									viewport={{ once: true }}
 									className='mainpricebtn'>
-									<button className='btn btn-lg pricebtn'>See Pricing</button>
+									<a href="/pricing" className='btn btn-lg pricebtn'>See Pricing</a>
 								</motion.div>
 							</div>
 						</div>
