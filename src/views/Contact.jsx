@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import {motion} from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Form, Button } from 'react-bootstrap';
 
 export default function Contact() {
 	const [validated, setValidated] = useState(false);
 	const [email, setEmail] = useState('');
 	const [emailValid, setEmailValid] = useState(true);
+	const [mobile, setMobile] = useState('');
+	const [isValidMobile, setIsValidMobile] = useState(true);
 
 	const handleSubmit = (event) => {
 		const form = event.currentTarget;
@@ -23,14 +25,29 @@ export default function Contact() {
 		setEmailValid(emailRegex.test(emailValue));
 	};
 
+	const handleMobChange = (e) => {
+		const inputValue = e.target.value.replace(/\D/g, '');
+
+		if (inputValue.length > 10) {
+			inputValue = inputValue.slice(0, 10);
+		}
+		setMobile(inputValue);
+	
+		if (inputValue.length !== 10) {
+			setIsValidMobile(false);
+		} else {
+			setIsValidMobile(true);
+		}
+	};
+
 	return (
 		<section>
-			<motion.div 
-			initial={{ opacity: 0, y: 50 }}
-			whileInView={{ opacity: 1, y: 1 }}
-			transition={{ duration: 0.5, delay: 0.4 }}
-			viewport={{ once: true }} 
-			className='main-contact'>
+			<motion.div
+				initial={{ opacity: 0, y: 50 }}
+				whileInView={{ opacity: 1, y: 1 }}
+				transition={{ duration: 0.5, delay: 0.4 }}
+				viewport={{ once: true }}
+				className='main-contact'>
 				<div className='left-contact'>
 					<div className='left-one'>
 						<div className='p-5'>
@@ -106,7 +123,7 @@ export default function Contact() {
 						validated={validated}
 						noValidate
 						onSubmit={handleSubmit}>
-						<div class='form-floating contact-div  mb-5'>
+						<div className='form-floating contact-div  mb-5'>
 							<input
 								type='text'
 								className='form-control contact-input'
@@ -119,7 +136,24 @@ export default function Contact() {
 								Please provide a valid name.
 							</Form.Control.Feedback>
 						</div>
-						<div class='form-floating contact-div mb-5'>
+						<div className='form-floating contact-div  mb-5'>
+							<input
+								type='tel'
+								className={`form-control contact-input ${
+									isValidMobile ? '' : 'is-invalid'
+								}`}
+								id='floatingMobile'
+								value={mobile}
+								onChange={handleMobChange}
+								placeholder=''
+								required
+							/>
+							<Form.Label htmlFor='floatingMobile'>Mobile</Form.Label>
+							<Form.Control.Feedback type='invalid'>
+								Please provide a valid 10-digit mobile number.
+							</Form.Control.Feedback>
+						</div>
+						<div className='form-floating contact-div mb-5'>
 							<input
 								type='email'
 								className={`form-control contact-input ${
@@ -136,7 +170,20 @@ export default function Contact() {
 								Please provide a valid email.
 							</Form.Control.Feedback>
 						</div>
-						<div class='form-floating contact-div '>
+						<div className='form-floating contact-div  mb-5'>
+							<input
+								type='text'
+								className='form-control contact-input'
+								id='floatingSub'
+								placeholder=''
+								required
+							/>
+							<Form.Label htmlFor='floatingSub'>Subject</Form.Label>
+							<Form.Control.Feedback type='invalid'>
+								Please provide your subject.
+							</Form.Control.Feedback>
+						</div>
+						<div className='form-floating contact-div '>
 							<textarea
 								className='form-control contact-input'
 								placeholder='Leave a comment here'
@@ -144,7 +191,7 @@ export default function Contact() {
 								style={{ height: '92px' }}
 								required
 							/>
-							<label htmlFor='floatingTextarea'>Comments</label>
+							<label htmlFor='floatingTextarea'>Message</label>
 						</div>
 
 						<Form.Group className=' mt-3 mb-2' controlId='flexCheckDefault'>

@@ -14,7 +14,7 @@ import Contact from './views/Contact';
 import Footer from './componant/Footer';
 import AboutUs from './views/AboutUs';
 import Home from './views/Home';
-import ChatWidget from './componant/ChatWidget';
+// import ChatWidget from './componant/ChatWidget';
 import Pricing from './views/Pricing';
 
 
@@ -31,7 +31,7 @@ import '../public/assets/css/catalougebanner.css';
 import '../public/assets/css/testimonial.css';
 import '../public/assets/css/features.css';
 import '../public/assets/css/contact.css';
-import '../public/assets/css/chatwidget.css'
+// import '../public/assets/css/chatwidget.css'
 import '../public/assets/css/pricing.css';
 
 

@@ -22,9 +22,9 @@ export default function Pricing() {
         <PlanCards/>
 				
 
-				<div class='card mb-3 free-servicedsc mt-5 p-5 border-0'>
-					<div class='row g-4'>
-						<div class='col-md-8'>
+				<div className='card mb-3 free-servicedsc mt-5 p-5 border-0'>
+					<div className='row g-4'>
+						<div className='col-md-8'>
 							<h2 className='mb-4'>Our Team is Here to Help You 24/7</h2>
 							<div className=' d-flex align-items-start'>
 								<img src={circleCheck} className='mt-1' alt='' />
@@ -63,7 +63,7 @@ export default function Pricing() {
 							</div>
 						</div>
 
-						<div class='col-md-4 teamservice'>
+						<div className='col-md-4 teamservice'>
 							<img src={teamservice} alt='' />
 						</div>
 					</div>

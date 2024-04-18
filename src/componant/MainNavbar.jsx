@@ -110,7 +110,7 @@ export default function MainNavbar() {
         <Container className="d-flex justify-content-between align-items-center p-2">
           <div className="navbar-translate d-flex justify-content-between">
             <NavbarBrand to="/" id="navbar-brand" tag={Link} onClick={() => handleNavItemClicked('')}
-                  active={activeNavItem === ''}>
+                  active={activeNavItem === '' ? "true" : ""}>
               <img className='navlogo' src={logo}></img>
             </NavbarBrand>
           </div>
