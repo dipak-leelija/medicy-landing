@@ -112,7 +112,7 @@ export default function Contact() {
 					</div>
 				</div>
 				<div className='right-contact'>
-					<div className='contact-head mb-5'>
+					<div className='contact-head mb-3'>
 						<h1>Contact Us</h1>
 						<p className='text-center mt-4'>
 							Fill out the form below to get your Free Proposal.
