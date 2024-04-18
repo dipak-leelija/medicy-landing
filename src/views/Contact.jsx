@@ -26,7 +26,7 @@ export default function Contact() {
 	};
 
 	const handleMobChange = (e) => {
-		const inputValue = e.target.value.replace(/\D/g, '');
+		let inputValue = e.target.value.replace(/\D/g, '');
 
 		if (inputValue.length > 10) {
 			inputValue = inputValue.slice(0, 10);
