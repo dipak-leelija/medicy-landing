@@ -170,6 +170,7 @@ export default function Contact() {
                 type="text"
                 className="form-control contact-input"
                 id="floatingName"
+                placeholder=""
                 name="name"
                 onChange={handleChange}
                 value={formData.name}
@@ -187,6 +188,7 @@ export default function Contact() {
                   isValidMobile ? "" : "is-invalid"
                 }`}
                 id="floatingMobile"
+                placeholder=""
                 name="mobile"
                 value={mobile}
                 onChange={handleChange}
@@ -220,6 +222,7 @@ export default function Contact() {
                 type="text"
                 className="form-control contact-input"
                 id="floatingSub"
+                placeholder=""
                 name="subject"
                 value={formData.subject}
                 onChange={handleChange}
