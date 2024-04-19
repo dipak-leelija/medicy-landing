@@ -165,11 +165,12 @@ export default function Contact() {
             noValidate
             onSubmit={handleSubmit}
           >
-            <div className="form-floating contact-div  mb-5">
+            <div className="form-floating contact-div  mb-4">
               <input
                 type="text"
                 className="form-control contact-input"
                 id="floatingName"
+                placeholder=""
                 name="name"
                 onChange={handleChange}
                 value={formData.name}
@@ -180,13 +181,14 @@ export default function Contact() {
                 Please provide a valid name.
               </Form.Control.Feedback>
             </div>
-            <div className="form-floating contact-div  mb-5">
+            <div className="form-floating contact-div  mb-4">
               <input
                 type="tel"
                 className={`form-control contact-input ${
                   isValidMobile ? "" : "is-invalid"
                 }`}
                 id="floatingMobile"
+                placeholder=""
                 name="mobile"
                 value={mobile}
                 onChange={handleChange}
@@ -197,7 +199,7 @@ export default function Contact() {
                 Please provide a valid 10-digit mobile number.
               </Form.Control.Feedback>
             </div>
-            <div className="form-floating contact-div mb-5">
+            <div className="form-floating contact-div mb-4">
               <input
                 type="email"
                 className={`form-control contact-input ${
@@ -215,11 +217,12 @@ export default function Contact() {
                 Please provide a valid email.
               </Form.Control.Feedback>
             </div>
-            <div className="form-floating contact-div  mb-5">
+            <div className="form-floating contact-div  mb-4">
               <input
                 type="text"
                 className="form-control contact-input"
                 id="floatingSub"
+                placeholder=""
                 name="subject"
                 value={formData.subject}
                 onChange={handleChange}
