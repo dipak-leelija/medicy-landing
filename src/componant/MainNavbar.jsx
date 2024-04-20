@@ -92,8 +92,8 @@ export default function MainNavbar() {
     }
     else if (path === "/pricing") {
       return "pricing";
-    } else if (path === "/doctors") {
-      return "doctors";
+    } else if (path === "/doctor") {
+      return "doctor";
     } else if (path === "/about") {
       return "about";
     } else if (path === "/contact") {
@@ -212,7 +212,7 @@ export default function MainNavbar() {
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/">
+            <NavLink href="/doctor">
               Doctors
             </NavLink>
           </NavItem>

@@ -16,6 +16,7 @@ import AboutUs from './views/AboutUs';
 import Home from './views/Home';
 // import ChatWidget from './componant/ChatWidget';
 import Pricing from './views/Pricing';
+import Doctor from './views/Doctor';
 
 
 import "../public/assets/css/main-navbar.css";
@@ -33,6 +34,7 @@ import '../public/assets/css/features.css';
 import '../public/assets/css/contact.css';
 // import '../public/assets/css/chatwidget.css'
 import '../public/assets/css/pricing.css';
+import '../public/assets/css/doctor.css';
 
 
 
@@ -53,6 +55,7 @@ function App() {
         <Route path='/contact' element={<Contact/>} />
         <Route path='/Testimonial' element={<Testimonial/>} />
         <Route path='/pricing' element={<Pricing/>} />
+        <Route path='/doctor' element={<Doctor/>} />
       </Routes>
       <Footer />
       {/* <ChatWidget/> */}
