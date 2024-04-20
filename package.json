@@ -1,17 +1,17 @@
 {
   "name": "medicy-landing",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "description": "A Integrated Medical Management Application Landing Page/Site",
   "main": "index.js",
   "author": "Leelija Web Solutions Private Limited",
   "license": "MIT",
+  "homepage": "./",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dipak-leelija/medicy-landing.git"
   },
-  "homepage": "https://github.com/dipak-leelija/medicy-landing.git",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
