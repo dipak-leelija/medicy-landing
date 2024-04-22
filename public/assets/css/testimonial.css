@@ -24,7 +24,7 @@
 
 /* Custom arrow styles */
 .custom-arrow {
-  width: 4.3%;
+    width: 2.5rem;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);

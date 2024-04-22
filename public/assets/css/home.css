@@ -226,7 +226,7 @@
         border-radius: 14%;
         margin-left: 0px;
         margin-top: 10px;
-        margin-left: 300px;
+        margin-left: calc(100% - 80px);
         margin-top: 40px;
         background-color: rgb(124, 128, 224);
         /* z-index: 1; */
