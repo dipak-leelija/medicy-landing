@@ -1,10 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import mainabout from '../../public/assets/img/mainAbout.jpg';
-import aboutTwo from '../../public/assets/img/aboutTwo.jpg';
-import awardIcon from '../../public/assets/icon/award-icon.svg';
-import groupOfPeoples from '../../public/assets/img/group-of-peoples.webp';
-import missionlogo from '../../public/assets/icon/missionLogo.svg';
+import mainabout from '/assets/img/mainAbout.jpg';
+import aboutTwo from '/assets/img/aboutTwo.jpg';
+import awardIcon from '/assets/icon/award-icon.svg';
+import groupOfPeoples from '/assets/img/group-of-peoples.webp';
+import missionlogo from '/assets/icon/missionLogo.svg';
 
 export default function AboutUs() {
 	return (
