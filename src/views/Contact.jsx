@@ -1,11 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Form, Button } from "react-bootstrap";
+import { Form, Button, Alert } from "react-bootstrap";
 import axios from "axios";
 
 import ContactCards from "../componant/ContactCards";
+import MEspinner from "../icons/MEspinner";
 
 export default function Contact() {
+  const [alert, setAlert] = useState(false);
+  const [alertMsg, setAlertMsg] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [formStyle, setFormStyle] = useState({});
+
   const [validated, setValidated] = useState(false);
   const [email, setEmail] = useState("");
   const [emailValid, setEmailValid] = useState(true);
@@ -21,92 +27,69 @@ export default function Contact() {
     privacy: false,
   });
 
-  //   const handleSubmit = (event) => {
-  //     event.preventDefault();
-  //     const form = event.currentTarget;
-  //     if (form.checkValidity() === false) {
-  //       event.stopPropagation();
-  //     } else {
-  //       // Sending POST request to backend API
-  //       // console.log(formData.name);
-
-  //       let data = new FormData();
-  //       data.append("name", "dipak");
-  //       data.append("phone", "7699753019");
-  //       data.append("email", "dipak@gmail.com");
-  //       data.append("subject", "Test Subject");
-  //       data.append("message", "this is a test message");
-
-  //       let config = {
-  //         method: "post",
-  //         maxBodyLength: Infinity,
-  //         url: "http://127.0.0.1:8000/contact/",
-  //         headers: {
-  //           // 'X-CSRFToken': '4x4Wzo7RYunZBzjh5eeShUo231qSiKW4',
-  //           // 'Cookie': 'csrftoken=4x4Wzo7RYunZBzjh5eeShUo231qSiKW4',
-  //           // ...data.getHeaders()
-  //           "X-CSRFToken": csrftoken,
-  //           ...data.getHeaders(),
-  //         },
-  //         data: data,
-  //       };
-
-  //       axios
-  //         .request(config)
-  //         .then((response) => {
-  //           console.log(JSON.stringify(response.data));
-  //         })
-  //         .catch((error) => {
-  //           console.log(error);
-  //         });
-  //     }
-  //     setValidated(true);
-  //   }
-
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     const form = event.currentTarget;
+
     if (form.checkValidity() === false) {
       event.stopPropagation();
     } else {
-      // Fetch CSRF token from Django backend
-      // axios
-      //   .get("http://127.0.0.1:8000/vtoken/")
-      //   .then((response) => {
-      //     const csrftoken = response.data.csrfToken;
-      //     console.log(csrftoken.trim());
+      setLoading(true);
+      setFormStyle({ opacity: 0.3 });
+      try {
+        // Sending POST request to backend API
+        let data = new FormData();
+        data.append("name", "dipak");
+        data.append("phone", "7699753019");
+        data.append("email", "dipak@gmail.com");
+        data.append("subject", "Test Subject");
+        data.append("message", "this is a test message");
+        data.append("message", "this is a test message");
 
-      //     // Sending POST request to backend API
-      //     let data = new FormData();
-      //     data.append("name", "dipak");
-      //     data.append("phone", "7699753019");
-      //     data.append("email", "dipak@gmail.com");
-      //     data.append("subject", "Test Subject");
-      //     data.append("message", "this is a test message");
+        let config = {
+          method: "post",
+          maxBodyLength: Infinity,
+          url: "http://127.0.0.1:8000/contact/",
+          data: data,
+        };
 
-      //     let config = {
-      //       method: "post",
-      //       maxBodyLength: Infinity,
-      //       url: "http://127.0.0.1:8000/contact/",
-      //       headers: {
-      //         "X-CSRFToken": csrftoken,
-      //         //   ...data.getHeaders(),
-      //       },
-      //       data: data,
-      //     };
+        const response = await axios.request(config);
+        if (response.data.status === "true") {
+          setAlert(true);
+          setAlertMsg(response.data.message);
+        }
+      } catch (error) {
+        setAlert(true);
+        setAlertMsg(
+          `ERROR: ${error.message}, Please Make Sure Your Data Connection is Working Properly!`
+        );
+        console.error("Error Code", error.code);
 
-        //   axios
-        //     .request(config)
-        //     .then((response) => {
-        //       console.log(JSON.stringify(response.data));
-        //     })
-        //     .catch((error) => {
-        //       console.log(error);
-        //     });
-        // })
-        // .catch((error) => {
-        //   console.log(error);
-        // });
+        // Handle different types of errors
+        if (error.response) {
+          // The request was made and the server responded with a status code
+          // that falls out of the range of 2xx
+          consoleMsg.error(
+            "Server responded with error status:",
+            error.response.status
+          );
+          console.error("Error data:", error.response.data);
+          console.error("Error headers:", error.response.headers);
+          // Handle specific error status codes or error responses here
+        } else if (error.request) {
+          // The request was made but no response was received
+          console.error("No response received:", error.request);
+          // Handle timeout or network errors here
+        } else {
+          console.error("Request setup error:", error.message);
+        }
+      } finally {
+        setLoading(false);
+        // Reset inline CSS after submission
+        setTimeout(() => {
+          setFormStyle({});
+        }, 2000); // Adjust timeout as needed
+      }
     }
     setValidated(true);
   };
@@ -151,14 +134,22 @@ export default function Contact() {
       >
         <ContactCards />
 
-        <div className="right-contact">
+        <div className="right-contact position-relative">
           <div className="contact-head mb-3">
             <h1>Contact Us</h1>
             <p className="text-center mt-4">
               Fill out the form below to get your Free Proposal.
             </p>
           </div>
+
+          {alert && (
+            <Alert variant="danger" onClose={() => setAlert(false)} dismissible>
+              <p>{alertMsg}</p>
+            </Alert>
+          )}
+
           <Form
+            style={formStyle}
             action=""
             method="POST"
             validated={validated}
@@ -265,6 +256,19 @@ export default function Contact() {
               </button>
             </div>
           </Form>
+          {/* Loading spinner */}
+          {loading && (
+            <div
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+              }}
+            >
+              <MEspinner />
+            </div>
+          )}
         </div>
       </motion.div>
     </section>
