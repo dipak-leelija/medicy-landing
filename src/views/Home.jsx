@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { motion } from 'framer-motion';
 import img1 from '/assets/img/hero-image.jpg';
 import tap from '/assets/img/tap.png';
@@ -12,10 +12,10 @@ import Testimonial from './Testimonial';
 import Features from './Features';
 
 export default function Home() {
-	const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
-	const [showImage, setShowImage] = React.useState(window.innerWidth > 767);
+	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+	const [showImage, setShowImage] = useState(window.innerWidth > 767);
 
-	React.useEffect(() => {
+	useEffect(() => {
 		window.addEventListener('resize', handleResize);
 		return function cleanup() {
 			window.removeEventListener('resize', handleResize);
@@ -42,7 +42,7 @@ export default function Home() {
 									viewport={{ once: true }}
 									className='mb-4 headingtext'>
 									<h1>
-										Pharmacy Management Solved In a Click
+										Best Healthcare Management Software in India
 										<img src={tap} alt='' />
 									</h1>
 								</motion.div>
@@ -52,11 +52,7 @@ export default function Home() {
 									transition={{ duration: 0.5, delay: .4 }}
 									viewport={{ once: true }}
 									className='baner-text'>
-									<p>
-										Lorem Ipsum is simply dummy text of the printing and
-										typesetting industry. Lorem Ipsum has been the industry's
-										standard dummy text ever since the 1500s, when an unknown
-										printer took a galley of type.
+									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi recusandae, eaque cumque aperiam iste repellat earum ea atque minima accusamus corrupti enim quaerat quasi, minus doloremque inventore, alias sapiente totam amet et facere! Maxime fugit et facilis a deserunt perferendis voluptate debitis nostrum. Sunt ut possimus doloremque consequatur quam earum veritatis nobis ipsum natus molestias!
 									</p>
 								</motion.div>
 
@@ -68,8 +64,9 @@ export default function Home() {
 										delay: 0.5,
 									}}
 									viewport={{ once: true }}
-									className='mainpricebtn'>
-									<a href="/pricing" className='btn btn-lg pricebtn'>See Pricing</a>
+									className='hero-btn-area'>
+									<a href="/pricing" className='btn btn-lg hero-price-btn'>See Pricing</a>
+									<a href="/pricing" className='btn btn-lg hero-demo-btn ms-md-4' variant="outline-secondary">Demo</a>
 								</motion.div>
 							</div>
 						</div>
