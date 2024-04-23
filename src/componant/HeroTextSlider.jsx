@@ -4,28 +4,28 @@ const HeroTextSlider = () => {
   const textItems = [
     {
       id: 1,
-      point: "Slide 1",
-      text: "Reprehenderit eius laboriosam veniam modi id ullam mollitia nam neque, error asperiores ab fugit."
+      point: "",
+      text: "Are you looking for a software that manages all your pharmacy functions and also does it at a lightning fast speed ? Well Medicy is here for you. Our engineers have solidified a software that would speed the distribution of medical supplies and would create an impeccable retail experience. Once you implement our software, a high performing lab is always guaranteed."
     },
     {
       id: 2,
-      point: "Slide 2",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam."
+      point: "Pharmacy Management",
+      text: "Our retail management software is a game changer. We solve the two issues that have been troubling the pharmacy market for years which are billing and handling issues. With the use of our pharmacy management system, you will be able to counter the problems of handling and billing drug orders and patient orders at a lightning-fast rate. "
     },
     {
       id: 3,
-      point: "Slide 1",
-      text: "Sapiente libero hic tempore quasi laborum cum dicta distinctio amet dolores, repellat."
+      point: "Diagnostic or Pathology Lab Management",
+      text: "With the use of our diagnostic lab management software, you can do various tests according to your business operations. So if you want basic diagnostic management such as digital X-ray, USG, and CT scan you can have that with a single click. Or if your business needs special diagnostic needs we can arrange that too."
     },
     {
       id: 4,
-      point: "Slide 4",
-      text: "Dolore delectus quam eaque perspiciatis beatae voluptate explicabo nam."
+      point: "Polyclinic Management",
+      text: "Our polyclinic management is an extremely powerful tool. We combine advanced technology and clinic expertise to provide you with premium healthcare. Once you register with us you will witness holistic patient records like e-prescriptions, referral consultants, and doctor consultations seamlessly."
     },
     {
       id: 5,
-      point: "Slide 5",
-      text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. "
+      point: "OPD Management Software",
+      text: "The outpatient department has always been critical. It's the first point of contact between hospital staff and patients. Our Opd management software makes sure that your electronic health record or EMR is managed with ease and we back up with a brilliant support team that can manage any hiccups. "
     },
   ];
 
@@ -36,7 +36,7 @@ const HeroTextSlider = () => {
       setCurrentSlide((prevSlide) =>
         prevSlide === textItems.length ? 1 : prevSlide + 1
       );
-    }, 3000);
+    }, 8000);
 
     return () => clearInterval(interval);
   }, [textItems.length]);
@@ -47,7 +47,7 @@ const HeroTextSlider = () => {
       // If reached, set currentSlide to the first slide
       setTimeout(() => {
         setCurrentSlide(1);
-      }, 500); // Delay to ensure smooth transition
+      }, 5000); // Delay to ensure smooth transition
     }
   }, [currentSlide, textItems.length]);
 
@@ -80,7 +80,7 @@ const HeroTextSlider = () => {
               }}
             >
               <p>
-                <b>{item.point}:</b> {item.text}
+              {item.point && <b>{item.point}:</b>} {item.text}
               </p>
             </div>
           )
