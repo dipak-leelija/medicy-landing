@@ -1,8 +1,7 @@
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 
-import React from "react";
-import { Link , useLocation} from "react-router-dom";
-
-import logo from '../../public/assets/img/logo.png';
+import logo from "/assets/img/logo.png";
 import {
   Button,
   Collapse,
@@ -15,18 +14,18 @@ import {
 } from "reactstrap";
 
 export default function MainNavbar() {
-  const [collapseOpen, setCollapseOpen] = React.useState(false);
-  const [showSidebar, setShowSidebar] = React.useState(false);
-  const [color, setColor] = React.useState("navbar-transparent");
-  const [navtextcolor, setNavtextcolor] = React.useState('');
-  const [curhover, setCurhover] = React.useState('');
-  const [navlogin, setnavlogin] = React.useState('loginbtn');
-  const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
+  const [collapseOpen, setCollapseOpen] = useState(false);
+  const [showSidebar, setShowSidebar] = useState(false);
+  const [color, setColor] = useState("navbar-transparent");
+  const [navDemoBtn, setNavDemoBtn] = useState(true);
+
+  const [curhover, setCurhover] = useState("");
+  const [navlogin, setnavlogin] = useState("loginbtn");
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const location = useLocation();
-  const [activeNavItem, setActiveNavItem] = React.useState('');
+  const [activeNavItem, setActiveNavItem] = useState("");
 
-
-  React.useEffect(() => {
+  useEffect(() => {
     handleInitialActiveNavItem();
     window.addEventListener("scroll", changeColor);
     window.addEventListener("scroll", changeNavtextColor);
@@ -59,7 +58,7 @@ export default function MainNavbar() {
       document.documentElement.scrollTop > 30 ||
       document.body.scrollTop > 99
     ) {
-      setColor("headershado");
+      setColor("sticky-header");
     } else if (
       document.documentElement.scrollTop < 100 ||
       document.body.scrollTop < 100
@@ -69,15 +68,19 @@ export default function MainNavbar() {
   };
 
   const changeNavtextColor = () => {
-    const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - document.documentElement.clientHeight)) * 100;
+    const scrollPercentage =
+      (window.scrollY /
+        (document.documentElement.scrollHeight -
+          document.documentElement.clientHeight)) *
+      100;
     if (scrollPercentage > 1.2) {
-      setNavtextcolor('navtext');
-      setCurhover('deactive');
-      setnavlogin('responsivebtn')
+      setNavDemoBtn(false);
+      setCurhover("deactive");
+      setnavlogin("responsivebtn");
     } else {
-      setNavtextcolor('');
-      setCurhover('');
-      setnavlogin('')
+      setNavDemoBtn(true);
+      setCurhover("");
+      setnavlogin("");
     }
   };
 
@@ -87,10 +90,9 @@ export default function MainNavbar() {
 
   const getNavItemFromPath = (path) => {
     // Logic to determine the active navigation item based on the path
-    if(path === "/"){
+    if (path === "/") {
       return;
-    }
-    else if (path === "/pricing") {
+    } else if (path === "/pricing") {
       return "pricing";
     } else if (path === "/doctor") {
       return "doctor";
@@ -105,76 +107,97 @@ export default function MainNavbar() {
 
   return (
     <>
-
-      <Navbar  className={"fixed-top " + color} color-on-scroll="100" expand="lg">
+      <Navbar
+        className={"fixed-top " + color}
+        color-on-scroll="100"
+        expand="lg"
+      >
         <Container className="d-flex justify-content-between align-items-center p-2">
           <div className="navbar-translate d-flex justify-content-between">
-            <NavbarBrand to="/" id="navbar-brand" tag={Link} onClick={() => handleNavItemClicked('')}
-                  active={activeNavItem === '' ? "true" : ""}>
-              <img className='navlogo' src={logo}></img>
+            <NavbarBrand
+              to="/"
+              id="navbar-brand"
+              tag={Link}
+              onClick={() => handleNavItemClicked("")}
+              active={activeNavItem === "" ? "true" : ""}
+            >
+              <img className="navlogo" src={logo}></img>
             </NavbarBrand>
           </div>
           <div className="d-flex justify-content-center w-100 navfontstyle">
             {windowWidth >= 992 && (
-              <Nav navbar className="d-flex justify-content-end w-100 " >
+              <Nav navbar className="d-flex justify-content-end w-100 ">
                 <NavItem>
                   <NavLink
-                   href="/pricing" 
-                  // className={navtextcolor}
-                  className={`${navtextcolor} ${activeNavItem === 'pricing' && curhover}`}
-                  onClick={() => handleNavItemClicked('pricing')}
-                  active={activeNavItem === 'pricing'}
+                    href="/pricing"
+                    className={`${activeNavItem === "pricing" && curhover}`}
+                    onClick={() => handleNavItemClicked("pricing")}
+                    active={activeNavItem === "pricing"}
                   >
                     Pricing
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/doctor" 
-                  // className={navtextcolor}
-                  className={`${navtextcolor} ${activeNavItem === 'doctor' && curhover}`}
-                  onClick={() => handleNavItemClicked('doctor')}
-                  active={activeNavItem === 'doctor'}
+                  <NavLink
+                    href="/doctor"
+                    className={`${activeNavItem === "doctor" && curhover}`}
+                    onClick={() => handleNavItemClicked("doctor")}
+                    active={activeNavItem === "doctor"}
                   >
                     Doctors
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/about"
-                   className={` ${navtextcolor} ${activeNavItem === 'about' && curhover}`}
-                   onClick={() => handleNavItemClicked('about')}
-                   active={activeNavItem === 'about'}
-                   >
+                  <NavLink
+                    href="/about"
+                    className={`${activeNavItem === "about" && curhover}`}
+                    onClick={() => handleNavItemClicked("about")}
+                    active={activeNavItem === "about"}
+                  >
                     About
                   </NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    className={`${navtextcolor} ${activeNavItem === 'contact' && curhover}`}
-                    onClick={() => handleNavItemClicked('contact')}
-                    active={activeNavItem === 'contact'}
+                    className={`${activeNavItem === "contact" && curhover}`}
+                    onClick={() => handleNavItemClicked("contact")}
+                    active={activeNavItem === "contact"}
                     href="/contact"
-                    >
+                  >
                     Contact
                   </NavLink>
                 </NavItem>
-                <div className="d-flex justify-content-around w-25">
-                  <NavItem className="navbutton">
-                    <Button color="success" className="mr-5">Free Trial</Button>
-                  </NavItem>
-                  <NavItem className="navbutton">
-                    <Button
+                <NavItem className="nav-button-item">
+                  <Button
                     href="https://app.medicy.in/login.php"
-                      color="primary"
-                    >Login</Button>
-                  </NavItem>
-                </div>
+                    color="success"
+                    outline={navDemoBtn}
+                  >
+                    Get Demo
+                  </Button>
+                </NavItem>
+                <NavItem className="nav-button-item">
+                  <Button
+                    href="https://app.medicy.in/login.php"
+                    color="primary"
+                  >
+                    Login
+                  </Button>
+                </NavItem>
               </Nav>
             )}
           </div>
           <div className="d-flex justify-content-end align-items-center">
             {windowWidth < 992 && (
               <>
-                <div className="m-2"><Button href="https://app.medicy.in/login.php" className={"loginbtn btn btn-transparent "+ navlogin} >Login</Button></div>
+                <div className="m-2">
+                  <Button
+                    href="https://app.medicy.in/login.php"
+                    className={"loginbtn btn btn-transparent " + navlogin}
+                  >
+                    Login
+                  </Button>
+                </div>
               </>
             )}
           </div>
@@ -192,10 +215,7 @@ export default function MainNavbar() {
         </Container>
       </Navbar>
 
-      <Collapse
-        className={"sidebar " + (showSidebar ? "show" : "")}
-        navbar
-      >
+      <Collapse className={"sidebar " + (showSidebar ? "show" : "")} navbar>
         <div className="navbar-collapse-header d-flex justify-content-end">
           <button
             aria-expanded={showSidebar}
@@ -207,24 +227,16 @@ export default function MainNavbar() {
         </div>
         <Nav navbar className="flex-column responsesidebar">
           <NavItem>
-            <NavLink href="/pricing">
-              Pricing
-            </NavLink>
+            <NavLink href="/pricing">Pricing</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/doctor">
-              Doctors
-            </NavLink>
+            <NavLink href="/doctor">Doctors</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/about">
-              About
-            </NavLink>
+            <NavLink href="/about">About</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink
-              className=""
-              href="/contact">
+            <NavLink className="" href="/contact">
               Contact
             </NavLink>
           </NavItem>

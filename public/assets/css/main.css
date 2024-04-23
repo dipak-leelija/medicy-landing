@@ -60,3 +60,6 @@ body {
   --font-width :700;
 }
 
+.w-20{
+  width: 20% !important;
+}
