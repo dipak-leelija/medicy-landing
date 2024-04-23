@@ -2,14 +2,16 @@ import React, {useState, useEffect} from 'react';
 import { motion } from 'framer-motion';
 import img1 from '/assets/img/hero-image.jpg';
 import tap from '/assets/img/tap.png';
+
+import HeroTextSlider from '../componant/HeroTextSlider';
+import TopPharmacies from './PharmaciesIcon';
 import Chooseus from './Chooseus';
 import KeyFeature from './KeyFeature';
-import TrailBooking from './TrailBooking';
-import TopPharmacies from './PharmaciesIcon';
-import Faqs from './Faqs';
 import Cataloguebanner from './Cataloguebanner';
-import Testimonial from './Testimonial';
 import Features from './Features';
+import Testimonial from './Testimonial';
+import TrailBooking from './TrailBooking';
+import Faqs from './Faqs';
 
 export default function Home() {
 	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -52,8 +54,9 @@ export default function Home() {
 									transition={{ duration: 0.5, delay: .4 }}
 									viewport={{ once: true }}
 									className='baner-text'>
-									<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi recusandae, eaque cumque aperiam iste repellat earum ea atque minima accusamus corrupti enim quaerat quasi, minus doloremque inventore, alias sapiente totam amet et facere! Maxime fugit et facilis a deserunt perferendis voluptate debitis nostrum. Sunt ut possimus doloremque consequatur quam earum veritatis nobis ipsum natus molestias!
-									</p>
+									<HeroTextSlider/>
+									{/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi recusandae, eaque cumque aperiam iste repellat earum ea atque minima accusamus corrupti enim quaerat quasi, minus doloremque inventore, alias sapiente totam amet et facere! Maxime fugit et facilis a deserunt perferendis voluptate debitis nostrum. Sunt ut possimus doloremque consequatur quam earum veritatis nobis ipsum natus molestias!
+									</p> */}
 								</motion.div>
 
 								<motion.div
