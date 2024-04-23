@@ -29,17 +29,31 @@ const HeroTextSlider = () => {
     },
   ];
 
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(1);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) =>
-        prevSlide === textItems.length - 1 ? 0 : prevSlide + 1
+        prevSlide === textItems.length ? 1 : prevSlide + 1
       );
     }, 3000);
 
     return () => clearInterval(interval);
   }, [textItems.length]);
+
+  useEffect(() => {
+    // Check if currentSlide reaches the duplicated last slide (last one of the copied array)
+    if (currentSlide === textItems.length + 1) {
+      // If reached, set currentSlide to the first slide
+      setTimeout(() => {
+        setCurrentSlide(1);
+      }, 500); // Delay to ensure smooth transition
+    }
+  }, [currentSlide, textItems.length]);
+
+  const handleDotClick = (index) => {
+    setCurrentSlide(index);
+  };
 
   return (
     <div
@@ -57,19 +71,45 @@ const HeroTextSlider = () => {
           transform: `translateX(-${currentSlide * 100}%)`,
         }}
       >
-        {textItems.map((item) => (
+        {[textItems[textItems.length - 1], ...textItems, textItems[0]].map(
+          (item) => (
+            <div
+              key={item.id}
+              style={{
+                flex: "0 0 100%",
+              }}
+            >
+              <p>
+                <b>{item.point}:</b> {item.text}
+              </p>
+            </div>
+          )
+        )}
+      </div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "10px",
+        }}
+      >
+        {textItems.map((_, index) => (
           <div
-            key={item.id}
+            key={index}
+            onClick={() => handleDotClick(index + 1)}
             style={{
-              flex: "0 0 100%",
+              width: "8px",
+              height: "8px",
+              borderRadius: "50%",
+              background: currentSlide === index + 1 ? "black" : "gray",
+              margin: "0 5px",
+              cursor: "pointer",
             }}
-          >
-            <p><b>{item.point}:</b> {item.text}</p>
-          </div>
+          />
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default HeroTextSlider;
