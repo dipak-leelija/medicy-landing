@@ -58,6 +58,9 @@ body {
 
   /* font width  */
   --font-width :700;
+
+  /* Border Radius: */
+  --sec-radius: 8px;
 }
 
 .w-20{
