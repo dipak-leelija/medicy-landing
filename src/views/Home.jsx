@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { motion } from 'framer-motion';
-import img1 from '/assets/img/hero-image.jpg';
+import heroImg from '/assets/img/best-healthcare-management-software-in-India.png';
 import tap from '/assets/img/tap.png';
 
 import HeroTextSlider from '../componant/HeroTextSlider';
@@ -30,12 +30,12 @@ export default function Home() {
 	};
 	return (
 		<>
-			<section className='w-100 h-100 '>
-				<div>
-					<div className='d-flex justify-content-around align-items-start flex-wrap main-banner'>
-						<div className='baner-left mt-5'>
-							<motion.div initial={{opacity: 0}} whileInView={{opacity: 1, }} transition={{ duration: 1.5, delay: 0.4 }} viewport={{ once: true }} className='ractangle1'></motion.div>
-							<motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{ duration: 1.5, delay: 0.4 }} viewport={{ once: true }} className='ractangle2'></motion.div>
+			<section className='w-100'>
+				<div className='hero-banner'>
+					<div className='d-flex justify-content-between align-items-center flex-wrap overflow-hidden'>
+						<div className='baner-left'>
+							<motion.div initial={{opacity: 0}} whileInView={{opacity: 0.4, }} transition={{ duration: 1.5, delay: 0.4 }} viewport={{ once: true }} className='ractangle1'></motion.div>
+							<motion.div initial={{opacity: 0}} whileInView={{opacity: 0.4}} transition={{ duration: 1.5, delay: 0.4 }} viewport={{ once: true }} className='ractangle2'></motion.div>
 							<div className='heading text-start'>
 								<motion.div
 									initial={{ opacity: 0, y: 50 }}
@@ -55,8 +55,6 @@ export default function Home() {
 									viewport={{ once: true }}
 									className='baner-text'>
 									<HeroTextSlider/>
-									{/* <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi recusandae, eaque cumque aperiam iste repellat earum ea atque minima accusamus corrupti enim quaerat quasi, minus doloremque inventore, alias sapiente totam amet et facere! Maxime fugit et facilis a deserunt perferendis voluptate debitis nostrum. Sunt ut possimus doloremque consequatur quam earum veritatis nobis ipsum natus molestias!
-									</p> */}
 								</motion.div>
 
 								<motion.div
@@ -68,14 +66,14 @@ export default function Home() {
 									}}
 									viewport={{ once: true }}
 									className='hero-btn-area'>
-									<a href="/pricing" className='btn btn-lg hero-price-btn'>See Pricing</a>
+									<a href="/pricing" className='btn btn-lg hero-price-btn w-md-25'>See Pricing</a>
 									<a href="/pricing" className='btn btn-lg hero-demo-btn ms-md-4' variant="outline-secondary">Demo</a>
 								</motion.div>
 							</div>
 						</div>
-						<div className='baner-right d-flex justify-content-end'>
-							<motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{ duration: 1.5, delay: 0.4 }} viewport={{once:true}} className='circle1'></motion.div>
-							<motion.div initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{ duration: 1.5, delay: 0.4 }} viewport={{once:true}}  className='circle2'></motion.div>
+						<div className='baner-right d-flex justify-content-center'>
+							<motion.div initial={{opacity: 0}} whileInView={{opacity: 0.5}} transition={{ duration: 1.5, delay: 0.4 }} viewport={{once:true}} className='circle1'></motion.div>
+							<motion.div initial={{opacity: 0}} whileInView={{opacity: 0.3}} transition={{ duration: 1.5, delay: 0.4 }} viewport={{once:true}}  className='circle2'></motion.div>
 							{showImage && (
 								<motion.div
 									initial={{ opacity: 0, x: 30 }}
@@ -83,7 +81,7 @@ export default function Home() {
 									transition={{ duration: 0.5, delay: 0.5 }}
 									viewport={{ once: true }}
 									className='heroimg'>
-									<img src={img1} alt='' />
+									<img src={heroImg} alt='' />
 								</motion.div>
 							)}
 						</div>
