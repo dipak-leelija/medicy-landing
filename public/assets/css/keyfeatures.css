@@ -65,8 +65,8 @@
     margin-bottom: 20px;
 }
 .card-text{
-    font-family: var( --plus-Jakarta-Sans);
-    font-size: var(--font-size-sm);
+    /* font-family: var( --plus-Jakarta-Sans); */
+    font-size: var(--font-size-mini);
     margin-left: 0px;
 }
 @media screen and (max-width:767px) {
