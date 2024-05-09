@@ -1,31 +1,32 @@
 import React, { useState, useEffect } from "react";
 
 const HeroTextSlider = () => {
+
   const textItems = [
     {
       id: 1,
       point: "",
-      text: "Are you looking for a software that manages all your pharmacy functions and also does it at a lightning fast speed ? Well Medicy is here for you. Our engineers have solidified a software that would speed the distribution of medical supplies and would create an impeccable retail experience. Once you implement our software, a high performing lab is always guaranteed."
+      text: "Medicy is the No. 1 healthcare management software in India. Our comprehensive software solutions are designed to fulfil the needs of Pharmacy Management, Diagnostic or Pathology Lab Management, Polyclinic Management, and Online Doctor Prescription Management. We offer effortless inventory management and OPD management software that can optimise your workflow and enhance patient care."
     },
     {
       id: 2,
       point: "Pharmacy Management",
-      text: "Our retail management software is a game changer. We solve the two issues that have been troubling the pharmacy market for years which are billing and handling issues. With the use of our pharmacy management system, you will be able to counter the problems of handling and billing drug orders and patient orders at a lightning-fast rate. "
+      text: "Our Pharmacy Management software is dedicated to empowering your pharmacy management system efficiently. We provide an online pharmacy solution that can streamline customer and supplier billing, manage low stocks and overstocks, handle expiry reporting, and elevate your patient service standards."
     },
     {
       id: 3,
       point: "Diagnostic or Pathology Lab Management",
-      text: "With the use of our diagnostic lab management software, you can do various tests according to your business operations. So if you want basic diagnostic management such as digital X-ray, USG, and CT scan you can have that with a single click. Or if your business needs special diagnostic needs we can arrange that too."
+      text: "We present excellent Diagnostic or Pathology Lab Management software to revolutionise your lab operations. Experience our automated testing process, manage patient data, and deliver accurate analytics. We offer one of the best diagnostic billing software in India."
     },
     {
       id: 4,
       point: "Polyclinic Management",
-      text: "Our polyclinic management is an extremely powerful tool. We combine advanced technology and clinic expertise to provide you with premium healthcare. Once you register with us you will witness holistic patient records like e-prescriptions, referral consultants, and doctor consultations seamlessly."
+      text: "Medicy is India’s best Polyclinic Management software system. It streamlines appointment scheduling, patient records management, billing, and report management efficiently. Enhance your polyclinic control and patient satisfaction with our tailored clinic management software in India."
     },
     {
       id: 5,
       point: "OPD Management Software",
-      text: "The outpatient department has always been critical. It's the first point of contact between hospital staff and patients. Our Opd management software makes sure that your electronic health record or EMR is managed with ease and we back up with a brilliant support team that can manage any hiccups. "
+      text: "We offer top-quality OPD Management Software for enhanced Outpatient Management (OPD Module) to healthcare providers. This software solution simplifies appointment scheduling, patient record management, and prescription processing. With seamless integration of the doctor chamber management software, you can focus on delivering quality care."
     },
   ];
 
