@@ -17,6 +17,7 @@ import Home from './views/Home';
 // import ChatWidget from './componant/ChatWidget';
 import Pricing from './views/Pricing';
 import Doctor from './views/Doctor';
+import Chooseus3 from './views/Chooseus3';
 
 
 import "../public/assets/css/main-navbar.css";
@@ -56,6 +57,7 @@ function App() {
         <Route path='/Testimonial' element={<Testimonial/>} />
         <Route path='/pricing' element={<Pricing/>} />
         <Route path='/doctor' element={<Doctor/>} />
+        <Route path='/chooseus3' element={<Chooseus3 />} />
       </Routes>
       <Footer />
       {/* <ChatWidget/> */}

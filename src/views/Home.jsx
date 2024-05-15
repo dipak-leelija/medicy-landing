@@ -5,7 +5,7 @@ import tap from '/assets/img/tap.png';
 
 import HeroTextSlider from '../componant/HeroTextSlider';
 import TopPharmacies from './PharmaciesIcon';
-import Chooseus from './Chooseus';
+import Chooseus from './Chooseus3';
 import KeyFeature from './KeyFeature';
 import Cataloguebanner from './Cataloguebanner';
 import Features from './Features';
