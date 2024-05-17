@@ -1,6 +1,6 @@
 @import './main.css';
 
-.wby-choose-us {
+/* .wby-choose-us {
   width: 100%;
   position: relative;
   background-color: var(--salem-green);
@@ -15,7 +15,6 @@
   font-size: 2.25rem;
   color: var(--pure-white);
   font-family: var(--font-poppins);
-  /* z-index: -2; */
 }
 
 .why-choose-us {
@@ -26,7 +25,6 @@
 .main-div {
   width: 100%;
   margin-bottom: 10%;
-  /* background-color: ; */
 }
 
 .cloud-based-software-wrapper h4 {
@@ -49,7 +47,6 @@
   justify-content: center;
   margin-top: 6%;
   height: 100%;
-  /* flex-wrap: wrap; */
 }
 
 .frame3 {
@@ -67,11 +64,6 @@
   margin-left: 25px;
   text-align: left;
 }
-
-/* .be-always-connected {
-  font-size: var(--font-size-sm);
-  font-family: var( --plus-Jakarta-Sans);
-} */
 
 .frame6 {
   margin-top: 38%;
@@ -149,7 +141,6 @@
   }
 
   .frame5 {
-    /* width: 90%; */
     margin-left: 0px;
     text-align: center;
   }
@@ -176,7 +167,6 @@
   }
 
   .frame10 {
-    /* width: 90%; */
     margin-top: 6%;
     margin-left: 0px;
     margin-right: 0px;
@@ -192,10 +182,8 @@
   }
 
   .frame13 {
-    /* width: 90%; */
     margin-left: 0px;
     margin-right: 0px;
-    /* padding: 2px; */
     text-align: center;
   }
 }
@@ -204,32 +192,6 @@
   .frame1 {
     width: 35%;
   }
-
-  /* .frame6 {
-    margin: 0px;
-    top: 0;
-    padding: 10px;
-  }
-
-  .frame7 {
-    margin-left: 25px;
-  }
-
-  .frame8 {
-    padding-left: 8px;
-  }
-
-  .frame10 {
-    margin-right: 4px;
-    text-align: left;
-  }
-
-  .frame12 {
-    margin: 0px;
-    padding: 10px 10px 10px 10px;
-    margin-right: 4px;
-    text-align: left;
-  } */
   .choose-card {
     border: none;
     border-radius: 8px;
@@ -238,7 +200,7 @@
     color: var(--pure-white);
     box-shadow: rgba(0, 0, 0, 0.15) 4.95px 6.95px 9.6px;
   }
-}
+} */
 
 /* ...............chooseus3....................  */
 .wcuHeading {
@@ -266,31 +228,18 @@
   position: relative;
 }
 
-.smallCircle {
-  width: 2rem;
-  height: 2rem;
-  margin-left: -120px;
-  margin-top: -15px;
-  background-color: var(--Periwinkle-blue);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  border: 2px solid #fff;
-  position: absolute;
-}
-
 .borderCircle {
   width: 34rem;
   height: 38rem;
-  margin-left: -24rem;
+  margin-left: -24.2rem;
   border: none;
   border-right: 3px solid var(--Pale-cornflower-blue);
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
 }
 
+
 .borderCircle2 {
-  /* width: 34rem;
-  height: 38rem;
-  margin-left: -42px; */
   width: 28rem;
   height: 38rem;
   margin-left: -9px;
@@ -298,7 +247,6 @@
   border-left: 3px solid var(--Pale-cornflower-blue);
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
-  /* position: absolute; */
 }
 
 .wcuLeftImg {
@@ -308,12 +256,12 @@
   filter: drop-shadow(-2px 20px 14px rgb(181, 196, 238));
 }
 
-.wcuLeftImg2 {
+/* .wcuLeftImg2 {
   width: 100%;
   aspect-ratio: 1/1;
   object-fit: contain;
   filter: drop-shadow(-2px 20px 14px rgb(181, 196, 238));
-}
+} */
 
 .wcu-img {
   width: 100%;
@@ -336,7 +284,8 @@
     font-size: var(--font-size-mini);
     font-family: var(--plus-Jakarta-Sans);
     margin: 0px;
-    padding: 0px 25px;
+    padding: 0px 35px;
+    text-align: justify;
     /* padding-left: 40px; */
   }
 
@@ -358,7 +307,7 @@
 
   .borderCircle {
     width: 0rem;
-    height: 38rem;
+    height: 35rem;
     margin-top: 2rem;
     margin-left: 2rem;
     border: 1px solid var(--Pale-cornflower-blue);
@@ -367,7 +316,7 @@
 
   .borderCircle2 {
     width: 0rem;
-    height: 38rem;
+    height: 35rem;
     margin-top: 2rem;
     margin-left: -2rem;
     border: 1px solid var(--Pale-cornflower-blue);
@@ -377,14 +326,28 @@
 }
 @media screen and (max-width: 767px) {
   .circleIcon {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    width: 3.5rem;
-    height: 3.5rem;
-    background-color: var(--Periwinkle-blue);
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
     box-shadow: rgb(181, 196, 238) 0px 5px 15px;
-    border: 1px solid #fff;
+    border: none;
     position: relative;
   }
+}
+@media screen and (min-width: 1480px) {
+  .borderCircle {
+  width: 36rem;
+  height: 36rem;
+  margin-left: -25rem;
+}
+.borderCircle2 {
+  height: 34rem;
+}
+}
+@media screen and (min-width: 1680px) and (max-width: 2024px) {
+  .borderCircle {
+  width: 36rem;
+  height: 36rem;
+  margin-left: -24rem;
+}
 }
