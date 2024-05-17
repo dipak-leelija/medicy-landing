@@ -25,7 +25,7 @@ export default function Chooseus3() {
     };
 
     var n = (window.innerWidth < 768 ? 'py-2 py-5 px-4 mb-3 m-0 shadow rounded-4 ' : '');
-    var n1 = (window.innerWidth < 768 ? 'col-12 my-0  text-center' : 'col-8 my-5');
+    var n1 = (window.innerWidth < 1024 ? 'col-12 my-0  text-center' : 'col-8 my-5');
 
 
     return (
