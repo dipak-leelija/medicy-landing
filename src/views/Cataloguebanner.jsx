@@ -1,22 +1,23 @@
 import React from 'react';
-import catalogue from '../../public/assets/img/R.png';
+import { Link } from 'react-router-dom'
+import catalogue from '/assets/img/R.png';
 
 export default function Cataloguebanner() {
 	return (
 		<section>
-			<div className='maincat-banner'>
+			<div className='catalogue-banner'>
 				<div className='subcat-banner'>
 					<div className='leftcatalouge'>
 						<div className='leftcat-tag'>
-							<h3>Biggest catalogue 90,000+ FMCG items 4,00,000+ Medicines</h3>
-							<h5>with Pictures & API content</h5>
+							<h3>2,50,000+ Medicines Listing</h3>
+							<h5>On Request New Medicine </h5>
 							<p>
 								Find in-stock alternatives in real-time while billing and reduce
 								customer bounce rate.
 							</p>
 						</div>
                         <div className='catalougebtn'>
-                            <button className='btn btn-primary bg-white text-primary btn-lg mt-4'>Know More</button>
+						<Link to='https://app.medicy.in/login.php' className='btn btn-light text-primary btn-lg mt-4'>Get Started</Link>
                         </div>
 					</div>
 					<div className='rightcatalouge d-flex justify-content-end'>
