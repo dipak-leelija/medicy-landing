@@ -3,11 +3,6 @@
 .main-feat{
     margin: 50px 100px;
 }
-.main-feat-head h1{
-    font-weight: var(--font-width);
-    color: var(--brandeis-blue);
-    font-family: var( --font-poppins);
-}
 .main-feat-head p{
     font-family: var( --plus-Jakarta-Sans);
     font-size: var( --font-size-sm);
@@ -19,6 +14,7 @@
     border-radius: var(--br-5xs);
 }
 .feat-card-body{
+    padding: 2rem !important;
     transition: transform 0.5s ease;
 }
 .feat-card-body:hover{
@@ -30,6 +26,7 @@
 }
 .svgIcon{
     filter: drop-shadow(0px 12px 20px rgb(181, 196, 238));
+    width: 3rem;
 }
 .feat-head{
     font-family: var( --plus-Jakarta-Sans);
@@ -40,6 +37,14 @@
 @media screen and (max-width: 767px) {
     .main-feat{
         margin: 50px 50px;
+    }
+    .feat-card-body{
+        padding: 1rem !important;
+        padding-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .svgIcon{
         display: flex;
