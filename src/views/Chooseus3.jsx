@@ -4,7 +4,7 @@ import chooseImg from "/assets/img/chooseus.png";
 
 export default function Chooseus3() {
     const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
-    const [showImage, setShowImage] = React.useState(window.innerWidth > 1024);
+    const [showImage, setShowImage] = React.useState(window.innerWidth > 1023);
     const [showIcon, setShowIcon] = React.useState(window.innerWidth > 767);
 
     React.useEffect(() => {
@@ -16,7 +16,7 @@ export default function Chooseus3() {
 
     const handleResize = () => {
         setWindowWidth(window.innerWidth);
-        setShowImage(window.innerWidth > 1024);
+        setShowImage(window.innerWidth > 1023);
         setShowIcon(window.innerWidth > 767)
     };
 

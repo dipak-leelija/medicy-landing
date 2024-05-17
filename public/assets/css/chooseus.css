@@ -299,7 +299,8 @@
     font-size: var(--font-size-mini);
     font-family: var(--plus-Jakarta-Sans);
     margin: 0px;
-    padding: 0px 25px;
+    padding: 0px 35px;
+    text-align: justify;
     /* padding-left: 40px; */
   }
 
@@ -321,7 +322,7 @@
 
   .borderCircle {
     width: 0rem;
-    height: 38rem;
+    height: 35rem;
     margin-top: 2rem;
     margin-left: 2rem;
     border: 1px solid var(--Pale-cornflower-blue);
@@ -330,7 +331,7 @@
 
   .borderCircle2 {
     width: 0rem;
-    height: 38rem;
+    height: 35rem;
     margin-top: 2rem;
     margin-left: -2rem;
     border: 1px solid var(--Pale-cornflower-blue);
