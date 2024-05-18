@@ -50,8 +50,8 @@ export default function KeyFeature() {
           viewport={{ once: true }}
           className="mainhead"
         >
-          <div className="featureHead">
-            <h1>Key Features Of Medicy</h1>
+          <div className="text-center featureHead">
+            <h2 className="h1 sec-heading med-main-blue">Key Features Of Medicy</h2>
           </div>
           <p>
             Here are the key features of our healthcare management software that

@@ -6,7 +6,7 @@ export default function TrailBooking() {
       <div className="main-trail">
         <div className="sub-trail">
           <div className="trailhead">
-            <h2>Book Your Free Trail</h2>
+            <div className="h1 sec-heading text-light">Book Your Free Trail</div>
           </div>
           <div className="trail-text">
             Talk to an expert today and learn how Medicy can help your business

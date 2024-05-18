@@ -17,17 +17,9 @@
     color: var( --tp-common-black);
 }
 .featureHead{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 20%;
     margin: 50px 0px 30px 0px;
     /* margin-bottom: 10px; */
-}
-.featureHead h1{
-    font-weight: var(--font-width);
-    color: var(--brandeis-blue);
-    font-family: var(--font-poppins);
 }
 
 .main-card{

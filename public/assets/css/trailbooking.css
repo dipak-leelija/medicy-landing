@@ -13,11 +13,6 @@
     justify-content: center;
     align-items: center;
 }
-.trailhead h2{
-    font-family: var(--font-poppins);
-    font-weight: var(--font-width);
-    color: var(--pure-white);
-}
 .trail-text{
     display: flex;
     justify-content: center;
