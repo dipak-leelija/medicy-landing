@@ -72,7 +72,7 @@ export default function KeyFeature() {
                   <img src={pharmamanage1} alt="" />
                 </div>
               )}
-              <h4 className="card-title">Pharmacy Management</h4>
+              <h3 className="card-title">Pharmacy Management</h3>
               <p className="card-text">
                 Medicy’s online pharmacy software delivers a user-friendly
                 dashboard. It offers Real-time Stock Updates and detailed
@@ -83,12 +83,12 @@ export default function KeyFeature() {
                 ensures perfect operations and efficient supplier management.
               </p>
               <div className="d-flex justify-content-between">
-                <ul>
+                <ul className="text-start">
                   <li>Open stock, Real-time Stock Update</li>
                   <li>Low Stock, Overstock Expiry Reporting</li>
                   <li>Sales & Purchase, Returns Management</li>
                 </ul>
-                <ul>
+                <ul className="text-start">
                   <li>Sales & Purchase Report</li>
                   <li>Customer Payment Management</li>
                   <li>Supplier and Payment Management</li>
@@ -131,7 +131,7 @@ export default function KeyFeature() {
                   <img src={parmamanage4} alt="" />
                 </div>
               )}
-              <h4 className="card-title">OPD Management</h4>
+              <h3 className="card-title">OPD Management</h3>
               <p className="card-text">
                 Our OPD Management module simplifies the patient’s journey with
                 easy registration and appointment scheduling. This software is
@@ -143,12 +143,12 @@ export default function KeyFeature() {
                 optimise clinic operations flawlessly.
               </p>
               <div className="d-flex justify-content-between">
-                <ul>
+                <ul className="text-start">
                   <li>Patient Registration </li>
                   <li>Appointment</li>
                   <li>Doctor prescription</li>
                 </ul>
-                <ul>
+                <ul className="text-start">
                   <li>Integrated with Lab and Pharmacy </li>
                   <li>Communication Management </li>
                   <li>Report and Analytics</li>
@@ -169,9 +169,7 @@ export default function KeyFeature() {
                   <img src={pharmamanage3} alt="" />
                 </div>
               )}
-              <h4 className="card-title">
-                Diagnostic or Pathology Lab Management
-              </h4>
+              <h3 className="card-title">Diagnostic or Pathology Lab Management</h3>
               <p className="card-text">
                 Medicy offers a Diagnostic or Pathology Lab Management system
                 that makes lab management easy. From patient registration to
@@ -184,12 +182,12 @@ export default function KeyFeature() {
                 satisfaction.
               </p>
               <div className="d-flex justify-content-between">
-                <ul>
+                <ul className="text-start">
                   <li>Patient Registration </li>
                   <li>Billing</li>
                   <li>Payment Management</li>
                 </ul>
-                <ul>
+                <ul className="text-start">
                   <li>Referral Payment Management</li>
                   <li>Vendor Payment Management</li>
                 </ul>
@@ -231,7 +229,7 @@ export default function KeyFeature() {
                   <img src={parmamanage4} alt="" />
                 </div>
               )}
-              <h4 className="card-title">Inventory Management Software</h4>
+              <h3 className="card-title">Inventory Management Software</h3>
               <p className="card-text">
                 Our Inventory Management Software offers comprehensive control
                 over purchases, stocks, and accounting processes. From efficient
@@ -242,12 +240,12 @@ export default function KeyFeature() {
                 business by enhancing productivity and profitability.
               </p>
               <div className="d-flex justify-content-between">
-                <ul>
+                <ul className="text-start">
                   <li>Purchase Management</li>
                   <li>Stock Management</li>
                   <li>Accounting</li>
                 </ul>
-                <ul>
+                <ul className="text-start">
                   <li>Quality Check and Maintenance</li>
                   <li>Product Utilization Management</li>
                 </ul>
@@ -267,7 +265,7 @@ export default function KeyFeature() {
                   <img src={pharmamanage3} alt="" />
                 </div>
               )}
-              <h4 className="card-title">GST Billing & Return Filing</h4>
+              <h3 className="card-title">GST Billing & Return Filing</h3>
               <p className="card-text">
                 Medicy simplifies GST billing and return filing for healthcare
                 providers with its comprehensive software suite. The platform

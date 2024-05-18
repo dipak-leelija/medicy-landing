@@ -61,6 +61,9 @@
     font-size: var(--font-size-mini);
     margin-left: 0px;
 }
+.maincontent ul{
+    list-style-image: url('../icon/circle-check.svg');
+}
 @media screen and (max-width:767px) {
     .featuresmain {
         padding: 10px;
