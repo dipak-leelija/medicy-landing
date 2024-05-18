@@ -160,6 +160,9 @@
   height: 36rem;
   margin-left: -24rem;
 }
+.borderCircle2 {
+  height: 34rem;
+}
 }
 @media screen and (min-width: 1824px) and (max-width:1994px) {
   .borderCircle {
