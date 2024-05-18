@@ -5,8 +5,8 @@ export default function Faqs() {
 	return (
 		<section>
 			<div className='main-faqs'>
-				<div className='faq-heading'>
-					<h1>MEDICY FAQs</h1>
+				<div className='text-center faq-heading'>
+					<h2 className='h1'>FAQs</h2>
 				</div>
 				<p className='d-flex justify-content-center align-items-center faq-text'>
 					Frequently Asked Questions

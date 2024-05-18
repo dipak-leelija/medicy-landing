@@ -51,7 +51,7 @@ export default function Features() {
   return (
     <section>
       <div className="main-feat">
-        <Row className="d-flex justify-content-center align-items-center text-center pb-5 main-feat-head">
+        <Row className="text-center pb-5 main-feat-head">
           <motion.div
             initial={{ opacity: 0, y: 80 }}
             whileInView={{ opacity: 1, y: 1 }}

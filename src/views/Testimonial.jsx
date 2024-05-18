@@ -29,7 +29,7 @@ export default function Testimonial() {
 					whileInView={{ opacity: 1, y: 1 }}
 					transition={{ duration: 0.5, delay: 0.3 }}
 					viewport={{ once: true }}
-					className='pharmaciesTag'>
+					className='text-center pharmaciesTag'>
 					<h1>What Our Client Says</h1>
 				</motion.div>
 				<motion.div
