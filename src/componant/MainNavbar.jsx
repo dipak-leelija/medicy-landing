@@ -129,7 +129,8 @@ export default function MainNavbar() {
               <Nav navbar className="d-flex justify-content-end w-100 ">
                 <NavItem>
                   <NavLink
-                    href="/pricing"
+                    to="/pricing"
+                    tag={Link}
                     className={`${activeNavItem === "pricing" && curhover}`}
                     onClick={() => handleNavItemClicked("pricing")}
                     active={activeNavItem === "pricing"}
@@ -139,7 +140,8 @@ export default function MainNavbar() {
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    href="/doctor"
+                    to="/doctor"
+                    tag={Link}
                     className={`${activeNavItem === "doctor" && curhover}`}
                     onClick={() => handleNavItemClicked("doctor")}
                     active={activeNavItem === "doctor"}
@@ -149,7 +151,8 @@ export default function MainNavbar() {
                 </NavItem>
                 <NavItem>
                   <NavLink
-                    href="/about"
+                    to="/about"
+                    tag={Link}
                     className={`${activeNavItem === "about" && curhover}`}
                     onClick={() => handleNavItemClicked("about")}
                     active={activeNavItem === "about"}
@@ -162,14 +165,16 @@ export default function MainNavbar() {
                     className={`${activeNavItem === "contact" && curhover}`}
                     onClick={() => handleNavItemClicked("contact")}
                     active={activeNavItem === "contact"}
-                    href="/contact"
+                    to="/contact"
+                    tag={Link}
                   >
                     Contact
                   </NavLink>
                 </NavItem>
                 <NavItem className="nav-button-item">
                   <Button
-                    href="https://app.medicy.in/login.php"
+                    to="https://app.medicy.in/login.php"
+                    tag={Link}
                     color="success"
                     outline={navDemoBtn}
                   >
@@ -178,7 +183,8 @@ export default function MainNavbar() {
                 </NavItem>
                 <NavItem className="nav-button-item">
                   <Button
-                    href="https://app.medicy.in/login.php"
+                    to="https://app.medicy.in/login.php"
+                    tag={Link}
                     color="primary"
                   >
                     Login
@@ -192,7 +198,8 @@ export default function MainNavbar() {
               <>
                 <div className="m-2">
                   <Button
-                    href="https://app.medicy.in/login.php"
+                    to="https://app.medicy.in/login.php"
+                    tag={Link}
                     className={"loginbtn btn btn-transparent " + navlogin}
                   >
                     Login
@@ -227,16 +234,16 @@ export default function MainNavbar() {
         </div>
         <Nav navbar className="flex-column responsesidebar">
           <NavItem>
-            <NavLink href="/pricing">Pricing</NavLink>
+            <NavLink tag={Link} to="/pricing"  onClick={toggleSidebar}>Pricing</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/doctor">Doctors</NavLink>
+            <NavLink tag={Link} to="/doctor" onClick={toggleSidebar}>Doctors</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/about">About</NavLink>
+            <NavLink tag={Link} to="/about" onClick={toggleSidebar}>About</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink className="" href="/contact">
+            <NavLink tag={Link} className="" to="/contact" onClick={toggleSidebar}>
               Contact
             </NavLink>
           </NavItem>
