@@ -19,6 +19,56 @@ const responsive = {
 	},
 };
 
+
+// Custom Left Arrow Component
+const CustomLeftArrow = ({ onClick, ...rest }) => {
+	// Destructure carouselState out to avoid passing it to the button element
+	const { carouselState, rtl, ...remainingProps } = rest;
+	return (
+	  <button
+		className='custom-arrow custom-arrow-left'
+		aria-label="Previous slide"
+		type="button"
+		onClick={onClick}
+		{...remainingProps}
+	  >
+		<svg
+		  width='1.5rem'
+		  xmlns='http://www.w3.org/2000/svg'
+		  viewBox='0 0 448 512'
+		  fill='#6f6f70'
+		>
+		  <path d='M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z' />
+		</svg>
+	  </button>
+	);
+  };
+  
+  // Custom Right Arrow Component
+  const CustomRightArrow = ({ onClick, ...rest }) => {
+	// Destructure carouselState out to avoid passing it to the button element
+	const { carouselState, rtl, ...remainingProps } = rest;
+	return (
+	  <button
+		className='custom-arrow custom-arrow-right'
+		aria-label="Next slide"
+		type="button"
+		onClick={onClick}
+		{...remainingProps}
+	  >
+		<svg
+		  width='1.5rem'
+		  xmlns='http://www.w3.org/2000/svg'
+		  viewBox='0 0 448 512'
+		  fill='#6f6f70'
+		>
+		  <path d='M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z' />
+		</svg>
+	  </button>
+	);
+  };
+
+
 export default function Testimonial() {
 
 	return (
@@ -50,33 +100,12 @@ export default function Testimonial() {
 							keyBoardControl={true}
 							removeArrowOnDeviceType={['mobile']}
 							containerClass='carousel-container'
-							showDots={ window.innerWidth <=767 ? true : false }
+							showDots={window.innerWidth <= 767 ? true : false}
 							dotListClass='custom-dot-list-style'
 							itemClass='carousel-item-padding-40-px'
-							customLeftArrow={
-								<button className='custom-arrow custom-arrow-left' aria-label="Previous slide" type="button" rtl="false">
-									<svg
-										width='1.5rem'
-										xmlns='http://www.w3.org/2000/svg'
-										viewBox='0 0 448 512'
-										fill='#6f6f70'>
-										<path d='M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z' />
-									</svg>{' '}
-								</button>
-							}
-
-							customRightArrow={
-								<button className='custom-arrow custom-arrow-right'aria-label="Next slide" type="button" rtl="false">
-									<svg
-										width='1.5rem'
-										xmlns='http://www.w3.org/2000/svg'
-										viewBox='0 0 448 512'
-										fill='#6f6f70'>
-										<path d='M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z' />
-									</svg>
-								</button>
-							}
-							>
+							customLeftArrow={<CustomLeftArrow />}
+							customRightArrow={<CustomRightArrow />}
+						>
 							<div className='contentdiv'>
 								<div className='testimonial-img'>
 									<img src={avtar} alt='' />
