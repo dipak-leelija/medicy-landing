@@ -3,51 +3,83 @@ import { motion } from "framer-motion";
 import { Row, Col } from "react-bootstrap";
 import onlinehealth from "../../public/assets/icon/online-health.svg";
 
-const features = [
-  {
-    label: "Modern Charts",
-    icon: "/assets/icon/combo-chart.svg",
-  },
-  {
-    label: "Easy Filtering",
-    icon: "/assets/icon/filter.svg",
-  },
-  {
-    label: "Transection Report",
-    icon: "/assets/icon/patient-report.svg",
-  },
-  {
-    label: "GST Report",
-    icon: "/assets/icon/percentage.svg",
-  },
-  {
-    label: "Listed Distributors",
-    icon: "/assets/icon/contacts.svg",
-  },
-  {
-    label: "Maximun Item Units",
-    icon: "/assets/icon/org-unit.svg",
-  },
-  {
-    label: "Quick Search",
-    icon: "/assets/icon/search-icon.svg",
-  },
-  {
-    label: "Expiry Monitor",
-    icon: "/assets/icon/checklist.svg",
-  },
-  {
-    label: "Customer Monitor",
-    icon: "/assets/icon/checked-user-male.svg",
-  },
-  {
-    label: "Product Monitor",
-    icon: "/assets/icon/more-details.svg",
-  },
-];
 
 export default function Features() {
   const xValue = window.innerWidth < 1024 ? 0 : 160;
+
+  const features = [
+    {
+      label: "Modern Charts",
+      icon: "/assets/icon/combo-chart.svg",
+      init: { opacity: 0, x: xValue },
+      wIV: { opacity: 1, x: 1 },
+      trs: { duration: 0.5, delay: 0.8 }
+    },
+    {
+      label: "Easy Filtering",
+      icon: "/assets/icon/filter.svg",
+      init: {opacity: 0, x: xValue},
+      wIV: {opacity: 1, x: 1},
+      trs: {duration: 0.5, delay: 0.6}
+    },
+    {
+      label: "Transection Report",
+      icon: "/assets/icon/patient-report.svg",
+      init: {opacity: 0},
+      wIV: {opacity: 1},
+      trs: {duration: 0.4, delay: 0.6,}
+    },
+    {
+      label: "GST Report",
+      icon: "/assets/icon/percentage.svg",
+      init: {opacity: 0, x: -xValue},
+      wIV: {opacity: 1, x: 1},
+      trs: {duration: 0.5, delay: 0.6}
+    },
+    {
+      label: "Listed Distributors",
+      icon: "/assets/icon/contacts.svg",
+      init: { opacity: 0, x: -xValue},
+      wIV: { opacity: 1, x: 1},
+      trs: { duration: 0.5, delay: 0.8 },
+    },
+    {
+      label: "Maximun Item Units",
+      icon: "/assets/icon/org-unit.svg",
+      init: { opacity: 0, x: xValue },
+      wIV: { opacity: 1, x: 1 },
+      trs: { duration: 0.5, delay: 0.8 }
+    },
+    {
+      label: "Quick Search",
+      icon: "/assets/icon/search-icon.svg",
+      init: { opacity: 0, x: xValue },
+      wIV: { opacity: 1, x: 1 },
+      trs: { duration: 0.5, delay: 0.6 },
+    },
+    {
+      label: "Expiry Monitor",
+      icon: "/assets/icon/checklist.svg",
+      init: { opacity: 0},
+      wIV: { opacity: 1},
+      trs: { duration: 0.4, delay: 0.6 },
+    },
+    {
+      label: "Customer Monitor",
+      icon: "/assets/icon/checked-user-male.svg",
+      init: { opacity: 0, x: -xValue },
+      wIV: { opacity: 1, x: 1 },
+      trs: { duration: 0.5, delay: 0.5 },
+    },
+    {
+      label: "Product Monitor",
+      icon: "/assets/icon/more-details.svg",
+      init: { opacity: 0, x: -xValue },
+      wIV: { opacity: 1, x: 1 },
+      trs: { duration: 0.5 , delay: 0.8 },
+    },
+  ];
+
   return (
     <section>
       <div className="main-feat">
@@ -71,13 +103,13 @@ export default function Features() {
           {features.map((feature, index) => (
             <Col key={index}>
               <motion.div
-                initial={{ opacity: 0, x: xValue }}
-                whileInView={{ opacity: 1, x: 1 }}
-                transition={{ duration: 0.5, delay: 0.8 }}
+                initial={feature.init}
+                whileInView={feature.wIV}
+                transition={{ duration: feature.trs.duration, delay: feature.trs.delay }}
                 viewport={{ once: true }}
                 className="card feat-card"
               >
-                <div className="card-body feat-card-body" >
+                <div className="card-body feat-card-body">
                   <div className="pb-5 svgIcon">
                     <img src={feature.icon} alt="" />
                   </div>
