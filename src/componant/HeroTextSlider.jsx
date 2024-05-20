@@ -72,20 +72,22 @@ const HeroTextSlider = () => {
           transform: `translateX(-${currentSlide * 100}%)`,
         }}
       >
-        {[textItems[textItems.length - 1], ...textItems, textItems[0]].map(
-          (item) => (
-            <div
-              key={item.id}
-              style={{
-                flex: "0 0 100%",
-              }}
-            >
-              <p>
+        {[{ ...textItems[textItems.length - 1], id: `${textItems[textItems.length - 1].id}-prev` },
+        ...textItems,
+        { ...textItems[0], id: `${textItems[0].id}-next` }
+        ].map((item) => (
+          <div
+            key={item.id}
+            style={{
+              flex: "0 0 100%",
+            }}
+          >
+            <p>
               {item.point && <b>{item.point}:</b>} {item.text}
-              </p>
-            </div>
-          )
-        )}
+            </p>
+          </div>
+        ))}
+
       </div>
       <div
         style={{
