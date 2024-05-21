@@ -18,6 +18,7 @@ import Home from './views/Home';
 import Pricing from './views/Pricing';
 import Doctor from './views/Doctor';
 import Chooseus3 from './views/Chooseus3';
+import PrivacyPolicy from './componant/PrivacyPolicy';
 
 
 import "../public/assets/css/main-navbar.css";
@@ -36,6 +37,7 @@ import '../public/assets/css/contact.css';
 // import '../public/assets/css/chatwidget.css'
 import '../public/assets/css/pricing.css';
 import '../public/assets/css/doctor.css';
+import '../public/assets/css/privacy-policy.css';
 
 
 
@@ -58,6 +60,7 @@ function App() {
         <Route path='/pricing' element={<Pricing/>} />
         <Route path='/doctor' element={<Doctor/>} />
         <Route path='/chooseus3' element={<Chooseus3 />} />
+        <Route path='/privacy-policy' element={<PrivacyPolicy />} />
       </Routes>
       <Footer />
       {/* <ChatWidget/> */}

@@ -1,0 +1,49 @@
+.privacy-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+    background-color: var(--brandeis-blue);
+}
+
+.privacy-head p {
+    font-family: var(--font-poppins);
+    font-weight: var(--font-width);
+    color: var(--pure-white);
+}
+
+.privacy-logo {
+    width: 20%;
+    /* aspect-ratio: 1/1; */
+    padding: 16px;
+    background-color: white;
+}
+
+.privacy-logo img {
+    width: 100%;
+    /* aspect-ratio: 1/1; */
+    object-fit: contain;
+}
+
+.privacy-content {
+    margin: 60px 80px;
+    padding: 12px;
+}
+
+.privacy-footer {
+    background-color: var(--brandeis-blue);
+    color: var(--pure-white);
+}
+
+@media screen and (max-width: 767px) {
+    .privacy-logo {
+        padding: 8px;
+    }
+    .privacy-content {
+        margin: 40px 16px;
+        padding: 12px;
+    }
+    .privacy-content h2{
+        text-align: center;
+    }
+}

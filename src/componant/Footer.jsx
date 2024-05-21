@@ -106,7 +106,7 @@ export default function Footer() {
                     <a className="footer-list-item" href="/">About Us</a>
                     <a className="footer-list-item" href="/">Careers</a>
                     <a className="footer-list-item" href="/">Support</a>
-                    <a className="footer-list-item" href="/">Privacy Policy</a>
+                    <a className="footer-list-item" href="/privacy-policy">Privacy Policy</a>
                     <a className="footer-list-item" href="/">Refund Rules</a>
                   </div>
                 </div>
