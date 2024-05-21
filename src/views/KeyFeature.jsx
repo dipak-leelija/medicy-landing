@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import pharmamanage1 from "../../public/assets/img/pharmamanage1.png";
-import pharmamanage3 from "../../public/assets/img/pharmamanage3.png";
+import medicyPharManage from "../../public/assets/img/pharmacy-management-medicy.png";
+import medicyOpdManage from "../../public/assets/img/opd-management.medicy.png";
+import medicyPathoLabManage from "../../public/assets/img/pathology-lab-management.medicy.png";
+import medicyInventManage from "../../public/assets/img/inventory-management.medicy.png";
 import parmamanage4 from "../../public/assets/img/parmamanage4.png";
 
 export default function KeyFeature() {
@@ -69,7 +71,7 @@ export default function KeyFeature() {
             >
               {!showImage && (
                 <div className="keycard-img">
-                  <img src={pharmamanage1} alt="" />
+                  <img src={medicyPharManage} alt="" />
                 </div>
               )}
               <h3 className="card-title">Pharmacy Management</h3>
@@ -103,7 +105,7 @@ export default function KeyFeature() {
                 viewport={{ once: true }}
                 className="keycard-img"
               >
-                <img src={pharmamanage1} alt="" />
+                <img src={medicyPharManage} alt="" />
               </motion.div>
             )}
           </div>
@@ -116,7 +118,7 @@ export default function KeyFeature() {
                 viewport={{ once: true }}
                 className="keycard-img"
               >
-                <img src={parmamanage4} alt="" />
+                <img src={medicyOpdManage} alt="" />
               </motion.div>
             )}
             <motion.div
@@ -128,7 +130,7 @@ export default function KeyFeature() {
             >
               {!showImage && (
                 <div className="keycard-img">
-                  <img src={parmamanage4} alt="" />
+                  <img src={medicyOpdManage} alt="" />
                 </div>
               )}
               <h3 className="card-title">OPD Management</h3>
@@ -166,7 +168,7 @@ export default function KeyFeature() {
             >
               {!showImage && (
                 <div className="keycard-img">
-                  <img src={pharmamanage3} alt="" />
+                  <img src={medicyPathoLabManage} alt="" />
                 </div>
               )}
               <h3 className="card-title">Diagnostic or Pathology Lab Management</h3>
@@ -201,7 +203,7 @@ export default function KeyFeature() {
                 viewport={{ once: true }}
                 className="keycard-img"
               >
-                <img src={pharmamanage3} alt="" />
+                <img src={medicyPathoLabManage} alt="" />
               </motion.div>
             )}
           </div>
@@ -214,7 +216,7 @@ export default function KeyFeature() {
                 viewport={{ once: true }}
                 className="keycard-img"
               >
-                <img src={parmamanage4} alt="" />
+                <img src={medicyInventManage} alt="" />
               </motion.div>
             )}
             <motion.div
@@ -226,7 +228,7 @@ export default function KeyFeature() {
             >
               {!showImage && (
                 <div className="keycard-img">
-                  <img src={parmamanage4} alt="" />
+                  <img src={medicyInventManage} alt="" />
                 </div>
               )}
               <h3 className="card-title">Inventory Management Software</h3>
@@ -262,7 +264,7 @@ export default function KeyFeature() {
             >
               {!showImage && (
                 <div className="keycard-img">
-                  <img src={pharmamanage3} alt="" />
+                  <img src={parmamanage4} alt="" />
                 </div>
               )}
               <h3 className="card-title">GST Billing & Return Filing</h3>
@@ -284,7 +286,7 @@ export default function KeyFeature() {
                 viewport={{ once: true }}
                 className="keycard-img"
               >
-                <img src={pharmamanage3} alt="" />
+                <img src={parmamanage4} alt="" />
               </motion.div>
             )}
           </div>
