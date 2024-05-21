@@ -29,6 +29,10 @@
     align-items: center;
     margin: 50px 0px;
 }
+
+.trialImg{
+   margin-top: -50px;
+}
 /*
 .trailButton .tbtn{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
