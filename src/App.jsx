@@ -19,6 +19,8 @@ import Pricing from './views/Pricing';
 import Doctor from './views/Doctor';
 import Chooseus3 from './views/Chooseus3';
 import PrivacyPolicy from './componant/PrivacyPolicy';
+import RefundPolicy from './componant/RefundPolicy';
+import TermsConditions from './componant/TermsConditions';
 
 
 import "../public/assets/css/main-navbar.css";
@@ -52,7 +54,7 @@ function App() {
         <Route path='/features' element={<KeyFeature />} />
         <Route path='/Trail-boking' element={<TrailBooking />}/>
         <Route path='/about' element={<AboutUs />} />
-        <Route path='/Faqs' element={<Faqs/>}/>
+        <Route path='/faqs' element={<Faqs/>}/>
         <Route path='/catalouge' element={<Cataloguebanner/>}/>
         <Route path='/usefull-features' element={<Features/>}/>
         <Route path='/contact' element={<Contact/>} />
@@ -61,6 +63,8 @@ function App() {
         <Route path='/doctor' element={<Doctor/>} />
         <Route path='/chooseus3' element={<Chooseus3 />} />
         <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+        <Route path='/refund-policy' element={<RefundPolicy />} />
+        <Route path='/terms-conditions' element={<TermsConditions/>}/>
       </Routes>
       <Footer />
       {/* <ChatWidget/> */}

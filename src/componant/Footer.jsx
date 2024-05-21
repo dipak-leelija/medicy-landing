@@ -106,18 +106,17 @@ export default function Footer() {
                     <a className="footer-list-item" href="/">About Us</a>
                     <a className="footer-list-item" href="/">Careers</a>
                     <a className="footer-list-item" href="/">Support</a>
-                    <a className="footer-list-item" href="/privacy-policy">Privacy Policy</a>
-                    <a className="footer-list-item" href="/">Refund Rules</a>
+                    <a className="footer-list-item" href="/privacy-policy/">Privacy Policy</a>
+                    <a className="footer-list-item" href="/terms-conditions/">Terms and conditions</a>
                   </div>
                 </div>
                 <div className="footer-col-3 col-5 col-lg-2 col-xl-3 mt-3 mt-lg-0">
                   <h2 className="footer-title">Company</h2>
                   <div className="footer-list-item-box ps-1 mt-4">
-                    <a className="footer-list-item" href="/">FAQs</a>
+                    <a className="footer-list-item" href="/faqs/">FAQs</a>
                     <a className="footer-list-item" href="/">Documentation</a>
                     <a className="footer-list-item" href="/">Support</a>
-                    <a className="footer-list-item" href="/">Refund Policy</a>
-                    <a className="footer-list-item" href="/">Refund Rules</a>
+                    <a className="footer-list-item" href="/refund-policy/">Refund Policy</a>
                   </div>
                 </div>
               </div>

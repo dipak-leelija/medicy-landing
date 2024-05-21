@@ -14,7 +14,7 @@ export default function TermsConditions() {
         <div className='col-lg-4 termsCond-logo rounded'>
             <img className='' src={logo} alt="logo" />
         </div>
-        <div className="col-lg-8 termsCond-head ps-4 me-5">
+        <div className="col-lg-8 termsCond-head ps-4">
             <h1 className="sec-heading text-white">Terms and Conditions</h1>
             <p>Updated on 21 May, 2024</p>
         </div>
