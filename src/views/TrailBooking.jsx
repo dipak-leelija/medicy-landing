@@ -5,7 +5,7 @@ export default function TrailBooking() {
   return (
     <section className="px-4">
       <div className="main-trail d-flex justify-content-around">
-          <div className="col-2 trialImg d-none d-lg-block"><img src={freeTrail} alt="" /></div>
+        <div className="col-2 trialImg d-none d-lg-block"><img src={freeTrail} alt="" /></div>
         <div className="sub-trail">
           <div className="trailhead">
             <div className="h1 sec-heading text-light">Book Your Free Trail</div>
@@ -16,9 +16,15 @@ export default function TrailBooking() {
           <div className="trailButton">
             <a
               href=""
-              className="btn btn-primary text-white fw-bold  btn-lg tbtn"
+              className="btn btn-primary text-white fw-bold border btn-lg tbtn me-4"
             >
               Get Demo
+            </a>
+            <a
+              href="/schedule/"
+              className="btn btn-primary text-white fw-bold border btn-lg tbtn"
+            >
+              Join Us Now
             </a>
           </div>
         </div>
