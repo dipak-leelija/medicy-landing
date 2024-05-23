@@ -7,15 +7,39 @@ import groupOfPeoples from '/assets/img/group-of-peoples.webp';
 import missionlogo from '/assets/icon/missionLogo.svg';
 import TrailBooking from './TrailBooking';
 
+const fadeInUp = {
+	initial: { opacity: 0, y: 35 },
+	whileInView: { opacity: 1, y: 0 },
+	viewport: { once: true },
+	transition: { duration: 0.5, delay: 0.3 },
+};
+
+const slideInFromLeft = {
+	initial: { x: -40, opacity: 0},
+	whileInView: { x: 0 , opacity: 1},
+	viewport: { once: true },
+	transition: { duration: 0.5, delay: 0.5 },
+};
+const slideInFromRight = {
+	initial: { x: 40 ,opacity: 0},
+	whileInView: { x: 0, opacity: 1 },
+	viewport: { once: true },
+	transition: { duration: 0.5, delay: 0.5 },
+};
+
+const fadeInUpDelayed = {
+	initial: { opacity: 0, y: 50 },
+	whileInView: { opacity: 1, y: 1 },
+	transition: { duration: 0.5, delay: 0.4 },
+	viewport: { once: true },
+};
+
 export default function AboutUs() {
 	return (
 		<>
-			<section>
-				<motion.div
-					initial={{ opacity: 0, y: 50 }}
-					whileInView={{ opacity: 1, y: 1 }}
-					transition={{ duration: 0.5, delay: 0.4 }}
-					viewport={{ once: true }}
+			<motion.section initial={{opacity: 0, y: 50}} whileInView={{opacity: 1, y: 1}} transition={{duration: 0.5, delay: 0.4}} viewport={{ once: true}}>
+				<div
+					
 					className='main-about'>
 					<div className='main-aboutImg'>
 						<img src={mainabout} alt='' />
@@ -26,12 +50,12 @@ export default function AboutUs() {
 						<div className='design-three'></div>
 					</div>
 					<div className='headdiv'>
-						<div className='head-text'>
+						<motion.div {...slideInFromLeft} className='head-text'>
 							<h1>About Us</h1>
-						</div>
-						<p>
+						</motion.div>
+						<motion.p {...fadeInUp}>
 							We are a software solution designed to simplify healthcare operations, enhance patient care, and empower Pharmacies, OPDs, and Diagnostic Centers across India.
-						</p>
+						</motion.p>
 						{/* <div className='headdiv-button'>
 							<button
 								type='button'
@@ -43,41 +67,33 @@ export default function AboutUs() {
 
 					<div className='about-one'>
 						<div>
-							<p>WHY WE LOVE LEARNING...</p>
-							<h1 className='mt-4'>Foundation Stories</h1>
-							<p className='mt-4'>
+							<motion.h1 {...fadeInUp} className='mt-4'>Foundation Stories</motion.h1>
+							<motion.p {...fadeInUpDelayed} className='mt-4'>
 								If we talk about the beginning, Medicy was not a healthcare software solution from its start. We were a pharmacy and diagnostic centre that wanted to deliver enhanced patient care through advanced technologies. We tried so many software and tools but nothing worked best for our services. We decided to develop our own software solution that is a single hub for pharmacy, OPD, and Diagnostic centre management.
-							</p>
-							<p className='mt-4'>Our professional development team designed innovative software that can transform traditional healthcare services. Now, we are delivering satisfying care to our patients with the Medicy Software. We can manage inventories, sales, overstocking, payments, patient appointments, and GST billing using a single solution. </p>
+							</motion.p>
+							<motion.p {...fadeInUpDelayed} className='mt-4'>Our professional development team designed innovative software that can transform traditional healthcare services. Now, we are delivering satisfying care to our patients with the Medicy Software. We can manage inventories, sales, overstocking, payments, patient appointments, and GST billing using a single solution. </motion.p>
 						</div>
 						<div>
-							<h1 className='mt-5'>Our Mission</h1>
-							<p className='mt-4'>
+							<motion.h1 {...fadeInUp} className='mt-5'>Our Mission</motion.h1>
+							<motion.p {...fadeInUpDelayed} className='mt-4'>
 								At Medicy, our mission is to revolutionise traditional healthcare management by empowering healthcare providers with a user-friendly software solution tailored to their needs. We aim to enhance patient care through innovative inventory management, patient appointment scheduling, and accurate billing operations.
-							</p>
+							</motion.p>
 						</div>
-						
-						{/* <div className='mt-5'>
-							<button
-								type='button'
-								className='btn btn-primary btn-lg rounded-pill'>
-								LEARN MORE
-							</button>
-						</div> */}
 					</div>
-					<div className='company-layout'>
-					<div className='compnayLayout-head'>
-						<div className='d-flex justify-content-center '>
-							<h1 className='me-4'>Mission</h1>
-							<img src={missionlogo} alt='' />
+					<motion.div {...fadeInUpDelayed} className='company-layout'>
+						<div className='compnayLayout-head'>
+							<div className='d-flex justify-content-center '>
+								<h1 className='me-4'>Mission</h1>
+								<img src={missionlogo} alt='' />
+							</div>
+							<h4>Efficient Healthcare Management | Elevate Patientcare standards.</h4>
 						</div>
-						<h4>Efficient Healthcare Management | Elevate Patientcare standards.</h4>
-					</div>
+					</motion.div>
 				</div>
-				</motion.div>
 				{/* ////////// */}
+				
 				<div className='trusted-layout d-flex justify-content-center align-items-center'>
-					<div className='trusted-banner'>
+					<motion.div {...slideInFromLeft} className='trusted-banner'>
 						<h5>― Our Team</h5>
 						<h3 className=' mb-0'>Dedicated Experts,</h3>
 						<h3 className=' mb-3'>Exceptional Results</h3>
@@ -127,15 +143,15 @@ export default function AboutUs() {
 								Let's Connect
 							</a>
 						</div>
-					</div>
-					<div className='trusted-img'>
+					</motion.div>
+					<motion.div {...slideInFromRight} className='trusted-img'>
 						<img src={groupOfPeoples} alt='' width='500px' height='350px' />
 						{/* <div className='textinpicdiv'>
 							<div className='textinpicture'>
 								<h5>850+ Completed Project </h5>
 							</div>
 						</div> */}
-					</div>
+					</motion.div>
 				</div>
 
 				{/* ///// */}
@@ -179,9 +195,9 @@ export default function AboutUs() {
 						</div>
 					</div>
 				</div> */}
-				<div className='mb-5'><TrailBooking/></div>
-				
-			</section>
+				<div className='mb-5'><TrailBooking /></div>
+
+			</motion.section>
 		</>
 	);
 }
