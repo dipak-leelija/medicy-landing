@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from "/assets/img/logo.png";
 import { motion } from 'framer-motion';
+import TrailBooking from '../views/TrailBooking';
 
 export default function PrivacyPolicy() {
     return (
@@ -61,10 +62,11 @@ export default function PrivacyPolicy() {
                 <p>If you have any questions or concerns about this Privacy Policy, please <a href="/contact/">contact</a> us.</p>
                 <p>By using Medicy, you acknowledge that you have read and understood this Privacy Policy and agree to its terms.</p>
             </div>
-            <div className='privacy-footer text-center py-5'>
+            {/* <div className='privacy-footer text-center py-5'>
                 <h2 className='sec-heading'> Join Us Now</h2>
                 <p>If You Have Any Concerns About This Privacy Statement, Please Feel Free To <a className='text-white' href="/schedule/">Meet</a> Us</p>
-            </div>
+            </div> */}
+            <TrailBooking/>
         </motion.section>
     )
 }

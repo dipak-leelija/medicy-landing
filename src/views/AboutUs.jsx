@@ -5,6 +5,7 @@ import aboutTwo from '/assets/img/aboutTwo.jpg';
 import awardIcon from '/assets/icon/award-icon.svg';
 import groupOfPeoples from '/assets/img/group-of-peoples.webp';
 import missionlogo from '/assets/icon/missionLogo.svg';
+import TrailBooking from './TrailBooking';
 
 export default function AboutUs() {
 	return (
@@ -55,6 +56,7 @@ export default function AboutUs() {
 								At Medicy, our mission is to revolutionise traditional healthcare management by empowering healthcare providers with a user-friendly software solution tailored to their needs. We aim to enhance patient care through innovative inventory management, patient appointment scheduling, and accurate billing operations.
 							</p>
 						</div>
+						
 						{/* <div className='mt-5'>
 							<button
 								type='button'
@@ -63,6 +65,15 @@ export default function AboutUs() {
 							</button>
 						</div> */}
 					</div>
+					<div className='company-layout'>
+					<div className='compnayLayout-head'>
+						<div className='d-flex justify-content-center '>
+							<h1 className='me-4'>Mission</h1>
+							<img src={missionlogo} alt='' />
+						</div>
+						<h4>Efficient Healthcare Management | Elevate Patientcare standards.</h4>
+					</div>
+				</div>
 				</motion.div>
 				{/* ////////// */}
 				<div className='trusted-layout d-flex justify-content-center align-items-center'>
@@ -168,15 +179,8 @@ export default function AboutUs() {
 						</div>
 					</div>
 				</div> */}
-				<div className='company-layout'>
-					<div className='compnayLayout-head'>
-						<div className='d-flex justify-content-center '>
-							<h1 className='me-4'>Mission</h1>
-							<img src={missionlogo} alt='' />
-						</div>
-						<h4>Efficient Healthcare Management | Elevate Patientcare standards.</h4>
-					</div>
-				</div>
+				<div className='mb-5'><TrailBooking/></div>
+				
 			</section>
 		</>
 	);

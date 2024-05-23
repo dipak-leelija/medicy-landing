@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from "/assets/img/logo.png";
 import { motion } from 'framer-motion';
+import TrailBooking from '../views/TrailBooking';
 
 export default function RefundPolicy() {
   return (
@@ -40,6 +41,7 @@ export default function RefundPolicy() {
                 <h2 className='sec-heading'> Join Us Now</h2>
                 <p>If You Have Any Concerns About This Privacy Statement, Please Feel Free To <a className='text-white' href="/schedule/">Meet</a> Us</p>
             </div> */}
+            <TrailBooking/>
         </motion.section>
   )
 }
