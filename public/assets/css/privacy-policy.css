@@ -39,7 +39,13 @@
 .refund-content,
 .termsCond-content {
     margin: 60px 80px;
-    padding: 12px;
+    padding: 8px 20px;
+}
+
+.privacy-content h3 {
+    font-family: var(--font-poppins);
+    font-weight: 600;
+    color: rgb(78, 77, 77);
 }
 
 .privacy-footer,
@@ -60,9 +66,9 @@
         margin: 40px 16px;
         padding: 12px;
     }
-    .privacy-content h2,
+    /* .privacy-content h2,
     .refund-content h2,
     .termsCond-content h2 {
         text-align: center;
-    }
+    } */
 }

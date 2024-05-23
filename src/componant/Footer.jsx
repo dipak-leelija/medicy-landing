@@ -103,7 +103,7 @@ export default function Footer() {
                 <div className="footer-col-2 col-5 col-lg-2 col-xl-3 mt-3 mt-lg-0">
                   <h2 className="footer-title">Important</h2>
                   <div className="footer-list-item-box ps-1  mt-4">
-                    <a className="footer-list-item" href="/">About Us</a>
+                    <a className="footer-list-item" href="/about">About Us</a>
                     <a className="footer-list-item" href="/">Careers</a>
                     <a className="footer-list-item" href="/">Support</a>
                     <a className="footer-list-item" href="/privacy-policy/">Privacy Policy</a>

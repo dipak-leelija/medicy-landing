@@ -21,6 +21,7 @@ import Chooseus3 from './views/Chooseus3';
 import PrivacyPolicy from './componant/PrivacyPolicy';
 import RefundPolicy from './componant/RefundPolicy';
 import TermsConditions from './componant/TermsConditions';
+import MeetSchedule from './views/MeetSchedule';
 
 
 import "../public/assets/css/main-navbar.css";
@@ -65,6 +66,7 @@ function App() {
         <Route path='/privacy-policy' element={<PrivacyPolicy />} />
         <Route path='/refund-policy' element={<RefundPolicy />} />
         <Route path='/terms-conditions' element={<TermsConditions/>}/>
+        <Route path='/schedule' element={<MeetSchedule/>}/>
       </Routes>
       <Footer />
       {/* <ChatWidget/> */}
