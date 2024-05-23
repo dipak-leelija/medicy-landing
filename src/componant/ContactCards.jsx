@@ -63,9 +63,9 @@ const ContactCards = () => {
         </div>
         <h4>For Support</h4>
         <div className="d-flex justify-content-center align-items-center p-4">
-          <button type="button" className="btn btn-primary btn-lg">
+          <a href="/schedule" type="button" className="btn btn-primary btn-lg">
             Raise Ticket
-          </button>
+          </a>
         </div>
       </div>
     </div>

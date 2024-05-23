@@ -114,7 +114,7 @@ export default function KeyFeature() {
               <motion.div
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 1 }}
-                transition={{ duration: 0.5, delay: 0.8 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
                 viewport={{ once: true }}
                 className="keycard-img"
               >
@@ -124,7 +124,7 @@ export default function KeyFeature() {
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 1 }}
-              transition={{ duration: 0.5, delay: 0.8 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
               viewport={{ once: true }}
               className="maincontent"
             >
@@ -162,7 +162,7 @@ export default function KeyFeature() {
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 1 }}
-              transition={{ duration: 0.5, delay: 0.8 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
               viewport={{ once: true }}
               className="maincontent"
             >
@@ -210,9 +210,9 @@ export default function KeyFeature() {
           <div className="keycontent">
             {showImage && (
               <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 1 }}
-                transition={{ duration: 0.5, delay: 0.8 }}
+                initial={{ opacity: 0, x: -35 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
                 viewport={{ once: true }}
                 className="keycard-img"
               >
@@ -220,9 +220,9 @@ export default function KeyFeature() {
               </motion.div>
             )}
             <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 1 }}
-              transition={{ duration: 0.5, delay: 0.8 }}
+              initial={{ opacity: 0, x: 35 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
               viewport={{ once: true }}
               className="maincontent"
             >
@@ -256,9 +256,9 @@ export default function KeyFeature() {
           </div>
           <div className="keycontent">
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 1 }}
-              transition={{ duration: 0.5, delay: 0.8 }}
+              initial={{ opacity: 0, x: -35 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
               viewport={{ once: true }}
               className="maincontent"
             >
@@ -280,9 +280,9 @@ export default function KeyFeature() {
             </motion.div>
             {showImage && (
               <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 1 }}
-                transition={{ duration: 0.5, delay: 0.8 }}
+                initial={{ opacity: 0, x: 35 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
                 viewport={{ once: true }}
                 className="keycard-img"
               >
