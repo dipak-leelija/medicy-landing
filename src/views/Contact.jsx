@@ -38,25 +38,38 @@ export default function Contact() {
       setFormStyle({ opacity: 0.3 });
       try {
         // Sending POST request to backend API
-        let data = new FormData();
-        data.append("name", "dipak");
-        data.append("phone", "7699753019");
-        data.append("email", "dipak@gmail.com");
-        data.append("subject", "Test Subject");
-        data.append("message", "this is a test message");
-        data.append("message", "this is a test message");
+        // let data = new FormData();
+        // data.append("name", "dipak");
+        // data.append("phone", "7699753019");
+        // data.append("email", "dipak@gmail.com");
+        // data.append("subject", "Test Subject");
+        // data.append("message", "this is a test message");
+        // data.append("message", "this is a test message");
 
+        const data = {
+          name: formData.name,
+          contact_number: mobile,
+          email: email,
+          subject: formData.subject,
+          message: formData.message,
+        };
+        console.log(data);
         let config = {
           method: "post",
           maxBodyLength: Infinity,
-          url: "http://127.0.0.1:8000/contact/",
-          data: data,
+          url: "http://localhost/medicy.in/api/contact.php",
+          headers: {
+          'Content-Type': 'application/json',
+        },
+          data: JSON.stringify(data),
         };
 
         const response = await axios.request(config);
-        if (response.data.status === "true") {
+        console.log({'response':response})
+        if (response.data.status === true) {
           setAlert(true);
-          setAlertMsg(response.data.message);
+          // setAlertMsg(response.data.message);
+          setAlertMsg('Uploaded !')
         }
       } catch (error) {
         setAlert(true);
@@ -69,7 +82,7 @@ export default function Contact() {
         if (error.response) {
           // The request was made and the server responded with a status code
           // that falls out of the range of 2xx
-          consoleMsg.error(
+          console.error(
             "Server responded with error status:",
             error.response.status
           );
