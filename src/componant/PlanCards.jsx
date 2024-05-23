@@ -10,7 +10,7 @@ export default function Pricing() {
     let config = {
       method: "get",
       maxBodyLength: Infinity,
-      url: "http://localhost/medicy.in/api/plans.php",
+      url: "https://app.medicy.in/api/plans.php",
       headers: {},
     };
 
@@ -27,20 +27,29 @@ export default function Pricing() {
 
   const handleBuyNowClick = async (planId) => {
     try {
-      const response = await fetch("http://localhost:5173/pricing", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          id: planId,
-        }),
+      const url = "http://localhost/medicy.in/register.php";
+      const postData = { pid: planId };
+
+      // Create a form element
+      const form = document.createElement("form");
+      form.method = "post";
+      form.action = url;
+
+      // Add input fields for each data key
+      Object.keys(postData).forEach((key) => {
+        const input = document.createElement("input");
+        input.type = "hidden";
+        input.name = key;
+        input.value = postData[key];
+        form.appendChild(input);
       });
-      if (response.ok) {
-        console.log("request send success");
-      } else {
-        console.log("request not send ");
-      }
+
+      // Append the form to the document body
+      document.body.appendChild(form);
+
+      // Submit the form
+      form.submit();
+
     } catch (error) {
       console.error("Error:", error);
     }
