@@ -38,14 +38,6 @@ export default function Contact() {
       setFormStyle({ opacity: 0.3 });
       try {
         // Sending POST request to backend API
-        // let data = new FormData();
-        // data.append("name", "dipak");
-        // data.append("phone", "7699753019");
-        // data.append("email", "dipak@gmail.com");
-        // data.append("subject", "Test Subject");
-        // data.append("message", "this is a test message");
-        // data.append("message", "this is a test message");
-
         const data = {
           name: formData.name,
           contact_number: mobile,
@@ -53,11 +45,11 @@ export default function Contact() {
           subject: formData.subject,
           message: formData.message,
         };
-        console.log(data);
+
         let config = {
           method: "post",
           maxBodyLength: Infinity,
-          url: "http://localhost/medicy.in/api/contact.php",
+          url: "https://app.medicy.in/api/contact.php",
           headers: {
           'Content-Type': 'application/json',
         },
@@ -65,10 +57,9 @@ export default function Contact() {
         };
 
         const response = await axios.request(config);
-        console.log({'response':response})
+        console.log({'response':response.data})
         if (response.data.status === true) {
           setAlert(true);
-          // setAlertMsg(response.data.message);
           setAlertMsg('Uploaded !')
         }
       } catch (error) {
