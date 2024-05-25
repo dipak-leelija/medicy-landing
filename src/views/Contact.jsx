@@ -27,6 +27,17 @@ export default function Contact() {
     privacy: false,
   });
 
+
+  useEffect(() => {
+    if (alert) {
+      const timer = setTimeout(() => {
+        setAlert(false);
+      }, 6000); // Dismiss alert after 3 seconds
+
+      return () => clearTimeout(timer); // Clear timeout if component unmounts
+    }
+  }, [alert]);
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     const form = event.currentTarget;
