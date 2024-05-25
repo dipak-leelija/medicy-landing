@@ -3,6 +3,28 @@ import { motion } from 'framer-motion';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import avtar from '../../public/assets/img/quotation.png';
+import Feedback from 'react-bootstrap/esm/Feedback';
+
+
+const testimonalList = [
+	{
+		text : "Medicy.in has transformed our clinic's workflow. The automated reminders and easy-to-use dashboard have greatly reduced medication errors and improved patient compliance. The support team is always responsive and helpful. A must-have for any modern healthcare facility.",
+		client: "Dr. Alex Patel"
+	},
+	{
+		text : "The integration of Medicy.in into our practice was seamless. The software is incredibly user-friendly and has helped us streamline our medication management processes. Our patients appreciate the timely reminders and clear instructions, which have improved adherence rates.",
+		client: "Dr. John Doe",
+	},
+	{
+		text : "As a pharmacist, Medicy.in has been a game-changer. The ability to track prescriptions, monitor inventory, and communicate with doctors in real-time has significantly enhanced our efficiency and service quality. I highly recommend this software to any healthcare professional.",
+		client: "Nurse Priya Kapoor",
+	},
+	{
+		text : "Implementing Medicy.in in our hospital has been a wise decision. The software’s comprehensive features, from electronic prescribing to medication administration records, have significantly improved our medication management practices. Our staff finds it easy to use and very reliable.",
+		client: "Ananya",
+	}
+
+]
 
 const responsive = {
 	desktop: {
@@ -106,54 +128,17 @@ export default function Testimonial() {
 							customLeftArrow={<CustomLeftArrow />}
 							customRightArrow={<CustomRightArrow />}
 						>
-							<div className='contentdiv'>
+							{testimonalList.map((feedback, index)=>(
+							<div className='contentdiv' key={index}>
 								<div className='testimonial-img'>
 									<img src={avtar} alt='' />
 								</div>
-								Lorem Ipsum is simply dummy text of the printing and typesetting
-								industry. Lorem Ipsum has been the industry's standard dummy
-								text ever since the 1500s, when an unknown printer took a galley
-								of type and scrambled it to make a typ
+								{feedback.text}
 								<div className='d-flex justify-content-end mt-3 fw-bold'>
-									<p>~ Jayanta</p>
+									<p>~ {feedback.client}</p>
 								</div>
 							</div>
-							<div className='contentdiv'>
-								<div className='testimonial-img'>
-									<img src={avtar} alt='' />
-								</div>
-								Lorem Ipsum is simply dummy text of the printing and typesetting
-								industry. Lorem Ipsum has been the industry's standard dummy
-								text ever since the 1500s, when an unknown printer took a galley
-								of type and scrambled it to make a typ
-								<div className='d-flex justify-content-end mt-3 fw-bold'>
-									<p>~ Jayanta</p>
-								</div>
-							</div>
-							<div className='contentdiv'>
-								<div className='testimonial-img'>
-									<img src={avtar} alt='' />
-								</div>
-								Lorem Ipsum is simply dummy text of the printing and typesetting
-								industry. Lorem Ipsum has been the industry's standard dummy
-								text ever since the 1500s, when an unknown printer took a galley
-								of type and scrambled it to make a typ
-								<div className='d-flex justify-content-end mt-3 fw-bold'>
-									<p>~ Jayanta</p>
-								</div>
-							</div>
-							<div className='contentdiv'>
-								<div className='testimonial-img'>
-									<img src={avtar} alt='' />
-								</div>
-								Lorem Ipsum is simply dummy text of the printing and typesetting
-								industry. Lorem Ipsum has been the industry's standard dummy
-								text ever since the 1500s, when an unknown printer took a galley
-								of type and scrambled it to make a typ
-								<div className='d-flex justify-content-end mt-3 fw-bold'>
-									<p>~ Jayanta</p>
-								</div>
-							</div>
+							))}
 						</Carousel>
 					}
 				</motion.div>
