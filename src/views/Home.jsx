@@ -88,7 +88,7 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<TopPharmacies />
+			{/* <TopPharmacies /> */}
 			<KeyFeature />
 			<Chooseus />
 			<Cataloguebanner />
