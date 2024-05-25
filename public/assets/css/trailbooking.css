@@ -6,7 +6,7 @@
     border-radius: var(--sec-radius);
 }
 .sub-trail{
-   padding: 6% 0px;
+   padding: 90px 0px 0px 0px;
 }
 .trailhead{
     display: flex;
@@ -32,6 +32,7 @@
 
 .trialImg{
    margin-top: -50px;
+   margin-bottom: 0px;
 }
 /*
 .trailButton .tbtn{
@@ -47,10 +48,16 @@
     .trail-text{
         margin: 20px 30px;
     }
+    .sub-trail{
+        padding: 40px 0px 0px 0px;
+    }
 }
 @media screen and (min-width:768px) and (max-width:1024px) {
     .trail-text{
         margin: 20px 70px;
+    }
+    .sub-trail{
+        padding: 40px 0px 0px 0px;
     }
 }
 /* @media (max-width: 575.98px) {
