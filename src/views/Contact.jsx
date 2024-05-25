@@ -11,7 +11,7 @@ export default function Contact() {
   const [alertMsg, setAlertMsg] = useState("");
   const [loading, setLoading] = useState(false);
   const [formStyle, setFormStyle] = useState({});
-
+  const [alertType, setAlertType] = useState('danger');
   const [validated, setValidated] = useState(false);
   const [email, setEmail] = useState("");
   const [emailValid, setEmailValid] = useState(true);
@@ -57,13 +57,16 @@ export default function Contact() {
         };
 
         const response = await axios.request(config);
-        console.log({'response':response.data})
+        // console.log({'response':response.data.status})
         if (response.data.status === true) {
+          // console.log(response.data.message);
           setAlert(true);
-          setAlertMsg('Uploaded !')
+          setAlertType('success');
+          setAlertMsg(response.data.message);
         }
       } catch (error) {
         setAlert(true);
+        setAlertType('danger');
         setAlertMsg(
           `ERROR: ${error.message}, Please Make Sure Your Data Connection is Working Properly!`
         );
@@ -147,7 +150,7 @@ export default function Contact() {
           </div>
 
           {alert && (
-            <Alert variant="danger" onClose={() => setAlert(false)} dismissible>
+            <Alert variant={alertType} onClose={() => setAlert(false)} dismissible>
               <p>{alertMsg}</p>
             </Alert>
           )}
