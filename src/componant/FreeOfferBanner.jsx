@@ -1,6 +1,6 @@
 import React from "react";
 import circleCheckWhite from '/assets/icon/circleCheck-white.svg';
-import freeService from '/assets/img/freepricing2.png';
+import freeService from '/assets/img/freepricing.png';
 
 const FreeOfferBanner = () => {
   return (
