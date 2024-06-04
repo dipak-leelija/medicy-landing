@@ -27,7 +27,7 @@ export default function Pricing() {
 
   const handleBuyNowClick = async (planId) => {
     try {
-      const url = "https://app.medicy.in//register.php";
+      const url = "https://app.medicy.in/register.php";
       const postData = { pid: planId };
 
       // Create a form element

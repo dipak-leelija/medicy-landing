@@ -173,7 +173,7 @@ export default function MainNavbar() {
                 </NavItem>
                 <NavItem className="nav-button-item">
                   <Button
-                    to="https://app.medicy.in/login.php"
+                    to="/schedule/"
                     tag={Link}
                     color="success"
                     outline={navDemoBtn}

@@ -21,13 +21,13 @@ export default function TrailBooking() {
           </div>
           <div className="trailButton">
             <a
-              href=""
+              href="/schedule/"
               className="btn btn-primary text-white fw-bold shadow btn-lg tbtn me-4"
             >
               Get Demo
             </a>
             <a
-              href="/schedule/"
+              href="https://app.medicy.in/register.php"
               className="btn btn-primary text-white fw-bold shadow btn-lg tbtn"
             >
               Join Us Now

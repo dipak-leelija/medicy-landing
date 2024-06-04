@@ -67,7 +67,7 @@ export default function Home() {
 									viewport={{ once: true }}
 									className='hero-btn-area'>
 									<a href="/pricing" className='btn btn-lg hero-price-btn w-md-25'>See Pricing</a>
-									<a href="/pricing" className='btn btn-lg hero-demo-btn ms-md-4' variant="outline-secondary">Demo</a>
+									<a href="/schedule/" className='btn btn-lg hero-demo-btn ms-md-4' variant="outline-secondary">Demo</a>
 								</motion.div>
 							</div>
 						</div>
