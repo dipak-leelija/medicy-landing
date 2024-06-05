@@ -4,7 +4,7 @@ import medicyPharManage from "../../public/assets/img/pharmacy-management-medicy
 import medicyOpdManage from "../../public/assets/img/opd-management.medicy.png";
 import medicyPathoLabManage from "../../public/assets/img/pathology-lab-management.medicy.png";
 import medicyInventManage from "../../public/assets/img/inventory-management.medicy.png";
-import parmamanage4 from "../../public/assets/img/parmamanage4.png";
+import medicyGSTBilling from "../../public/assets/img/GST-billing-and Return-Filling-medicy.png";
 
 export default function KeyFeature() {
   const [listItems, setListItems] = useState([
@@ -264,7 +264,7 @@ export default function KeyFeature() {
             >
               {!showImage && (
                 <div className="keycard-img">
-                  <img src={parmamanage4} alt="" />
+                  <img src={medicyGSTBilling} alt="" />
                 </div>
               )}
               <h3 className="card-title">GST Billing & Return Filing</h3>
@@ -286,7 +286,7 @@ export default function KeyFeature() {
                 viewport={{ once: true }}
                 className="keycard-img"
               >
-                <img src={parmamanage4} alt="" />
+                <img src={medicyGSTBilling} alt="" />
               </motion.div>
             )}
           </div>
