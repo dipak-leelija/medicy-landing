@@ -18,6 +18,7 @@ export default function Pricing() {
       .request(config)
       .then((response) => {
         // console.log(JSON.stringify(response.data.plans));
+        console.log(response.data);
         setPlans(response.data);
       })
       .catch((error) => {
@@ -54,6 +55,15 @@ export default function Pricing() {
       console.error("Error:", error);
     }
   };
+
+
+  const formatDuration = (duration) => {
+    const parts = duration.split(' ');
+    if (parts[0] === '1') {
+      return parts[1];
+    }
+    return `${parts[0]} ${parts[1]}`;
+  };
   return (
     <section>
       <div className="row row-cols-1 row-cols-md-3 g-5">
@@ -75,7 +85,7 @@ export default function Pricing() {
                   <h4>
                     <label htmlFor="">&#x20b9;</label>
                     <span className="fw-bold dark-primary">{plan.price}</span>/
-                    year
+                    {' '}{formatDuration(plan.duration)}
                   </h4>
                 </div>
 
