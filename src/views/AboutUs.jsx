@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import mainabout from '/assets/img/mainAbout.jpg';
 import aboutTwo from '/assets/img/aboutTwo.jpg';
 import awardIcon from '/assets/icon/award-icon.svg';
-import groupOfPeoples from '/assets/img/group-of-peoples.webp';
+import medicyDedicatedExpart from '/assets/img/dedicated experts.medicy.png';
 import missionlogo from '/assets/icon/missionLogo.svg';
 import TrailBooking from './TrailBooking';
 
@@ -145,7 +145,7 @@ export default function AboutUs() {
 						</div>
 					</motion.div>
 					<motion.div {...slideInFromRight} className='trusted-img'>
-						<img src={groupOfPeoples} alt='' width='500px' height='350px' />
+						<img src={medicyDedicatedExpart} alt='' width='500px' height='350px' />
 						{/* <div className='textinpicdiv'>
 							<div className='textinpicture'>
 								<h5>850+ Completed Project </h5>
