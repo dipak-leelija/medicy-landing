@@ -18,7 +18,6 @@ export default function Pricing() {
       .request(config)
       .then((response) => {
         // console.log(JSON.stringify(response.data.plans));
-        console.log(response.data);
         setPlans(response.data);
       })
       .catch((error) => {
