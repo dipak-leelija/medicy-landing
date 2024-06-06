@@ -1,9 +1,10 @@
 .main-about{
     margin: 100px;
-    padding-top: 40px;
+    margin-top: 0px;
+    /* padding-top: 40px; */
 }
 .main-aboutImg{
-    width: 90%;
+    width: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto;

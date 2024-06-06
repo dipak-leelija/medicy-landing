@@ -146,11 +146,11 @@
 @media screen and (min-width: 1424px) and (max-width:1680px) {
   .borderCircle {
   width: 36rem;
-  height: 36rem;
+  height: 38rem;
   margin-left: -25rem;
 }
 .borderCircle2 {
-  height: 34rem;
+  height: 39rem;
 }
 }
 
