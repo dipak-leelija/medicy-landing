@@ -15,7 +15,7 @@
     /* text-align: c; */
 }
 
-.doc-Leftdiv h1{
+.doc-Leftdiv .title{
     margin-bottom: 30px;
     font-family: var(--plus-Jakarta-Sans);
     color: var( --royel-blue);
