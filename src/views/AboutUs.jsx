@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import mainabout from '/assets/img/mainAbout.jpg';
+import mainabout from '/assets/img/about-us2.medicy.png';
 import aboutTwo from '/assets/img/aboutTwo.jpg';
 import awardIcon from '/assets/icon/award-icon.svg';
 import medicyDedicatedExpart from '/assets/img/dedicated experts.medicy.png';

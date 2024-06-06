@@ -62,7 +62,7 @@ export default function Home() {
 									whileInView={{ opacity: 1, y: 1 }}
 									transition={{
 										duration: 0.5,
-										delay: 0.5,
+										delay: 0.4,
 									}}
 									viewport={{ once: true }}
 									className='hero-btn-area'>
@@ -78,7 +78,7 @@ export default function Home() {
 								<motion.div
 									initial={{ opacity: 0, x: 30 }}
 									whileInView={{ opacity: 1, x: 1 }}
-									transition={{ duration: 0.5, delay: 0.5 }}
+									transition={{ duration: 0.5, delay: 0.4 }}
 									viewport={{ once: true }}
 									className='heroimg'>
 									<img src={heroImg} alt='' />
