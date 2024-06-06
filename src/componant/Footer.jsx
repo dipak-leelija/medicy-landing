@@ -1,14 +1,56 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Footer() {
+  const [siteName, setSiteName] = useState("");
+  const [email, setEmail] = useState("");
+  const [pnone, setPhone] = useState("");
+  const [address1, setAddress1] = useState("");
+  const [address2, setAddress2] = useState("");
+  const [state, setState] = useState("");
+  const [country, setCountry] = useState("");
+  const [pincode, setPincode] = useState("");
+
+  useEffect(() => {
+    const requestOptions = {
+      method: "GET",
+      redirect: "follow",
+    };
+
+    fetch("http://localhost/medicy.in/api/infos.php", requestOptions)
+      .then((response) => response.json())
+      .then((result) => {
+        const nameObj = result.find((item) => item.info_name === "name");
+        const emailObj = result.find((item) => item.info_name === "email");
+        const phoneObj = result.find((item) => item.info_name === "contact");
+        const address1Obj = result.find(
+          (item) => item.info_name === "address_1"
+        );
+        const address2Obj = result.find(
+          (item) => item.info_name === "address_2"
+        );
+        const stateObj = result.find((item) => item.info_name === "state");
+        const countryObj = result.find((item) => item.info_name === "country");
+        const pincodeObj = result.find((item) => item.info_name === "pin_code");
+
+        setSiteName(nameObj ? nameObj.info_value : "")
+        setEmail(emailObj ? emailObj.info_value : "");
+        setPhone(phoneObj ? phoneObj.info_value : "");
+        setAddress1(address1Obj ? address1Obj.info_value : "");
+        setAddress2(address2Obj ? address2Obj.info_value : "");
+        setState(stateObj ? stateObj.info_value : "");
+        setCountry(countryObj ? countryObj.info_value : "");
+        setPincode(pincodeObj ? pincodeObj.info_value : "");
+      })
+      .catch((error) => console.error(error));
+  }, []);
+
   return (
     <>
-      <div
-        className="footer-frame">
+      <div className="footer-frame">
         <section className="footer-sec frame-about-us-careers">
-          <footer
-            className="frame-important-text">
+          <footer className="frame-important-text">
             <div className="support-frame">
               <div className="framework-about-us row justify-content-center pt-4">
                 <div className="footer-col-1 col-12 col-lg-5">
@@ -75,13 +117,16 @@ export default function Footer() {
                     <div className="contact-box">
                       <div className="contact">
                         <div className="icon-bx">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                          >
                             <path d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z" />
                           </svg>
                         </div>
                         <div className="supportmedicyin2">
-                          <p className="m-0">7699753019</p>
-                          <p className="m-0">support@medicy.in</p>
+                          <p className="m-0">{pnone}</p>
+                          <p className="m-0">{email}</p>
                         </div>
                       </div>
 
@@ -95,8 +140,12 @@ export default function Footer() {
                           </svg>
                         </div>
                         <div className="supportmedicyin2">
-                          <p className="m-0">7699753019</p>
-                          <p className="m-0">support@medicy.in</p>
+                          <p className="m-0">
+                            {address1}, {address2}
+                          </p>
+                          <p className="m-0">
+                            {state}, {country}, {pincode}
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -105,26 +154,49 @@ export default function Footer() {
                 <div className="footer-col-2 col-5 col-lg-2 col-xl-3 mt-3 mt-lg-0">
                   <h2 className="footer-title">Important</h2>
                   <div className="footer-list-item-box ps-1  mt-4">
-                    <a className="footer-list-item" href="/about">About Us</a>
-                    <a className="footer-list-item" href="/">Careers</a>
-                    <a className="footer-list-item" href="/">Support</a>
-                    <a className="footer-list-item" href="/privacy-policy/">Privacy Policy</a>
-                    <a className="footer-list-item" href="/terms-conditions/">Terms and conditions</a>
+                    {/* <Link className="footer-list-item" to={'/about'}>About Us</Link> */}
+                    <a className="footer-list-item" href="/about">
+                      About Us
+                    </a>
+                    <a
+                      className="footer-list-item"
+                      target="_blank"
+                      href="https://leelija.com/career.php"
+                    >
+                      Careers
+                    </a>
+                    <a className="footer-list-item" href="/contact">
+                      Support
+                    </a>
+                    <a className="footer-list-item" href="/privacy-policy/">
+                      Privacy Policy
+                    </a>
+                    <a className="footer-list-item" href="/terms-conditions/">
+                      Terms and conditions
+                    </a>
                   </div>
                 </div>
                 <div className="footer-col-3 col-5 col-lg-2 col-xl-3 mt-3 mt-lg-0">
                   <h2 className="footer-title">Company</h2>
                   <div className="footer-list-item-box ps-1 mt-4">
-                    <a className="footer-list-item" href="/faqs/">FAQs</a>
-                    <a className="footer-list-item" href="/">Documentation</a>
-                    <a className="footer-list-item" href="/">Support</a>
-                    <a className="footer-list-item" href="/refund-policy/">Refund Policy</a>
+                    <a className="footer-list-item" href="/schedule">
+                      Schedule Meeting
+                    </a>
+                    <a className="footer-list-item" href="/">
+                      Documentation
+                    </a>
+                    <a className="footer-list-item" href="/pricing">
+                      Pricing
+                    </a>
+                    <a className="footer-list-item" href="/refund-policy/">
+                      Refund Policy
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
             <p className="copyright-text small">
-              &copy; 2024 Medicy. All rights reserved.
+              &copy; 2024 {siteName}. All rights reserved.
             </p>
           </footer>
         </section>

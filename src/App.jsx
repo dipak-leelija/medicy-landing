@@ -2,22 +2,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainNavbar from './componant/MainNavbar'
-import ChooseUs from './views/Chooseus';
-import KeyFeature from './views/KeyFeature';
-import TrailBooking from './views/TrailBooking';
-import PharmaciesIcon from './views/PharmaciesIcon';
-import Faqs from './views/Faqs';
-import Cataloguebanner from './views/Cataloguebanner';
-import Testimonial from './views/Testimonial';
-import Features from './views/Features';
-import Contact from './views/Contact';
 import Footer from './componant/Footer';
-import AboutUs from './views/AboutUs';
+
 import Home from './views/Home';
-// import ChatWidget from './componant/ChatWidget';
 import Pricing from './views/Pricing';
 import Doctor from './views/Doctor';
-import Chooseus3 from './views/Chooseus3';
+import AboutUs from './views/AboutUs';
+import Contact from './views/Contact';
+// import ChatWidget from './componant/ChatWidget';
 import PrivacyPolicy from './componant/PrivacyPolicy';
 import RefundPolicy from './componant/RefundPolicy';
 import TermsConditions from './componant/TermsConditions';
@@ -50,23 +42,14 @@ function App() {
       <MainNavbar />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/top-pharmacies' element={<PharmaciesIcon/>}/>
-        <Route path='/choose' element={<ChooseUs />} />
-        <Route path='/features' element={<KeyFeature />} />
-        <Route path='/Trail-boking' element={<TrailBooking />}/>
-        <Route path='/about' element={<AboutUs />} />
-        <Route path='/faqs' element={<Faqs/>}/>
-        <Route path='/catalouge' element={<Cataloguebanner/>}/>
-        <Route path='/usefull-features' element={<Features/>}/>
-        <Route path='/contact' element={<Contact/>} />
-        <Route path='/Testimonial' element={<Testimonial/>} />
         <Route path='/pricing' element={<Pricing/>} />
-        <Route path='/doctor' element={<Doctor/>} />
-        <Route path='/chooseus3' element={<Chooseus3 />} />
+        <Route path='/doctor' element={<Doctor />} />
+        <Route path='/about' element={<AboutUs />} />
+        <Route path='/contact' element={<Contact/>} />
+        <Route path='/schedule' element={<MeetSchedule/>}/>
         <Route path='/privacy-policy' element={<PrivacyPolicy />} />
         <Route path='/refund-policy' element={<RefundPolicy />} />
         <Route path='/terms-conditions' element={<TermsConditions/>}/>
-        <Route path='/schedule' element={<MeetSchedule/>}/>
       </Routes>
       <Footer />
       {/* <ChatWidget/> */}
