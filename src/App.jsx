@@ -6,13 +6,14 @@ import Footer from './componant/Footer';
 
 import Home from './views/Home';
 import Pricing from './views/Pricing';
+import Doctor from './views/Doctor';
 import AboutUs from './views/AboutUs';
 import Contact from './views/Contact';
 // import ChatWidget from './componant/ChatWidget';
-import MeetSchedule from './views/MeetSchedule';
 import PrivacyPolicy from './componant/PrivacyPolicy';
 import RefundPolicy from './componant/RefundPolicy';
 import TermsConditions from './componant/TermsConditions';
+import MeetSchedule from './views/MeetSchedule';
 
 
 import "../public/assets/css/main-navbar.css";
@@ -42,6 +43,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/pricing' element={<Pricing/>} />
+        <Route path='/doctor' element={<Doctor />} />
         <Route path='/about' element={<AboutUs />} />
         <Route path='/contact' element={<Contact/>} />
         <Route path='/schedule' element={<MeetSchedule/>}/>
