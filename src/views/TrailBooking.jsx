@@ -7,7 +7,7 @@ export default function TrailBooking() {
     <motion.section
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 1 }}
-      transition={{ duration: 0.8, delay: 0.5 }}
+      transition={{ duration: 0.8, delay: 0.4 }}
       viewport={{ once: true }}
       className="px-4">
       <div className="main-trail d-flex justify-content-around">

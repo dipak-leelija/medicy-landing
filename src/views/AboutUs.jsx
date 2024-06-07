@@ -18,13 +18,13 @@ const slideInFromLeft = {
 	initial: { x: -40, opacity: 0},
 	whileInView: { x: 0 , opacity: 1},
 	viewport: { once: true },
-	transition: { duration: 0.5, delay: 0.3 },
+	transition: { duration: 0.5, delay: 0.2 },
 };
 const slideInFromRight = {
-	initial: { x: 40 ,opacity: 0},
-	whileInView: { x: 0, opacity: 1 },
+	initial: { opacity: 0},
+	whileInView: { opacity: 1 },
 	viewport: { once: true },
-	transition: { duration: 0.4, delay: 0.2 },
+	transition: { duration: 0.6, delay: 0.1 },
 };
 
 const fadeInUpDelayed = {

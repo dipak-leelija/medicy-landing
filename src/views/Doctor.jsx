@@ -2,8 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import doctor from "../../public/assets/img/doctor.png";
 import circleCheck from "/assets/icon/circle-check.svg";
+import TrailBooking from './TrailBooking';
 export default function Doctor() {
   return (
+    <>
     <section>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -48,5 +50,9 @@ export default function Doctor() {
         </div>
       </motion.div>
     </section>
+    <div className="mb-5">
+    <TrailBooking/>
+    </div>
+    </>
   );
 }

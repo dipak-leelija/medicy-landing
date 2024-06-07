@@ -3,12 +3,14 @@ import { motion } from 'framer-motion';
 import FreeOfferBanner from '../componant/FreeOfferBanner'
 import PlanCards from '../componant/PlanCards'
 import CheckFaqs from '../componant/CheckFaq'
+import TrailBooking from './TrailBooking';
 
 import circleCheck from '/assets/icon/circle-check.svg';
 import teamservice from '/assets/img/teamservice.png';
 
 export default function Pricing() {
 	return (
+		<>
 		<section>
 			<motion.div
 				initial={{ opacity: 0, y: 50 }}
@@ -68,8 +70,12 @@ export default function Pricing() {
 						</div>
 					</div>
 				</div>
-        <CheckFaqs />				
+        {/* <CheckFaqs />			 */}
 			</motion.div>
 		</section>
+		<div className='mb-5'>
+		<TrailBooking/>	
+		</div>
+		</>
 	);
 }
