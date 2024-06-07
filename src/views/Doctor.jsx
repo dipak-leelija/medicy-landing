@@ -19,7 +19,7 @@ export default function Doctor() {
         <div className="doc-shape5"></div>
 
         <div className="doc-Leftdiv">
-			<span>Under Construction</span>
+          <p className="bg-warning text-center fw-bold fs-4 mb-2 p-3 w-100" style={{ position: 'relative', zIndex: '1' }}>Under Construction</p>
           <h2 className="title">What You Can Look Forward To</h2>
 
           <div className="mb-2 doc-feat">
@@ -34,13 +34,13 @@ export default function Doctor() {
             <img src={circleCheck} alt="" className="me-3" />{" "}
             <span><strong>View Detailed Information:</strong> Access addresses, contact details, and available hours.</span>
           </div>
-		  <div className="mb-2 doc-feat">
+          <div className="mb-2 doc-feat">
             <img src={circleCheck} alt="" className="me-3" />{" "}
             <span><strong>Real-Time Availability:</strong> Check when doctors are available and book appointments.</span>
           </div>
-		  <p>Stay tuned for more updates and get ready to find the best healthcare providers in your area!</p>
+          <p>Stay tuned for more updates and get ready to find the best healthcare providers in your area!</p>
         </div>
-		
+
         <div className="d-flex justify-content-end">
           <div className="doctor-img">
             <img src={doctor} alt="" />

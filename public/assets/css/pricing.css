@@ -101,6 +101,7 @@
 }
 .price-card:hover{
     margin: 0px;
+    padding: 0px;
     transform: scaleY(1.02) scaleX(1.02);
     border: 1px solid var(--royel-blue);
     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
