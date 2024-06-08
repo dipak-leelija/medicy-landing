@@ -69,15 +69,15 @@ export default function Pricing() {
         {plans.map((plan) => (
           <div className="col" key={plan.id}>
             <div className="card price-card">
-              <div>
+              {/* <div>
                 <div className="pricebdg text-center text-white p-1">
                   popular
                 </div>
-              </div>
+              </div> */}
               <div className="card-body">
                 <div className="head text-center mb-4 p-4 pb-0">
                   <h3 className="mb-0 fw-semibold">{plan.name}</h3>
-                  <p className="text-center">starter</p>
+                  {/* <p className="text-center">starter</p> */}
                 </div>
 
                 <div className="show-price text-center mb-4">
