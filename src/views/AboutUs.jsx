@@ -24,7 +24,7 @@ const slideInFromRight = {
 	initial: { opacity: 0},
 	whileInView: { opacity: 1 },
 	viewport: { once: true },
-	transition: { duration: 0.6, delay: 0.1 },
+	transition: { duration: 0.8, delay: 0.3 },
 };
 
 const fadeInUpDelayed = {
