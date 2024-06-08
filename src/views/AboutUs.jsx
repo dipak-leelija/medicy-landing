@@ -145,7 +145,7 @@ export default function AboutUs() {
 						</div>
 					</motion.div>
 					<motion.div {...slideInFromRight} className='trusted-img'>
-						<img src={medicyDedicatedExpart} alt='' width='500px' height='350px' />
+						<img src={medicyDedicatedExpart} alt='' width='500px' height='400px' />
 						{/* <div className='textinpicdiv'>
 							<div className='textinpicture'>
 								<h5>850+ Completed Project </h5>
