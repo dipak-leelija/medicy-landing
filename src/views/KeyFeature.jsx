@@ -284,9 +284,9 @@ export default function KeyFeature() {
                 whileInView={{ opacity: 1, x: 1 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
                 viewport={{ once: true }}
-                className="keycard-img"
+                className="gst-img mt-4"
               >
-                <img src={medicyGSTBilling} alt="" />
+                <img src={medicyGSTBilling} width={320} height={280} alt="" />
               </motion.div>
             )}
           </div>

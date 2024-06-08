@@ -31,6 +31,10 @@
     align-items: center;
     margin: 0px 20px;
 }
+.keycontent li{
+    margin-bottom: 8px;
+    font-weight: 600;
+}
 .maincontent{
     width: 50%;
     margin: 0px;
@@ -48,6 +52,9 @@
 }
 .keycard-img img{
     width: 100%;
+    filter: drop-shadow(-2px 20px 14px rgb(181, 196, 238));
+}
+.gst-img img{
     filter: drop-shadow(-2px 20px 14px rgb(181, 196, 238));
 }
 .card-title{
