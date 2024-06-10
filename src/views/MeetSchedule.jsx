@@ -14,19 +14,16 @@ export default function App() {
     return () => clearTimeout(timeout);
   }, []);
 
-  return (
+  return isLoading ? (
+    // Display React Bootstrap Spinner while loading
+    <div className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
+      <Spinner animation="border" variant="primary" style={{ width: '5rem', height: '5rem' }} role="status">
+        <span className="sr-only"></span>
+      </Spinner>
+    </div>
+  ) :(
     <div className="App">
-      {isLoading ? (
-        // Display React Bootstrap Spinner while loading
-        <div className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
-          <Spinner animation="border" variant="primary" style={{ width: '5rem', height: '5rem' }} role="status">
-            <span className="sr-only"></span>
-          </Spinner>
-        </div>
-      ) : (
-        // Once loading is finished, display MeetSchedule component
         <MeetSchedule />
-      )}
     </div>
   );
 }
