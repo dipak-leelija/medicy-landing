@@ -7,7 +7,7 @@ const FreeOfferBanner = () => {
     <>
       <div className="main-pricehead text-center m-4 mb-5">
         <h1>Pick Your Perfect Plan</h1>
-        <p>All plan FREE for first 7days</p>
+        <p>Choose the ideal plan for your needs. Streamline operations, enhance patient care, and boost efficiency with our tailored solutions.</p>
       </div>
 
       <div className="free-priceCard card mb-5">
@@ -17,43 +17,43 @@ const FreeOfferBanner = () => {
               <div className=" text-white free-pricehead">
                 <div className="mb-4">
                   <h5 className="text-white fw-semibold m-3 ms-2 fs-2">
-                    Free for one year
+                    Free for 15 Days
                   </h5>
                 </div>
                 <div className="d-flex justify-content-between align-items-center  mb-2 fs-5">
                   <span>
                     <img src={circleCheckWhite} className="me-4" alt="" />
-                    Lab Test
+                    OPD Management
+                  </span>
+                </div>
+                <div className="d-flex justify-content-between align-items-center  mb-2 fs-5">
+                  <span>
+                    <img src={circleCheckWhite} className="me-4" alt="" /> 
+                    Pharmacy Management
                   </span>
                 </div>
                 <div className="d-flex justify-content-between align-items-center  mb-2 fs-5">
                   <span>
                     <img src={circleCheckWhite} className="me-4" alt="" />
-                    Report
+                    Electronic Health Records (EHR)
+                  </span>
+                </div>
+                <div className="d-flex justify-content-between align-items-center  mb-2 fs-5">
+                  <span>
+                    <img src={circleCheckWhite} className="me-4" alt="" /> 
+                    Billing & Invoicing
                   </span>
                 </div>
                 <div className="d-flex justify-content-between align-items-center  mb-2 fs-5">
                   <span>
                     <img src={circleCheckWhite} className="me-4" alt="" />
-                    Product
+                    Report Generation
                   </span>
                 </div>
                 <div className="d-flex justify-content-between align-items-center  mb-2 fs-5">
                   <span>
                     <img src={circleCheckWhite} className="me-4" alt="" />
-                    Sale Management
-                  </span>
-                </div>
-                <div className="d-flex justify-content-between align-items-center  mb-2 fs-5">
-                  <span>
-                    <img src={circleCheckWhite} className="me-4" alt="" />
-                    Purchase Management
-                  </span>
-                </div>
-                <div className="d-flex justify-content-between align-items-center  mb-2 fs-5">
-                  <span>
-                    <img src={circleCheckWhite} className="me-4" alt="" />
-                    Stock Details
+                    Reporting & Analytics
                   </span>
                 </div>
               </div>
