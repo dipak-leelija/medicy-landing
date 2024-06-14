@@ -18,7 +18,8 @@ export default function Footer() {
       redirect: "follow",
     };
 
-    fetch("http://localhost/medicy.in/api/infos.php", requestOptions)
+    // fetch("http://localhost/medicy.in/api/infos.php", requestOptions)
+    fetch("https://app.medicy.in/api/infos.php", requestOptions)
       .then((response) => response.json())
       .then((result) => {
         const nameObj = result.find((item) => item.info_name === "name");
@@ -125,7 +126,7 @@ export default function Footer() {
                           </svg>
                         </div>
                         <div className="supportmedicyin2">
-                          <p className="m-0">{pnone}</p>
+                          <p className="m-0">+91 {pnone}</p>
                           <p className="m-0">{email}</p>
                         </div>
                       </div>
